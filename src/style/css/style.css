@@ -6999,7 +6999,7 @@ hr {
   24.header
 ============================*/
 header {
-  background: transparent;
+  background: transparent !important;
   position: relative;
   left: 0;
   top: 0;
@@ -7018,7 +7018,7 @@ header.fixed {
   -webkit-transition: all 0.9s;
   -ms-transition: all 0.9s;
   transition: all 0.9s;
-  background-color: #FFF;
+  background-color: transparent !important;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0px 4px 34px 0px rgba(0, 0, 0, 0.15);
