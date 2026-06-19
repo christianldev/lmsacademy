@@ -7,8 +7,8 @@
 
 .banner-section {
     position: relative;
+    background-color: variables.$primary;
 
-    background: linear-gradient(249.22deg, variables.$primary 75.7%, variables.$primary-hover 229.76%);
     padding: 155px 0 80px;
     z-index: 0;
     overflow: hidden;
