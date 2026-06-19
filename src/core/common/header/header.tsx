@@ -264,24 +264,18 @@ const Header = () => {
           </Link>
           <div className="navbar-logo">
             <Link className="logo-white header-logo" href={all_routes.homeone}>
-            {location === '/home'  ?
-                <ImageWithBasePath src="assets/img/logo-white.svg" className="logo" alt="Logo" /> :
-                <ImageWithBasePath src="assets/img/logo.svg" className="logo" alt="Logo" />
-              }
+             
+                <ImageWithBasePath src="assets/img/logo.webp" className="logo" alt="Logo" /> 
+                
+              
             </Link>
-            <Link className="logo-dark header-logo" href={all_routes.homeone}>
-              <ImageWithBasePath
-                src="assets/img/logo-white.svg"
-                className="logo"
-                alt="Logo"
-              />
-            </Link>
+            
           </div>
         </div>
         <div className={`main-menu-wrapper ${isMegaMenu ? 'active' : ''}`}>
           <div className="menu-header">
             <Link href={all_routes.homeone} className="menu-logo">
-              <ImageWithBasePath src="assets/img/logo.svg" className="img-fluid" alt="Logo" />
+              <ImageWithBasePath src="assets/img/logo.webp" className="img-fluid" alt="Logo" />
             </Link>
             <Link
               id="menu_close"

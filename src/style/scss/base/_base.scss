@@ -19,10 +19,12 @@ body {
   text-shadow: none;
 }
 img {
-	max-width: 100%;
+	max-width: 120px;
 	height: auto;
-	vertical-align: middle;
+	object-fit: contain;
+	
 }
+
 *{
 	outline: none;
 }
