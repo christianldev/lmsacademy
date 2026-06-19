@@ -101,264 +101,48 @@ const Header = () => {
     )
   }
   return (
-<<<<<<< HEAD
-<>
-  {/* Header Topbar*/}
-  {location === '/home' || location === '/home-2' || location === '/home-3'
-      || location === '/home-4' || location === '/home-5' ? 
-    <></>
-  :
-  <div className="header-topbar text-center">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-6">
-          <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-            <p className="d-flex align-items-center fw-medium fs-14 mb-2 me-3">
-              <i className="isax isax-location5 me-2" />
-              1442 Crosswind Drive Madisonville
-            </p>
-            <p className="d-flex align-items-center fw-medium fs-14 mb-2">
-              <i className="isax isax-call-calling5 me-2" />
-              +1 45887 77874
-            </p>
-          </div>
-        </div>
-        <div className="col-lg-6">
-          <div className="d-flex align-items-center justify-content-center justify-content-lg-end">
-            <div className="dropdown flag-dropdown mb-2 me-3">
-              <Link
-                href="#"
-                className="dropdown-toggle d-inline-flex align-items-center"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <ImageWithBasePath
-                  src="assets/img/flags/us-flag.svg"
-                  className="me-2"
-                  alt="flag"
-                />
-                ENG
-              </Link>
-              <ul className="dropdown-menu p-2 mt-2">
-                <li>
-                  <Link
-                    className="dropdown-item rounded d-flex align-items-center"
-                    href="#"
-                  >
-                    <ImageWithBasePath
-                      src="assets/img/flags/us-flag.svg"
-                      className="me-2"
-                      alt="flag"
-                    />
-                    ENG
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item rounded d-flex align-items-center"
-                    href="#"
-                  >
-                    <ImageWithBasePath
-                      src="assets/img/flags/arab-flag.svg"
-                      className="me-2"
-                      alt="flag"
-                    />
-                    ARA
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item rounded d-flex align-items-center"
-                    href="#"
-                  >
-                    <ImageWithBasePath
-                      src="assets/img/flags/france-flag.svg"
-                      className="me-2"
-                      alt="flag"
-                    />
-                    FRE
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div className="dropdown mb-2 me-3">
-              <Link
-                href="#"
-                className="dropdown-toggle"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                USD
-              </Link>
-              <ul className="dropdown-menu p-2 mt-2">
-                <li>
-                  <Link
-                    className="dropdown-item rounded"
-                    href="#"
-                  >
-                    USD
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item rounded"
-                    href="#"
-                  >
-                    YEN
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item rounded"
-                    href="#"
-                  >
-                    EURO
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <ul className="social-icon d-flex align-items-center mb-2">
-              <li className="me-2">
-                <Link href="#">
-                  <i className="fa-brands fa-facebook-f" />
-                </Link>
-              </li>
-              <li className="me-2">
-                <Link href="#">
-                  <i className="fa-brands fa-instagram" />
-                </Link>
-              </li>
-              <li className="me-2">
-                <Link href="#">
-                  <i className="fa-brands fa-x-twitter" />
-                </Link>
-              </li>
-              <li className="me-2">
-                <Link href="#">
-                  <i className="fa-brands fa-youtube" />
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <i className="fa-brands fa-linkedin" />
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-}
-  
-  {/* /Header Topbar*/}
-  {/* Header */}
-  <header className={`${location === '/home' ? 'header-one': location === '/home-3' || location === '/home-6' ? 
-   'header-three':location === '/home-4' ?'header-four':location === '/home-5' ?'header-five header-two': 'header-two'} ${scrolled ? "fixed" : ""}`}>
-    <div className="container">
-      <div className="header-nav">
-        <div className="navbar-header">
-          <Link id="mobile_btn" href="#" onClick={() => onHandleMobileMenu()}>
-            <span className="bar-icon">
-              <i className="isax isax-menu"></i>
-            </span>
-          </Link>
-          <div className="navbar-logo">
-            <Link className="logo-white header-logo" href={all_routes.homeone}>
-             
-                <ImageWithBasePath src="assets/img/logo.webp" className="logo" alt="Logo" /> 
-                
-              
-            </Link>
-            
-          </div>
-        </div>
-        <div className={`main-menu-wrapper ${isMegaMenu ? 'active' : ''}`}>
-          <div className="menu-header">
-            <Link href={all_routes.homeone} className="menu-logo">
-              <ImageWithBasePath src="assets/img/logo.webp" className="img-fluid" alt="Logo" />
-            </Link>
-            <Link
-              id="menu_close"
-              className="menu-close"
-              href="#"
-              onClick={() => onhandleCloseMenu()}
-            >
-              <i className="fas fa-times" />
-            </Link>
-          </div>
-          <ul className={`main-nav ${isMegaMenu ? 'active' : ''}`}>
-            {header.map((mainMenus:any, mainIndex) => (
-              <React.Fragment key={mainIndex}>
-                {mainMenus.separateRoute ? (
-                  <li
-                    key={mainIndex}
-                    className={
-                      `has-submenu megamenu ${location.includes('home')
-                        ? "active"
-                        : ""}`
-                    }
-                    onClick={()=>toggleSidebar(mainMenus.tittle)}
-                    onMouseOver={() => setIsMegaMenu(true)} onMouseLeave={() => setIsMegaMenu(false)}
-                  >
-                    <Link href='#'>{mainMenus.tittle}<i className={` ${basePath === 'instructor' || basePath === 'student' ? "isax isax-add" : "fas fa-chevron-down"}`} /></Link> 
-                    <ul className={`submenu mega-submenu ${subOpen === mainMenus.tittle ? "d-block" : ""}`} onMouseOver={() => setIsMegaMenu(true)} onMouseLeave={() => setIsMegaMenu(false)}>
-                <li>
-                  <div className="megamenu-wrapper">
-                    <div className="row">
-                    {mainMenus.menu.map((menu: any, idx: any) => (
-                        <div className="col-lg-2" key={idx}>
-                        <div className={`single-demo ${location === menu.route ? 'active' : ''}`}>
-                          <div className="demo-img">
-                            <Link href={menu.route} className="inner-demo-img">
-                              <ImageWithBasePath
-                                src={menu.img}
-                                className="img-fluid "
-                                alt="img"
-                              />
-                            </Link>
-                          </div>
-                          <div className="demo-info">
-                            <Link href={menu.route} className="inner-demo-img">
-                            {menu.menuValue}
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                       ))}
-                      
-                      
-=======
     <>
       {/* Header Topbar*/}
       {/* {location === '/home' || location === '/home-2' || location === '/home-3'
-            || location === '/home-4' || location === '/home-5' ?
-            <></>
-            :
-            <div className="header-topbar text-center">
-              <div className="container">
-                <div className="row">
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
-                      <p className="d-flex align-items-center fw-medium fs-14 mb-2 me-3">
-                        <i className="isax isax-location5 me-2" />
-                        1442 Crosswind Drive Madisonville
-                      </p>
-                      <p className="d-flex align-items-center fw-medium fs-14 mb-2">
-                        <i className="isax isax-call-calling5 me-2" />
-                        +1 45887 77874
-                      </p>
->>>>>>> feature_christian
-                    </div>
-                  </div>
-                  <div className="col-lg-6">
-                    <div className="d-flex align-items-center justify-content-center justify-content-lg-end">
-                      <div className="dropdown flag-dropdown mb-2 me-3">
+        || location === '/home-4' || location === '/home-5' ?
+        <></>
+        :
+        <div className="header-topbar text-center">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-6">
+                <div className="d-flex align-items-center justify-content-center justify-content-lg-start">
+                  <p className="d-flex align-items-center fw-medium fs-14 mb-2 me-3">
+                    <i className="isax isax-location5 me-2" />
+                    1442 Crosswind Drive Madisonville
+                  </p>
+                  <p className="d-flex align-items-center fw-medium fs-14 mb-2">
+                    <i className="isax isax-call-calling5 me-2" />
+                    +1 45887 77874
+                  </p>
+                </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="d-flex align-items-center justify-content-center justify-content-lg-end">
+                  <div className="dropdown flag-dropdown mb-2 me-3">
+                    <Link
+                      href="#"
+                      className="dropdown-toggle d-inline-flex align-items-center"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <ImageWithBasePath
+                        src="assets/img/flags/us-flag.svg"
+                        className="me-2"
+                        alt="flag"
+                      />
+                      ENG
+                    </Link>
+                    <ul className="dropdown-menu p-2 mt-2">
+                      <li>
                         <Link
+                          className="dropdown-item rounded d-flex align-items-center"
                           href="#"
-                          className="dropdown-toggle d-inline-flex align-items-center"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
                         >
                           <ImageWithBasePath
                             src="assets/img/flags/us-flag.svg"
@@ -367,117 +151,104 @@ const Header = () => {
                           />
                           ENG
                         </Link>
-                        <ul className="dropdown-menu p-2 mt-2">
-                          <li>
-                            <Link
-                              className="dropdown-item rounded d-flex align-items-center"
-                              href="#"
-                            >
-                              <ImageWithBasePath
-                                src="assets/img/flags/us-flag.svg"
-                                className="me-2"
-                                alt="flag"
-                              />
-                              ENG
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="dropdown-item rounded d-flex align-items-center"
-                              href="#"
-                            >
-                              <ImageWithBasePath
-                                src="assets/img/flags/arab-flag.svg"
-                                className="me-2"
-                                alt="flag"
-                              />
-                              ARA
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="dropdown-item rounded d-flex align-items-center"
-                              href="#"
-                            >
-                              <ImageWithBasePath
-                                src="assets/img/flags/france-flag.svg"
-                                className="me-2"
-                                alt="flag"
-                              />
-                              FRE
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="dropdown mb-2 me-3">
+                      </li>
+                      <li>
                         <Link
+                          className="dropdown-item rounded d-flex align-items-center"
                           href="#"
-                          className="dropdown-toggle"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
+                        >
+                          <ImageWithBasePath
+                            src="assets/img/flags/arab-flag.svg"
+                            className="me-2"
+                            alt="flag"
+                          />
+                          ARA
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="dropdown-item rounded d-flex align-items-center"
+                          href="#"
+                        >
+                          <ImageWithBasePath
+                            src="assets/img/flags/france-flag.svg"
+                            className="me-2"
+                            alt="flag"
+                          />
+                          FRE
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="dropdown mb-2 me-3">
+                    <Link
+                      href="#"
+                      className="dropdown-toggle"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      USD
+                    </Link>
+                    <ul className="dropdown-menu p-2 mt-2">
+                      <li>
+                        <Link
+                          className="dropdown-item rounded"
+                          href="#"
                         >
                           USD
                         </Link>
-                        <ul className="dropdown-menu p-2 mt-2">
-                          <li>
-                            <Link
-                              className="dropdown-item rounded"
-                              href="#"
-                            >
-                              USD
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="dropdown-item rounded"
-                              href="#"
-                            >
-                              YEN
-                            </Link>
-                          </li>
-                          <li>
-                            <Link
-                              className="dropdown-item rounded"
-                              href="#"
-                            >
-                              EURO
-                            </Link>
-                          </li>
-                        </ul>
-                      </div>
-                      <ul className="social-icon d-flex align-items-center mb-2">
-                        <li className="me-2">
-                          <Link href="#">
-                            <i className="fa-brands fa-facebook-f" />
-                          </Link>
-                        </li>
-                        <li className="me-2">
-                          <Link href="#">
-                            <i className="fa-brands fa-instagram" />
-                          </Link>
-                        </li>
-                        <li className="me-2">
-                          <Link href="#">
-                            <i className="fa-brands fa-x-twitter" />
-                          </Link>
-                        </li>
-                        <li className="me-2">
-                          <Link href="#">
-                            <i className="fa-brands fa-youtube" />
-                          </Link>
-                        </li>
-                        <li>
-                          <Link href="#">
-                            <i className="fa-brands fa-linkedin" />
-                          </Link>
-                        </li>
-                      </ul>
-                    </div>
+                      </li>
+                      <li>
+                        <Link
+                          className="dropdown-item rounded"
+                          href="#"
+                        >
+                          YEN
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          className="dropdown-item rounded"
+                          href="#"
+                        >
+                          EURO
+                        </Link>
+                      </li>
+                    </ul>
                   </div>
+                  <ul className="social-icon d-flex align-items-center mb-2">
+                    <li className="me-2">
+                      <Link href="#">
+                        <i className="fa-brands fa-facebook-f" />
+                      </Link>
+                    </li>
+                    <li className="me-2">
+                      <Link href="#">
+                        <i className="fa-brands fa-instagram" />
+                      </Link>
+                    </li>
+                    <li className="me-2">
+                      <Link href="#">
+                        <i className="fa-brands fa-x-twitter" />
+                      </Link>
+                    </li>
+                    <li className="me-2">
+                      <Link href="#">
+                        <i className="fa-brands fa-youtube" />
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="#">
+                        <i className="fa-brands fa-linkedin" />
+                      </Link>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
-          } */}
+          </div>
+        </div>
+      } */}
 
       {/* /Header Topbar*/}
       {/* Header */}
@@ -493,24 +264,18 @@ const Header = () => {
               </Link>
               <div className="navbar-logo">
                 <Link className="logo-white header-logo" href={all_routes.homeone}>
-                  {location === '/home' ?
-                    <ImageWithBasePath src="assets/img/logo.webp" className="logo" alt="Logo" /> :
-                    <ImageWithBasePath src="assets/img/logo.webp" className="logo" alt="Logo" />
-                  }
+
+                  <ImageWithBasePath src="assets/img/logo.png" className="logo" alt="Logo" />
+
+
                 </Link>
-                <Link className="logo-dark header-logo" href={all_routes.homeone}>
-                  <ImageWithBasePath
-                    src="assets/img/llogo.svg"
-                    className="logo"
-                    alt="Logo"
-                  />
-                </Link>
+
               </div>
             </div>
             <div className={`main-menu-wrapper ${isMegaMenu ? 'active' : ''}`}>
               <div className="menu-header">
                 <Link href={all_routes.homeone} className="menu-logo">
-                  <ImageWithBasePath src="assets/img/logo.svg" className="img-fluid" alt="Logo" />
+                  <ImageWithBasePath src="assets/img/logo.png" className="img-fluid" alt="Logo" />
                 </Link>
                 <Link
                   id="menu_close"

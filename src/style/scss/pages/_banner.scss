@@ -7,12 +7,8 @@
 
 .banner-section {
     position: relative;
-<<<<<<< HEAD
-    background:linear-gradient(variables.$primary, variables.$primary-hover);
-=======
     background-color: variables.$primary;
 
->>>>>>> feature_christian
     padding: 155px 0 80px;
     z-index: 0;
     overflow: hidden;
@@ -34,10 +30,6 @@
         left: 0;
         top: 20%;
     }
-<<<<<<< HEAD
-  
-    .banner-bg4{
-=======
 
     .banner-bg3 {
         position: absolute;
@@ -47,7 +39,6 @@
     }
 
     .banner-bg4 {
->>>>>>> feature_christian
         position: absolute;
         right: 0;
         top: 30%;
@@ -99,11 +90,6 @@
             color: variables.$light;
             margin-bottom: 24px;
         }
-<<<<<<< HEAD
-        
-          
-       
-=======
 
         .banner-search {
             background: variables.$white;
@@ -196,7 +182,6 @@
         }
     }
 
->>>>>>> feature_christian
     .banner-image {
         position: relative;
         padding: 0 40px;
@@ -457,10 +442,6 @@
             border-color: variables.$white;
             color: variables.$gray-900;
         }
-<<<<<<< HEAD
-    
-        
-=======
 
         .banner-img-section {
             position: relative;
@@ -557,204 +538,202 @@
                 }
             }
         }
->>>>>>> feature_christian
+
+
     }
 
-<<<<<<< HEAD
-		.banner-bg-02 {
-			position: absolute;
-			top: 0;
-			right: 0;
-			z-index: 0;
-		}
-		
-	}
-	&-four {
-		position: relative;
-		background: linear-gradient(349.22deg, #FBFCFF 25.7%, #F3EDFF 129.76%);
-		padding: 165px 0 80px;
-		z-index: 1;
-		@include mixins.respond-below(lg) {
-			padding: 105px 0 50px;
-		}
-		.drop-detail {
-			width: 180px;
-			display: flex;
-			margin: 0;
-			border-radius: 50px !important;
-			border: 0;
-			height: 44px;
-			@include mixins.respond-below(sm) {
-				width: 100%;
-			}
-			.select2-container--default .select2-selection--single .select2-selection__rendered {
-				font-weight: variables.$font-weight-semibold;
-			}
-			.select2-container--default .select2-selection--single .select2-selection__arrow b {
-				margin-top: 0;
-			}
-		}
-		.banner-content {
-			.form-inner {
-				padding: 10px;
-				background-color: variables.$white;
-				border-radius: 35px;
-				width: 100%;
-				border: 0;
-				max-width: 740px;
-			}
-		}
-		
-		.logo-cover {
-			position: absolute;
-			width: 118px;
-			height: 118px;
-			top: 50%;
-			left: 50%;
-			@include mixins.transform(translate(-50%, -50%));
-			background: variables.$white;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			z-index: 1;
-			@include mixins.rounded(50%);
-			img {
-				width: 70px;
-			}
-		}
-	}
-=======
-    &-three {
-        position: relative;
-        padding: 120px 0 100px;
-        overflow: hidden;
+    .banner-bg-02 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
 
-        .banner-bg-01 {
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 0;
+}
+
+.banner-four {
+    position: relative;
+    background: linear-gradient(349.22deg, #FBFCFF 25.7%, #F3EDFF 129.76%);
+    padding: 165px 0 80px;
+    z-index: 1;
+
+    @include mixins.respond-below(lg) {
+        padding: 105px 0 50px;
+    }
+
+    .drop-detail {
+        width: 180px;
+        display: flex;
+        margin: 0;
+        border-radius: 50px !important;
+        border: 0;
+        height: 44px;
+
+        @include mixins.respond-below(sm) {
+            width: 100%;
         }
 
-        .banner-bg-02 {
-            position: absolute;
-            top: 0;
-            right: 0;
-            z-index: 0;
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            font-weight: variables.$font-weight-semibold;
         }
 
-        .search-box {
-            .search-btn {
-                width: 150px;
-                -ms-flex: 0 0 150px;
-                flex: 0 0 130px;
-                border-radius: 5px;
-                position: absolute;
-                top: 8px;
-                right: 8px;
-                padding: 0px;
-            }
-        }
-
-        @include mixins.respond-below(lg) {
-            padding: 115px 0 120px;
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            margin-top: 0;
         }
     }
 
-    &-four {
-        position: relative;
-        background: linear-gradient(349.22deg, #FBFCFF 25.7%, #F3EDFF 129.76%);
-        padding: 165px 0 80px;
-        z-index: 1;
-
-        @include mixins.respond-below(lg) {
-            padding: 105px 0 50px;
-        }
-
-        .drop-detail {
-            width: 180px;
-            display: flex;
-            margin: 0;
-            border-radius: 50px !important;
+    .banner-content {
+        .form-inner {
+            padding: 10px;
+            background-color: variables.$white;
+            border-radius: 35px;
+            width: 100%;
             border: 0;
-            height: 44px;
-
-            @include mixins.respond-below(sm) {
-                width: 100%;
-            }
-
-            .select2-container--default .select2-selection--single .select2-selection__rendered {
-                font-weight: variables.$font-weight-semibold;
-            }
-
-            .select2-container--default .select2-selection--single .select2-selection__arrow b {
-                margin-top: 0;
-            }
-        }
-
-        .banner-content {
-            .form-inner {
-                padding: 10px;
-                background-color: variables.$white;
-                border-radius: 35px;
-                width: 100%;
-                border: 0;
-                max-width: 740px;
-            }
-        }
-
-        .banner-image {
-            margin-left: 24px;
-
-            @include mixins.respond-below(xxl) {
-                margin-left: 0;
-            }
-
-            @include mixins.respond-below(lg) {
-                display: none;
-            }
-
-            .img-01,
-            .img-02,
-            .img-03 {
-                @include mixins.rounded(10px);
-                width: 100%;
-            }
-        }
-
-        .logo-cover {
-            position: absolute;
-            width: 118px;
-            height: 118px;
-            top: 50%;
-            left: 50%;
-            @include mixins.transform(translate(-50%, -50%));
-            background: variables.$white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            z-index: 1;
-            @include mixins.rounded(50%);
-
-            img {
-                width: 70px;
-            }
+            max-width: 740px;
         }
     }
->>>>>>> feature_christian
+
+    .logo-cover {
+        position: absolute;
+        width: 118px;
+        height: 118px;
+        top: 50%;
+        left: 50%;
+        @include mixins.transform(translate(-50%, -50%));
+        background: variables.$white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        @include mixins.rounded(50%);
+
+        img {
+            width: 70px;
+        }
+    }
 }
+
+.banner-three {
+    position: relative;
+    padding: 120px 0 100px;
+    overflow: hidden;
+
+    .banner-bg-01 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+
+    .banner-bg-02 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 0;
+    }
+
+    .search-box {
+        .search-btn {
+            width: 150px;
+            -ms-flex: 0 0 150px;
+            flex: 0 0 130px;
+            border-radius: 5px;
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            padding: 0px;
+        }
+    }
+
+    @include mixins.respond-below(lg) {
+        padding: 115px 0 120px;
+    }
+}
+
+.banner-four {
+    position: relative;
+    background: linear-gradient(349.22deg, #FBFCFF 25.7%, #F3EDFF 129.76%);
+    padding: 165px 0 80px;
+    z-index: 1;
+
+    @include mixins.respond-below(lg) {
+        padding: 105px 0 50px;
+    }
+
+    .drop-detail {
+        width: 180px;
+        display: flex;
+        margin: 0;
+        border-radius: 50px !important;
+        border: 0;
+        height: 44px;
+
+        @include mixins.respond-below(sm) {
+            width: 100%;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered {
+            font-weight: variables.$font-weight-semibold;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__arrow b {
+            margin-top: 0;
+        }
+    }
+
+    .banner-content {
+        .form-inner {
+            padding: 10px;
+            background-color: variables.$white;
+            border-radius: 35px;
+            width: 100%;
+            border: 0;
+            max-width: 740px;
+        }
+    }
+
+    .banner-image {
+        margin-left: 24px;
+
+        @include mixins.respond-below(xxl) {
+            margin-left: 0;
+        }
+
+        @include mixins.respond-below(lg) {
+            display: none;
+        }
+
+        .img-01,
+        .img-02,
+        .img-03 {
+            @include mixins.rounded(10px);
+            width: 100%;
+        }
+    }
+
+    .logo-cover {
+        position: absolute;
+        width: 118px;
+        height: 118px;
+        top: 50%;
+        left: 50%;
+        @include mixins.transform(translate(-50%, -50%));
+        background: variables.$white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        @include mixins.rounded(50%);
+
+        img {
+            width: 70px;
+        }
+    }
 }
 
 
 
 
-
-
-
-<<<<<<< HEAD
-	
-	
-=======
 
 
 
@@ -777,4 +756,3 @@
         background-image: none;
     }
 }
->>>>>>> feature_christian
