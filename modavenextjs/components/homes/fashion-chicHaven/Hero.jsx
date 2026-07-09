@@ -10,6 +10,7 @@ export default function Hero() {
           src="/images/slider/slider-chicHaven.jpg"
           width={1920}
           height={800}
+          
         />
         <div className="box-content">
           <div className="container">

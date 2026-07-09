@@ -102,7 +102,7 @@ export const slideshowData = [
 export const slidesData = [
   {
     id: 1,
-    imageSrc: "/images/slider/slider-elegantAbode.jpg",
+    imageSrc: "/images/slider/carrusel1.webp",
     heading: "Casual Chic <br /> Everyday",
     description:
       "Achieve effortless style every day with our casual chic pieces.",
@@ -110,7 +110,7 @@ export const slidesData = [
   },
   {
     id: 2,
-    imageSrc: "/images/slider/slider-elegantAbode2.jpg",
+    imageSrc: "/images/slider/carrusel2.webp",
     heading: "Layer in Style <br /> with Our Jackets",
     description:
       "Find your next go-to jacket for stylish layering in any season.",
@@ -118,7 +118,7 @@ export const slidesData = [
   },
   {
     id: 3,
-    imageSrc: "/images/slider/slider-elegantAbode3.jpg",
+    imageSrc: "/images/slider/carrusel3.webp",
     heading: "Every Coat Tells <br /> a Story",
     description: "Choose outerwear that reflects your unique narrative.",
     buttonText: "Shop New",

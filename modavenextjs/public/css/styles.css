@@ -628,7 +628,7 @@ video {
 }
 
 .bg-main {
-  background-color: var(--main) !important;
+  background-color: rgba(59, 59, 59, 0.178) !important;
 }
 
 .bg-secondary {

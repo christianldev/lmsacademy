@@ -34,7 +34,7 @@ export default function Hero() {
                 <div className="container">
                   <div className="row">
                     <div className="col-md-7 col-sm-10">
-                      <div className="content-slider card-box bg-main">
+                      <div className="content-slider card-box bg-main ">
                         <div className="box-title-slider">
                           <div
                             className="fade-item fade-item-1 heading title-display text-white"
