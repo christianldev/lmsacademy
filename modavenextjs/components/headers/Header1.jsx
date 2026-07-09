@@ -39,7 +39,7 @@ export default function Header1({ fullWidth = false }) {
               </ul>
             </nav>
           </div>
-          <div className="col-xl-3 col-md-4 col-3">
+          {/* <div className="col-xl-3 col-md-4 col-3">
             <ul className="nav-icon d-flex justify-content-end align-items-center">
               <li className="nav-search">
                 <a
@@ -161,7 +161,7 @@ export default function Header1({ fullWidth = false }) {
                 </a>
               </li>
             </ul>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>
