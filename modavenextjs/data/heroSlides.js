@@ -103,10 +103,10 @@ export const slidesData = [
   {
     id: 1,
     imageSrc: "/images/slider/carrusel1.webp",
-    heading: "Casual Chic <br /> Everyday",
+    heading: "La música no tiene edad. Tu voz tampoco. <br />",
     description:
-      "Achieve effortless style every day with our casual chic pieces.",
-    buttonText: "Explore Collection",
+      "Canta con confianza, técnica y pasión",
+    buttonText: "Comienza hoy",
   },
   {
     id: 2,
