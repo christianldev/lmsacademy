@@ -1,5 +1,24 @@
 @use "../abstracts/mixin";
-
+.btn-inscribirme{
+  background: linear-gradient(90deg,
+                    #936F33,
+                    #DFBC67,
+                    #936F33);
+    color:white;
+    padding: 15px 32px;
+    border-radius: 99px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    text-transform: capitalize;
+    border: 1px solid var(--main);
+    position: relative;
+    overflow: hidden;
+}
 .tf-btn {
     @include mixin.transition3;
     background-color: var(--main);
