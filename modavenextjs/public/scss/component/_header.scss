@@ -79,6 +79,11 @@
 
   .box-nav-ul {
     gap: 20px;
+    width: 100%;
+
+    li:last-child {
+      margin-left: auto;
+    }
   }
 
   .wrapper-header-right {
@@ -169,6 +174,7 @@
 
   .mobile-menu {
     display: inline-flex;
+    color: #9b8f08;
 
     .icon {
       font-size: 24px;

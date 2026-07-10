@@ -19,7 +19,7 @@ export default function Header3() {
               <i className="icon icon-categories" />
             </a>
           </div>
-          <div className="col-xxl-5 col-xl-6 d-none d-xl-block">
+          <div className="col-xl-9 d-none d-xl-block">
             <nav className="box-navigation text-center">
               <ul className="box-nav-ul d-flex align-items-center">
                 <Nav />

@@ -32,7 +32,7 @@ export default function Header1({ fullWidth = false }) {
               />
             </Link>
           </div>
-          <div className="col-xl-6 d-none d-xl-block">
+          <div className="col-xl-9 d-none d-xl-block">
             <nav className="box-navigation text-center">
               <ul className="box-nav-ul d-flex align-items-center justify-content-center">
                 <Nav />
