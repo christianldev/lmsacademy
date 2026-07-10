@@ -4,7 +4,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 export default function Hero() {
   return (
     <section className="tf-slideshow slider-style2 slider-effect-fade">
@@ -13,8 +13,8 @@ export default function Hero() {
         centeredSlides={false}
         spaceBetween={0}
         loop={true}
-        autoplay={false}
-        modules={[Pagination]}
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        modules={[Pagination, Autoplay]}
         pagination={{
           clickable: true,
           el: ".spd33",
@@ -67,7 +67,7 @@ export default function Hero() {
       </Swiper>
       <div className="wrap-pagination">
         <div className="container">
-          <div className="sw-dots sw-pagination-slider type-circle justify-content-center spd33" />
+          <div className="sw-dots sw-pagination-slider type-circle white-circle justify-content-center spd33" />
         </div>
       </div>
     </section>
