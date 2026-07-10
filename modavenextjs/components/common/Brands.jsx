@@ -10,7 +10,7 @@ export default function Brands({ parentClass = "flat-spacing-5 line-top" }) {
         dir="ltr"
         className="swiper tf-sw-partner sw-auto"
         spaceBetween={50} // Equivalent to data-space={50}
-        loop={true} // Equivalent to data-loop="true"
+        loop={false} // Equivalent to data-loop="true"
         autoplay={{ delay: 0 }} // Equivalent to data-auto-play="true" with a delay of 0
         breakpoints={{
           1024: {

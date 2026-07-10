@@ -32,6 +32,7 @@ export default function Header14() {
                   src="/images/logo/logo.svg"
                   width={144}
                   height={25}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </Link>
               <div className="tf-list-categories style-2 d-none d-xl-block">

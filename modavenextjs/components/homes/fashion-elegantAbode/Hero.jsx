@@ -5,6 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Pagination, Autoplay } from "swiper/modules";
+
 export default function Hero() {
   return (
     <section className="tf-slideshow slider-style2 slider-effect-fade">
@@ -24,17 +25,34 @@ export default function Hero() {
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
             <div className="wrap-slider">
+              {/* IMAGEN DE NEXT.JS USANDO FILL */}
               <Image
                 alt="fashion-slideshow"
                 src={slide.imageSrc}
-                width={1920}
-                height={803}
+                fill
+                sizes="100vw"
+                priority
+                style={{ objectFit: "cover", objectPosition: "top center" }} // ← Cambiado a top center
               />
-              <div className="box-content">
+
+              {/* CAPA DE GRADIENTE OSCURO (Integra perfectamente el navbar de la escuela) */}
+              <div
+                style={{
+                  position: "absolute",
+                  inset: 0,
+                  background:
+                    "linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)",
+                  pointerEvents: "none",
+                  zIndex: 2,
+                }}
+              />
+
+              {/* CONTENIDO ORIGINAL (Subimos el z-index para que flote) */}
+              <div className="box-content" style={{ zIndex: 3, width: "100%" }}>
                 <div className="container">
                   <div className="row">
                     <div className="col-md-7 col-sm-10">
-                      <div className="content-slider card-box bg-main ">
+                      <div className="content-slider card-box bg-main">
                         <div className="box-title-slider">
                           <div
                             className="fade-item fade-item-1 heading title-display text-white"
@@ -47,7 +65,6 @@ export default function Hero() {
                           </p>
                         </div>
                         <div className="fade-item fade-item-3 box-btn-slider">
-                          {/* Adding the link directly here */}
                           <Link
                             href={`/shop-default-grid`}
                             className="tf-btn btn-fill btn-white"

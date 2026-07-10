@@ -493,7 +493,7 @@ export default function MobileMenu() {
                   href="https://themeforest.net/user/themesflat"
                   className="mb-menu-link"
                 >
-                  Buy Theme
+                  Inscribirme
                 </a>
               </li>
             </ul>

@@ -27,8 +27,9 @@ export default function Header1({ fullWidth = false }) {
                 alt="logo"
                 className="logo"
                 src="/images/logo/logo.svg"
-                width={144}
+                width={100}
                 height={25}
+              
               />
             </Link>
           </div>

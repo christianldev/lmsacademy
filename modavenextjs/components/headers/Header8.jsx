@@ -26,6 +26,7 @@ export default function Header8() {
                 src="/images/logo/logo.svg"
                 width={144}
                 height={25}
+                style={{ width: "auto", height: "auto" }}
               />
             </Link>
           </div>

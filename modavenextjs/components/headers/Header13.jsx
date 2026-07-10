@@ -29,6 +29,7 @@ export default function Header13() {
                 src="/images/logo/logo.svg"
                 width={144}
                 height={25}
+                style={{ width: "auto", height: "auto" }}
               />
             </Link>
             <div className="d-none d-xl-block">
