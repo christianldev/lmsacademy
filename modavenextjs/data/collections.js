@@ -206,52 +206,45 @@ export const collections4 = [
 export const collectionData = [
   {
     id: 1,
-    imageSrc: "/images/collections/cls9.jpg",
-    title: "Dresses",
-    itemCount: 12,
+    imageSrc: "./images/categories/Técnica Vocal Inicial.jpg",
+    title: "Técnica Vocal Inicial",
+
     delay: "0s",
   },
   {
     id: 2,
-    imageSrc: "/images/collections/cls10.jpg",
-    title: "Tops",
-    itemCount: 12,
+    imageSrc: "./images/categories/Repertorio Pop_Rock.jpg",
+    title: "Repertorio Pop/Rock",
+
     delay: "0.1s",
   },
   {
     id: 3,
-    imageSrc: "/images/collections/cls11.jpg",
-    title: "Bottoms",
-    itemCount: 12,
+    imageSrc: "./images/categories/Manejo Escénico.jpg",
+    title: "Manejo Escénico",
+
     delay: "0.2s",
   },
   {
     id: 4,
-    imageSrc: "/images/collections/cls12.jpg",
-    title: "Outerwear",
-    itemCount: 12,
+    imageSrc: "./images/categories/Armonía Vocal.jpg",
+    title: "Armonía Vocal",
+
     delay: "0.3s",
   },
   {
     id: 5,
-    imageSrc: "/images/collections/cls4.jpg",
-    title: "Shoes",
-    itemCount: 12,
+    imageSrc: "./images/categories/Grabación en Estudio.jpg",
+    title: "Grabación en Estudio",
+
     delay: "0.4s",
   },
   {
     id: 6,
-    imageSrc: "/images/collections/cls6.jpg",
-    title: "Accessories",
-    itemCount: 12,
+    imageSrc: "./images/categories/Canto para Niños.jpg",
+    title: "Canto para Niños",
+
     delay: "0.5s",
-  },
-  {
-    id: 7,
-    imageSrc: "/images/collections/cls12.jpg",
-    title: "Outerwear",
-    itemCount: 12,
-    delay: "0.6s",
   },
 ];
 
