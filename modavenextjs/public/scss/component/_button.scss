@@ -5,7 +5,7 @@
             #936F33,
             #DFBC67,
             #936F33);
-    color: white;
+    color: white !important;
     padding: 12px 30px;
     border-radius: 99px;
     display: inline-flex;
@@ -22,7 +22,7 @@
     cursor: pointer;
 
     &:hover {
-        color: var(--white);
+        color: var(--white) !important;
         background-position: 0% 50%;
     }
 
@@ -149,7 +149,7 @@
                 #936F33);
         background-position: 100% 50%;
         background-size: 200% 100%;
-        border-color: #000000;
+
 
         &:hover {
             color: var(--white);

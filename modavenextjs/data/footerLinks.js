@@ -9,25 +9,25 @@ export const socialLinks = [
 
 export const footerLinks = [
   {
-    heading: "Infomation",
+    heading: "Información",
     items: [
-      { label: "About Us", href: "/about-us", isLink: true },
-      { label: "Our Stories", href: "#", isLink: false },
-      { label: "Size Guide", href: "#", isLink: false },
-      { label: "Contact us", href: "/contact", isLink: true },
-      { label: "Career", href: "#", isLink: false },
-      { label: "My Account", href: "/my-account", isLink: true },
+      { label: "Sobre Nosotros", href: "/about-us", isLink: true },
+      { label: "Nuestra Historia", href: "#", isLink: false },
+      { label: "Guía de Niveles", href: "#", isLink: false },
+      { label: "Contáctanos", href: "/contact", isLink: true },
+      { label: "Trabaja con Nosotros", href: "#", isLink: false },
+      { label: "Mi Cuenta", href: "/my-account", isLink: true },
     ],
   },
   {
-    heading: "Customer Services",
+    heading: "Servicio al Estudiante",
     items: [
-      { label: "Shipping", href: "#", isLink: false },
-      { label: "Return & Refund", href: "#", isLink: false },
-      { label: "Privacy Policy", href: "#", isLink: false },
-      { label: "Terms & Conditions", href: "/term-of-use", isLink: true },
-      { label: "Orders FAQs", href: "/FAQs", isLink: true },
-      { label: "My Wishlist", href: "/wish-list", isLink: true },
+      { label: "Inscripciones", href: "#", isLink: false },
+      { label: "Devoluciones", href: "#", isLink: false },
+      { label: "Política de Privacidad", href: "#", isLink: false },
+      { label: "Términos y Condiciones", href: "/term-of-use", isLink: true },
+      { label: "Preguntas Frecuentes", href: "/FAQs", isLink: true },
+      { label: "Mis Cursos", href: "/wish-list", isLink: true },
     ],
   },
 ];

@@ -9,9 +9,9 @@ export default function Categories() {
     <section className="flat-spacing">
       <div className="container">
         <div className="heading-section-2 wow fadeInUp">
-          <h3 className="heading">Explore Collections</h3>
+          <h3 className="heading">¿Por qué elegirnos?</h3>
           <Link href={`/shop-collection`} className="btn-line py_8">
-            View All Collection
+            Ver toda la colección
           </Link>
         </div>
       </div>

@@ -17,8 +17,8 @@ import MarqueeSection2 from "@/components/common/MarqueeSection2";
 
 export const metadata = {
   title:
-    "Home Fashion Elegant Abode || Modave - Multipurpose React Nextjs eCommerce Template",
-  description: "Modave - Multipurpose React Nextjs eCommerce Template",
+    "Escuela de canto || Katty Elisa",
+  description: "Aprende a cantar con Katty Elisa, tu escuela de canto de confianza. Mejora tu técnica vocal y alcanza tus metas musicales con nuestros cursos personalizados.",
 };
 
 export default function HomeFashionElegantAbodePage() {

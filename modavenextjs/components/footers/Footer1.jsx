@@ -98,35 +98,35 @@ export default function Footer1({
                           alt=""
                           src={
                             dark
-                              ? "/images/logo/logo-white.svg"
+                              ? "/images/logo/logo.svg"
                               : "/images/logo/logo.svg"
                           }
-                          width={127}
-                          height={24}
-                          style={{ width: "auto", height: "auto" }}
+                          width={180}
+                          height={60}
+                       
                         />
                       </Link>
                     </div>
                     <div className="footer-address">
-                      <p>549 Oak St.Crystal Lake, IL 60014</p>
+                      <p>Guayaquil, Ecuador</p>
                       <Link
                         href={`/contact`}
                         className={`tf-btn-default fw-6 ${
                           dark ? "style-white" : ""
                         } `}
                       >
-                        GET DIRECTION
+                        CÓMO LLEGAR
                         <i className="icon-arrowUpRight" />
                       </Link>
                     </div>
                     <ul className="footer-info">
                       <li>
                         <i className="icon-mail" />
-                        <p>themesflat@gmail.com</p>
+                        <p>info@lmsacademy.com</p>
                       </li>
                       <li>
                         <i className="icon-phone" />
-                        <p>315-666-6688</p>
+                        <p>+593 99 999 9999</p>
                       </li>
                     </ul>
                     <ul
@@ -181,13 +181,12 @@ export default function Footer1({
                 <div className="col-lg-4">
                   <div className="footer-col-block">
                     <div className="footer-heading text-button footer-heading-mobile">
-                      Newletter
+                      Boletín
                     </div>
                     <div className="tf-collapse-content">
                       <div className="footer-newsletter">
                         <p className="text-caption-1">
-                          Sign up for our newsletter and get 10% off your first
-                          purchase
+                          Regístrate en nuestro boletín y recibe 10% de descuento en tu primera matrícula
                         </p>
                         <div
                           className={`tfSubscribeMsg  footer-sub-element ${
@@ -196,10 +195,10 @@ export default function Footer1({
                         >
                           {success ? (
                             <p style={{ color: "rgb(52, 168, 83)" }}>
-                              You have successfully subscribed.
+                              Te has suscrito con éxito.
                             </p>
                           ) : (
-                            <p style={{ color: "red" }}>Something went wrong</p>
+                            <p style={{ color: "red" }}>Algo salió mal</p>
                           )}
                         </div>
                         <form
@@ -214,7 +213,7 @@ export default function Footer1({
                                 type="email"
                                 name="email"
                                 className="subscribe-email"
-                                placeholder="Enter your e-mail"
+                                placeholder="Ingresa tu e-mail"
                                 tabIndex={0}
                                 aria-required="true"
                               />
@@ -246,13 +245,13 @@ export default function Footer1({
                             className="text-caption-1"
                             htmlFor="footer-Form_agree"
                           >
-                            By clicking subcribe, you agree to the{" "}
+                            Al hacer clic en suscribirte, aceptas los{" "}
                             <Link className="fw-6 link" href={`/term-of-use`}>
-                              Terms of Service
+                              Términos y Condiciones
                             </Link>{" "}
-                            and{" "}
+                            y la{" "}
                             <a className="fw-6 link" href="#">
-                              Privacy Policy
+                              Política de Privacidad
                             </a>
                             .
                           </label>
@@ -271,7 +270,7 @@ export default function Footer1({
                   <div className="footer-bottom-wrap">
                     <div className="left">
                       <p className="text-caption-1">
-                        ©{new Date().getFullYear()} Modave. All Rights Reserved.
+                        ©{new Date().getFullYear()} LMS Academy Guayaquil. Todos los derechos reservados.
                       </p>
                       <div className="tf-cur justify-content-end">
                         <div className="tf-currencies">
@@ -287,7 +286,7 @@ export default function Footer1({
                       </div>
                     </div>
                     <div className="tf-payment">
-                      <p className="text-caption-1">Payment:</p>
+                      <p className="text-caption-1">Pagos:</p>
                       <ul>
                         <li>
                           <Image
