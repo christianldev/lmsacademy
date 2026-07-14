@@ -1,0 +1,172 @@
+@use "../abstracts/mixin";
+
+.btn-line py_8 {
+    color: #ffffff !important;
+}
+
+.categories-voz-wrap {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* El background y el pull up ya no son necesarios aquí 
+       porque se manejan de manera más robusta con posicionamiento absoluto 
+       sobre toda la sección en el componente JSX */
+}
+
+.categories-voz-heading {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+
+    .subtitle {
+        color: #ff4a4a;
+        letter-spacing: 4px;
+        font-weight: 700;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+    }
+
+    h3.heading {
+        font-size: clamp(1.8rem, 4vw, 3.5rem);
+        font-weight: 900;
+        font-family: "Montserrat", "Arial Black", sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+        line-height: 1.2;
+        margin: 0;
+
+        span {
+            color: #4affd8;
+        }
+    }
+
+    p {
+        max-width: 700px;
+        margin: 10px auto 0;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #d0d0d0;
+    }
+
+    .btn-line {
+        color: #d4af37;
+        border-color: #d4af37;
+        margin-top: 1rem;
+        background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b, #d4af37);
+        background-size: 300% 300%;
+        animation: goldShimmerText 3s ease infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
+        text-transform: uppercase;
+        font-weight: 700;
+
+        &::after {
+            background-color: #ffd700;
+        }
+
+        &:hover {
+            color: #ffd700;
+        }
+    }
+}
+
+@keyframes goldShimmerText {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.categories-voz-carousel {
+    padding: 0 15px;
+    position: relative;
+    z-index: 10;
+}
+
+.categories-voz-card {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    /* <-- NECESARIO PARA QUE EL BOTÓN FLOTE SOBRE LA IMAGEN */
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+
+        .img-style img {
+            transform: scale(1.05);
+        }
+    }
+
+    .img-style {
+        display: block;
+        overflow: hidden;
+        height: 400px;
+        position: relative;
+
+        /* Un ligero degradado oscuro abajo para que el botón dorado destaque mejor (opcional pero ayuda) */
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+            pointer-events: none;
+        }
+
+        img {
+            transition: transform 0.5s ease;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .content {
+        position: absolute;
+        /* <-- ESTO HACE QUE SE PONGA SOBRE LA IMAGEN */
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        z-index: 2;
+
+        .cls-btn {
+            background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b, #d4af37);
+            background-size: 300% 300%;
+            animation: goldShimmer 3s ease infinite;
+            color: #000;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 25px;
+            box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+            min-width: 200px;
+            display: flex;
+            align-items: center;
+            /* Alinea texto e ícono al medio */
+            justify-content: space-between;
+            margin: 0 auto;
+
+            .text,
+            .icon {
+                color: #000;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+    }
+}
