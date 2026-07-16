@@ -16888,6 +16888,23 @@ ul.list-text.type-number {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .section-nosotros-dark {
+    background-color: #111;
+    color: #f8f8f8;
+  }
+  .nosotros-title {
+    font-size: 2.75rem;
+  }
+  .nosotros-video {
+    height: 600px;
+    width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  .nosotros-text {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+  }
   .flat-spacing-4 {
     padding-top: 40px;
     padding-bottom: 40px;

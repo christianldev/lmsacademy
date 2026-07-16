@@ -7,38 +7,50 @@ import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 export default function Products() {
   return (
-    <section className="flat-spacing-3 pt-0">
+    <section className="section"
+    
+      style={{ backgroundColor: "#1a1a1a", color: "#f8f8f8" }}
+    >
       <div className="container">
-        <div className="heading-section text-center wow fadeInUp">
-          <h3>Today's Top Picks</h3>
-          <p className="subheading text-secondary">
-            Fresh styles just in! Elevate your look.
-          </p>
+        <div className=" text-center wow fadeInUp p-4">
+          <div className="my-4  heading-section">
+            <h3 className="text-white p-4" >
+              ¿QUIENES SOMOS?
+            </h3>
+          </div>
+          <div className="row justify-content-center mt-4 text-center">
+            <div className="col-md-6 d-flex justify-content-center align-items-center">
+              <video
+                style={{
+                  height: "600px",
+                  width: "500px",
+                  borderRadius: "15px",
+                  boxShadow: "0 10px 30px rgba(0,0,0,.2)"
+                }}
+                controls
+                playsInline
+                preload="metadata"
+                poster="/images/nosotros/foto-katty.webp"
+              >
+                <source src="/videos/KATTYELISA-2.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div className="col-md-6 d-flex justify-content  ">
+              <p
+                className="my-5 text-light"
+              >
+                En nuestra escuela creemos que todas las personas pueden aprender a
+                cantar cuando reciben la guía adecuada, una metodología clara y un
+                ambiente que inspire confianza. <br />
+                Más que enseñar técnica vocal, ayudamos a nuestros estudiantes a
+                descubrir su propia voz, desarrollar seguridad en sí mismos y disfrutar
+                el proceso de cantar. No importa si estás dando tus primeros pasos o si ya
+                tienes experiencia diseñamos un aprendizaje adaptado a tu nivel y objetivos.
+              </p>
+            </div>
+          </div>
         </div>
-        <Swiper
-          className="swiper tf-sw-latest"
-          dir="ltr"
-          spaceBetween={15}
-          breakpoints={{
-            0: { slidesPerView: 2, spaceBetween: 15 },
-
-            768: { slidesPerView: 3, spaceBetween: 30 },
-            1200: { slidesPerView: 4, spaceBetween: 30 },
-          }}
-          modules={[Pagination]}
-          pagination={{
-            clickable: true,
-            el: ".spd444",
-          }}
-        >
-          {products.slice(0, 4).map((product, i) => (
-            <SwiperSlide key={i} className="swiper-slide">
-              <ProductCard1 product={product} />
-            </SwiperSlide>
-          ))}
-
-          <div className="sw-pagination-latest spd444  sw-dots type-circle justify-content-center mb-5" />
-        </Swiper>
+       
       </div>
     </section>
   );

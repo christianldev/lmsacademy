@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export default function Categories() {
   return (
-    <section className="flat-spacing" style={{ position: 'relative' }}>
+    <section  style={{ position: 'relative' }}>
       {/* Fondo oscuro absoluto que cubre todo el alto necesario */}
       <div 
         style={{ 

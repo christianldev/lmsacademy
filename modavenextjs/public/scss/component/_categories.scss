@@ -34,6 +34,7 @@
         color: #ffffff;
         line-height: 1.2;
         margin: 0;
+        font-size:3rem;
 
         span {
             color: #4affd8;
@@ -70,6 +71,18 @@
         }
     }
 }
+.heading-section{
+
+    h3{font-size: clamp(1.8rem, 4vw, 3.5rem);
+        font-weight: 900;
+        font-family: "Montserrat", "Arial Black", sans-serif;
+        text-transform: uppercase;
+        color: #ffffff;
+        line-height: 1.2;
+        margin: 0;
+        font-size:3rem;
+    }
+ }
 
 @keyframes goldShimmerText {
     0% {
