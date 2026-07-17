@@ -225,27 +225,6 @@ export const collectionData = [
 
     delay: "0.2s",
   },
-  {
-    id: 4,
-    imageSrc: "./images/categories/Armonía Vocal.jpg",
-    title: "Armonía Vocal",
-
-    delay: "0.3s",
-  },
-  {
-    id: 5,
-    imageSrc: "./images/categories/Grabación en Estudio.jpg",
-    title: "Grabación en Estudio",
-
-    delay: "0.4s",
-  },
-  {
-    id: 6,
-    imageSrc: "./images/categories/Canto para Niños.jpg",
-    title: "Canto para Niños",
-
-    delay: "0.5s",
-  },
 ];
 
 export const categories2 = [

@@ -45,17 +45,27 @@ export default function Categories() {
           className="swiper tf-sw-collection"
           spaceBetween={15}
           loop={true}
+          centeredSlides={true}
+          centerInsufficientSlides={true}
           breakpoints={{
-            1024: {
+            1280: {
               slidesPerView: 5.1,
+              spaceBetween: 24,
+            },
+            1024: {
+              slidesPerView: 4.1,
               spaceBetween: 20,
             },
             768: {
               slidesPerView: 3.1,
               spaceBetween: 20,
             },
-            0: {
+            576: {
               slidesPerView: 2.1,
+              spaceBetween: 15,
+            },
+            0: {
+              slidesPerView: 1.1,
               spaceBetween: 15,
             },
           }}

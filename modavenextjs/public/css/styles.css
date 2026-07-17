@@ -628,7 +628,7 @@ video {
 }
 
 .bg-main {
-  background-color: rgb(24 24 24 / 93%) !important;
+  background-color: rgb(3, 3, 3) !important;
 }
 
 .bg-secondary {
@@ -3019,7 +3019,7 @@ footer.bg-main .footer-menu .footer-menu_item:hover {
   color: var(--primary);
 }
 footer.bg-main .footer-bottom-wrap {
-  border-color: rgba(255, 255, 255, 0.1);
+  border-color: rgb(0, 0, 0);
 }
 footer.bg-main .footer-heading-mobile::after,
 footer.bg-main .footer-heading-mobile::before {
@@ -10702,7 +10702,7 @@ ul.list-tags.has-bg a {
   border-radius: 12px;
   padding: 32px;
   display: block;
-  border: 2px solid var(--line);
+ 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -10713,9 +10713,7 @@ ul.list-tags.has-bg a {
   padding-bottom: 0px;
   border: 0;
 }
-.testimonial-item.style-4:hover {
-  border-color: var(--main);
-}
+
 .testimonial-item.style-row {
   flex-direction: column;
 }

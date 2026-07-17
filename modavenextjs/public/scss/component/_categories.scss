@@ -100,11 +100,23 @@
 
 .categories-voz-carousel {
     padding: 0 15px;
-    position: relative;
     z-index: 10;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    .swiper-wrapper {
+        justify-content: center;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
 }
 
 .categories-voz-card {
+    width: min(100%, 280px);
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -124,7 +136,7 @@
     .img-style {
         display: block;
         overflow: hidden;
-        height: 400px;
+        height: 360px;
         position: relative;
 
         /* Un ligero degradado oscuro abajo para que el botón dorado destaque mejor (opcional pero ayuda) */
@@ -149,7 +161,6 @@
 
     .content {
         position: absolute;
-        /* <-- ESTO HACE QUE SE PONGA SOBRE LA IMAGEN */
         bottom: 20px;
         left: 0;
         right: 0;
@@ -167,10 +178,9 @@
             border-radius: 30px;
             padding: 12px 25px;
             box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
-            min-width: 200px;
+            min-width: 180px;
             display: flex;
             align-items: center;
-            /* Alinea texto e ícono al medio */
             justify-content: space-between;
             margin: 0 auto;
 
