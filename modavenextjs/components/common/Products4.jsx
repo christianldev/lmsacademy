@@ -8,8 +8,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 export default function Products4({ parentClass = "" }) {
   return (
     <section className={parentClass}>
-      <div className="container">
-        <div className="heading-section text-center wow fadeInUp">
+      <div className="container section">
+        <div className="heading-section text-center wow fadeInUp ">
           <h3 className="heading">¿QUIENES SOMOS?</h3>
           <p className="subheading text-secondary">
             Fresh styles just in! Elevate your look.

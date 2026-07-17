@@ -100,16 +100,23 @@ export const slideshowData = [
 ];
 
 export const slidesData = [
+   {
+    id: 1,
+    imageSrc: "/images/banner/banner1.webp",
+    heading: "La música no tiene edad. Tu voz tampoco. <br />",
+    description: "Canta con confianza, técnica y pasión",
+    buttonText: "Comienza hoy",
+  },
   {
     id: 1,
-    imageSrc: "/images/slider/carrusel1.webp",
+    imageSrc: "/images/banner/banner3.webp",
     heading: "La música no tiene edad. Tu voz tampoco. <br />",
     description: "Canta con confianza, técnica y pasión",
     buttonText: "Comienza hoy",
   },
   {
     id: 2,
-    imageSrc: "/images/slider/carrusel2.webp",
+    imageSrc: "/images/banner/banner6.webp",
     heading: "Layer in Style <br /> with Our Jackets",
     description:
       "Find your next go-to jacket for stylish layering in any season.",
@@ -117,7 +124,7 @@ export const slidesData = [
   },
   {
     id: 3,
-    imageSrc: "/images/slider/carrusel3.webp",
+    imageSrc: "/images/banner/banner7.webp",
     heading: "Every Coat Tells <br /> a Story",
     description: "Choose outerwear that reflects your unique narrative.",
     buttonText: "Comienza hoy",

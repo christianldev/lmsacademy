@@ -11,15 +11,15 @@ export default function Products() {
     
       style={{ backgroundColor: "#1a1a1a", color: "#f8f8f8" }}
     >
-      <div className="container">
-        <div className=" text-center wow fadeInUp p-4">
+      <div className="container section">
+        <div className=" text-center wow fadeInUp p-4 section ">
           <div className="my-4  heading-section">
-            <h3 className="text-white p-4" >
+            <h3 >
               ¿QUIENES SOMOS?
             </h3>
           </div>
-          <div className="row justify-content-center mt-4 text-center">
-            <div className="col-md-6 d-flex justify-content-center align-items-center">
+          <div className="row justify-content-center mt-4 text-center ">
+            <div className="col-md-6 d-flex justify-content-center align-items-center ">
               <video
                 style={{
                   height: "600px",

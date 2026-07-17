@@ -10775,6 +10775,9 @@ ul.list-tags.has-bg a {
   justify-content: center;
   gap: 12px;
 }
+.section-testimonio{
+  color:#eeeeee;
+}
 
 .testimonial-item-2 {
   display: grid;

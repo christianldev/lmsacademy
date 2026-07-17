@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 export default function Testimonials() {
   return (
-    <section className="flat-spacing">
+    <section className="flat-spacing"  >
       <div className="container">
         <div className="heading-section text-center wow fadeInUp">
-          <h3 className="heading">Customer Review</h3>
+          <h3 className="heading">Cussstomer Review</h3>
         </div>
         <Swiper
           className="tf-sw-testimonial wow fadeInUp"

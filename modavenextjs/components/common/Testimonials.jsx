@@ -5,39 +5,39 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import { testimonialsWithProduct9 } from "@/data/products";
-import { useContextElement } from "@/context/Context";
+
 export default function Testimonials({ parentClass = "flat-spacing" }) {
-  const { setQuickViewItem } = useContextElement();
   return (
-    <section className={parentClass}>
-      <div className="container">
-        <div className="heading-section text-center">
-          <h3 className="heading wow fadeInUp">Customer Say!</h3>
-          <p className="subheading wow fadeInUp">
-            Our customers adore our products, and we constantly aim to delight
-            them.
+    <section className={`section-testimonials ${parentClass}`}>
+      <div className="container py-4">
+        <div className="text-center mb-4">
+          <h3 className="wow fadeInUp text-primary mb-3 p-4">
+            Lo que dicen nuestros alumnos
+          </h3>
+          <p className="text-secondary mx-auto font-bold">
+            Experiencias reales de quienes han transformado su futuro con
+            nuestra academia
           </p>
         </div>
+
         <div className="swiper tf-sw-testimonial">
           <Swiper
             breakpoints={{
-              // Small devices (mobile)
               0: {
                 slidesPerView: 1,
                 spaceBetween: 15,
-                pagination: { clickable: true },
               },
-              // Medium devices (tablet)
               768: {
-                spaceBetween: 30,
                 slidesPerView: 1.3,
-                pagination: { clickable: true },
+                spaceBetween: 20,
               },
-              // Large devices (desktop)
               1024: {
+                slidesPerView: 2.2,
+                spaceBetween: 24,
+              },
+              1280: {
+                slidesPerView: 3,
                 spaceBetween: 30,
-                slidesPerView: 2,
-                pagination: { clickable: true },
               },
             }}
             modules={[Pagination]}
@@ -46,27 +46,11 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
               el: ".spd7",
             }}
             dir="ltr"
+            spaceBetween={15}
           >
             {testimonialsWithProduct9.map((testimonial, index) => (
               <SwiperSlide key={index}>
-                <div className="testimonial-item hover-img">
-                  <div className="img-style">
-                    <Image
-                      src={testimonial.imgSrc}
-                      alt={testimonial.alt}
-                      width={468}
-                      height={624}
-                    />
-                    <a
-                      href="#quickView"
-                      onClick={() => setQuickViewItem(testimonial)}
-                      data-bs-toggle="modal"
-                      className="box-icon hover-tooltip center"
-                    >
-                      <span className="icon icon-eye" />
-                      <span className="tooltip">Quick View</span>
-                    </a>
-                  </div>
+                <article className="testimonial-item testimonial-item--compact style-4 wow fadeInUp">
                   <div className="content">
                     <div className="content-top">
                       <div className="list-star-default">
@@ -74,71 +58,14 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
                           <i key={i} className="icon icon-star" />
                         ))}
                       </div>
-                      <p className="text-secondary">{testimonial.quote}</p>
-                      <div className="box-author">
-                        <div className="text-title author">
-                          {testimonial.author}
-                        </div>
-                        <svg
-                          className="icon"
-                          width={20}
-                          height={21}
-                          viewBox="0 0 20 21"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <g clipPath="url(#clip0)">
-                            <path
-                              d="M6.875 11.6255L8.75 13.5005L13.125 9.12549"
-                              stroke="#3DAB25"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                            <path
-                              d="M10 18.5005C14.1421 18.5005 17.5 15.1426 17.5 11.0005C17.5 6.85835 14.1421 3.50049 10 3.50049C5.85786 3.50049 2.5 6.85835 2.5 11.0005C2.5 15.1426 5.85786 18.5005 10 18.5005Z"
-                              stroke="#3DAB25"
-                              strokeWidth="1.5"
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                            />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0">
-                              <rect
-                                width={20}
-                                height={20}
-                                fill="white"
-                                transform="translate(0 0.684082)"
-                              />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </div>
-                    </div>
-                    <div className="box-avt">
-                      <div className="avatar avt-60 round">
-                        <Image
-                          alt="avt"
-                          src={testimonial.avatar}
-                          width={90}
-                          height={91}
-                        />
-                      </div>
-                      <div className="box-price">
-                        <p className="text-title text-line-clamp-1">
-                          {testimonial.title}
-                        </p>
-                        <div className="text-button price">
-                          ${testimonial.price.toFixed(2)}
-                        </div>
-                      </div>
+                      <p className="testimonial-quote">“{testimonial.quote}”</p>
                     </div>
                   </div>
-                </div>
+                </article>
               </SwiperSlide>
             ))}
-            <div className="sw-pagination-testimonial sw-dots type-circle d-flex justify-content-center spd7" />
+
+            <div className="sw-pagination-testimonial sw-dots type-circle d-flex justify-content-center spd7 text-primary" />
           </Swiper>
         </div>
       </div>
