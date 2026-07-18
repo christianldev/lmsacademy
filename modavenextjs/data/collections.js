@@ -225,6 +225,20 @@ export const collectionData = [
 
     delay: "0.2s",
   },
+  {
+    id: 4,
+    imageSrc: "./images/categories/Manejo Escénico.jpg",
+    title: "Manejo Escénico",
+
+    delay: "0.2s",
+  },
+  {
+    id: 5,
+    imageSrc: "./images/categories/Manejo Escénico.jpg",
+    title: "Manejo Escénico",
+
+    delay: "0.2s",
+  },
 ];
 
 export const categories2 = [

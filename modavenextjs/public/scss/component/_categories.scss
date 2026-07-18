@@ -1,15 +1,13 @@
 @use "../abstracts/mixin";
 
-.btn-line py_8 {
-    color: #ffffff !important;
+.categories-voz-section {
+    background-color: #fdfdfd;
+    overflow: hidden;
 }
 
 .categories-voz-wrap {
     padding-top: 80px;
-    padding-bottom: 80px;
-    /* El background y el pull up ya no son necesarios aquí 
-       porque se manejan de manera más robusta con posicionamiento absoluto 
-       sobre toda la sección en el componente JSX */
+    padding-bottom: 60px;
 }
 
 .categories-voz-heading {
@@ -31,10 +29,9 @@
         font-weight: 900;
         font-family: "Montserrat", "Arial Black", sans-serif;
         text-transform: uppercase;
-        color: #ffffff;
+        color: #070707;
         line-height: 1.2;
         margin: 0;
-        font-size:3rem;
 
         span {
             color: #4affd8;
@@ -71,18 +68,19 @@
         }
     }
 }
-.heading-section{
 
-    h3{font-size: clamp(1.8rem, 4vw, 3.5rem);
+.heading-section {
+
+    h3 {
+        font-size: clamp(1.8rem, 4vw, 3.5rem);
         font-weight: 900;
         font-family: "Montserrat", "Arial Black", sans-serif;
         text-transform: uppercase;
         color: #ffffff;
         line-height: 1.2;
         margin: 0;
-        font-size:3rem;
     }
- }
+}
 
 @keyframes goldShimmerText {
     0% {
@@ -100,29 +98,17 @@
 
 .categories-voz-carousel {
     padding: 0 15px;
+    position: relative;
     z-index: 10;
-    max-width: 1400px;
-    margin: 0 auto;
-
-    .swiper-wrapper {
-        justify-content: center;
-    }
-
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        width: auto;
-    }
 }
 
 .categories-voz-card {
-    width: min(100%, 280px);
+    width: 100%;
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     position: relative;
-    /* <-- NECESARIO PARA QUE EL BOTÓN FLOTE SOBRE LA IMAGEN */
 
     &:hover {
         transform: translateY(-10px);
@@ -139,7 +125,6 @@
         height: 360px;
         position: relative;
 
-        /* Un ligero degradado oscuro abajo para que el botón dorado destaque mejor (opcional pero ayuda) */
         &::after {
             content: '';
             position: absolute;
@@ -172,7 +157,7 @@
         .cls-btn {
             background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b, #d4af37);
             background-size: 300% 300%;
-            animation: goldShimmer 3s ease infinite;
+            animation: goldShimmerText 3s ease infinite;
             color: #000;
             border: none;
             border-radius: 30px;

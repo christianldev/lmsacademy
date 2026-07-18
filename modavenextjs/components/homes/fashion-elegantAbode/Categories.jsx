@@ -7,20 +7,7 @@ import Image from "next/image";
 
 export default function Categories() {
   return (
-    <section  style={{ position: 'relative' }}>
-      {/* Fondo oscuro absoluto que cubre todo el alto necesario */}
-      <div 
-        style={{ 
-          position: 'absolute', 
-          top: 0, 
-          left: 0, 
-          right: 0, 
-          height: '95%', /* Ajusta este porcentaje si deseas que baje más o menos detrás del carrusel */
-          backgroundColor: '#1a1a1a', 
-          zIndex: -1 
-        }} 
-      ></div>
-
+    <section className="categories-voz-section flat-spacing">
       <div className="categories-voz-wrap">
         <div className="container">
           <div className="categories-voz-heading wow fadeInUp text-center">
@@ -45,8 +32,6 @@ export default function Categories() {
           className="swiper tf-sw-collection"
           spaceBetween={15}
           loop={true}
-          centeredSlides={true}
-          centerInsufficientSlides={true}
           breakpoints={{
             1280: {
               slidesPerView: 5.1,
