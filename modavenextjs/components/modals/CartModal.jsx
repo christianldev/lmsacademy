@@ -28,7 +28,7 @@ export default function CartModal() {
             <div className="wrap-recommendations">
               <div className="list-cart">
                 {products41.map((product, index) => (
-                  <div className="list-cart-item" key={index}>
+                  <div className="list-cart-item" key={`${product.id}-${index}`}>
                     <div className="image">
                       <Image
                         className="lazyload"
@@ -97,7 +97,7 @@ export default function CartModal() {
                       <div className="tf-mini-cart-items">
                         {cartProducts.map((product, i) => (
                           <div
-                            key={i}
+                            key={`${product.id}-${i}`}
                             className="tf-mini-cart-item file-delete"
                           >
                             <div className="tf-mini-cart-image">

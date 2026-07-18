@@ -125,20 +125,20 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="preload-wrapper popup-loader">
         <Context>
-          <div id="wrapper">{children}</div>
-          <CartModal />
-          <QuickView />
-          <QuickAdd />
-          <Compare />
-          <MobileMenu />
+          <div id="wrapper" key="wrapper">{children}</div>
+          <CartModal key="cart-modal" />
+          <QuickView key="quick-view" />
+          <QuickAdd key="quick-add" />
+          <Compare key="compare" />
+          <MobileMenu key="mobile-menu" />
 
           {/* <NewsLetterModal /> */}
-          <SearchModal />
-          <SizeGuide />
-          <Wishlist />
-          <DemoModal />
-          <Categories />
-          <AccountSidebar />
+          <SearchModal key="search-modal" />
+          <SizeGuide key="size-guide" />
+          <Wishlist key="wishlist" />
+          <DemoModal key="demo-modal" />
+          <Categories key="categories" />
+          <AccountSidebar key="account-sidebar" />
         </Context>
       </body>
     </html>

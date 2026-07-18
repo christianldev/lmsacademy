@@ -96,7 +96,7 @@ export default function SearchModal() {
             <h6 className="mb_16">Recently viewed products</h6>
             <div className="tf-grid-layout tf-col-2 lg-col-3 xl-col-4">
               {loadedItems.map((product, i) => (
-                <ProductCard1 product={product} key={i} />
+                <ProductCard1 product={product} key={`${product.id}-${i}`} />
               ))}
             </div>
           </div>
