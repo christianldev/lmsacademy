@@ -2971,49 +2971,34 @@ export const lookbookProducts = [
 ];
 
 export const testimonialsWithProduct9 = [
-  {
-    id: 215,
-    imgSrc: "/images/testimonial/tes-1.jpg",
-    alt: "img-testimonial",
-    quote:
-      "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
-    author: "Sybil Sharp",
-    avatar: "/images/avatar/user-4.jpg",
-    title: "Contrasting sheepskin sweatshirt",
-    price: 60,
-  },
-  {
-    id: 216,
-    imgSrc: "/images/testimonial/tes-2.jpg",
-    alt: "img-testimonial",
-    quote:
-      "I absolutely love this shop! The products are high-quality and the customer service is excellent. I always leave with exactly what I need and a smile on my face.",
-    author: "Mark G.",
-    avatar: "/images/avatar/user-5.jpg",
-    title: "Contrasting sheepskin sweatshirt",
-    price: 60,
-  },
+ 
   {
     id: 217,
     imgSrc: "/images/testimonial/tes-1.jpg",
     alt: "img-testimonial",
     quote:
-      "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
-    author: "Sybil Sharp",
-    avatar: "/images/avatar/user-4.jpg",
-    title: "Contrasting sheepskin sweatshirt",
-    price: 60,
+      "Buscaba una escuela seria y superó mis expectativas. El trato es muy cercano y siempre están pendientes de tu progreso.",
   },
   {
     id: 218,
     imgSrc: "/images/testimonial/tes-2.jpg",
     alt: "img-testimonial",
     quote:
-      "I absolutely love this shop! The products are high-quality and the customer service is excellent. I always leave with exactly what I need and a smile on my face.",
-    author: "Mark G.",
-    avatar: "/images/avatar/user-5.jpg",
-    title: "Contrasting sheepskin sweatshirt",
-    price: 60,
+      "Los profesores explican muy bien y corrigen sin hacerte sentir incómodo. Se nota que realmente les importa que aprendas.",
+  },
+  {
+    id: 219,
+    imgSrc: "/images/testimonial/tes-2.jpg",
+    alt: "img-testimonial",
+    quote:
+      "Las técnicas de respiración y afinación me ayudaron muchísimo. Ahora canto con mucha más seguridad.",
+  },
+   {
+    id: 220,
+    imgSrc: "/images/testimonial/tes-2.jpg",
+    alt: "img-testimonial",
+    quote:
+      "Mi hija esperaba con emoción cada clase. Además de mejorar su voz, desarrolló disciplina, seguridad y amor por la música.",
   },
 ];
 
