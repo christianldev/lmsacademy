@@ -7,7 +7,7 @@
 }
 
 .section-testimonials.testimonial-showcase {
-    background: #f4f4f4;
+    background: #ffffff;
     color: #203342;
     overflow: hidden;
     padding: clamp(118px, 11vw, 150px) 0 clamp(72px, 8vw, 112px) !important;
@@ -15,21 +15,6 @@
     scroll-margin-top: 110px;
 }
 
-.testimonial-map-pattern {
-    background-image: radial-gradient(rgba(32, 51, 66, 0.14) 1px, transparent 1px);
-    background-size: 6px 6px;
-    inset: 28px 6% auto;
-    height: 430px;
-    mask-image: radial-gradient(ellipse at 18% 45%, #000 0 15%, transparent 28%),
-        radial-gradient(ellipse at 33% 20%, #000 0 20%, transparent 34%),
-        radial-gradient(ellipse at 51% 48%, #000 0 18%, transparent 34%),
-        radial-gradient(ellipse at 71% 22%, #000 0 20%, transparent 34%),
-        radial-gradient(ellipse at 84% 42%, #000 0 16%, transparent 30%),
-        radial-gradient(ellipse at 62% 78%, #000 0 22%, transparent 38%);
-    opacity: 0.58;
-    pointer-events: none;
-    position: absolute;
-}
 
 .testimonial-showcase-heading {
     margin: 0 auto 34px;
@@ -78,10 +63,15 @@
     background: #ffffff;
     border: 0;
     border-radius: 28px;
-    box-shadow: 0 18px 45px rgba(32, 51, 66, 0.06);
+    box-shadow:     1px 2px 2px hsla(0, 0%, 0%, 0),
+      2px 4px 4px hsla(0, 0%, 0%, 0),
+      4px 8px 8px hsla(0, 0%, 0%, 0),
+      8px 16px 16px hsla(0, 0%, 0%, 0),
+      16px 32px 32px hsla(0, 0%, 0%, 0.2);
     min-height: 320px;
     padding: clamp(38px, 4vw, 58px) clamp(34px, 4.4vw, 70px);
     position: relative;
+    margin:1.5rem;
 
     p {
         color: #6a6d73;
@@ -95,9 +85,9 @@
 }
 
 .testimonial-quote-mark {
-    color: #f0ebec;
+    color: #30eef5;
     display: block;
-    font-size: 132px;
+    font-size: 100px;
     font-weight: 800;
     height: 68px;
     left: clamp(30px, 4vw, 52px);

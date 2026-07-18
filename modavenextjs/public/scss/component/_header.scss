@@ -413,6 +413,8 @@
       @include mixin.transition3;
       position: relative;
       color: var(--secondary-2);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
 
       .icon {
         font-size: 12px;
@@ -462,6 +464,13 @@
     }
   }
 
+  // Mobile nav list (side/offcanvas)
+  .nav-ul-mb {
+    .sub-nav-link {
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+  }
   .nav-icon {
     .icon {
       font-size: 24px;
@@ -1474,6 +1483,7 @@ header {
     .box-nav-ul .item-link,
     .nav-icon .nav-icon-item {
       color: var(--main);
+      
     }
 
     .box-nav-ul .item-link::before {
@@ -1494,6 +1504,7 @@ header {
   .box-nav-ul {
     .item-link {
       color: var(--white);
+    
     }
   }
 

@@ -19,7 +19,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
 
   const renderTestimonialCard = (testimonial, index) => (
     <article key={index} className="testimonial-showcase-card">
-      <span className="testimonial-quote-mark" aria-hidden="true">
+      <span className="testimonial-quote-mark " aria-hidden="true">
         “
       </span>
       <p>{testimonial.quote}</p>
@@ -31,7 +31,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
       <div className="testimonial-map-pattern" aria-hidden="true" />
       <div className="container">
         <div className="testimonial-showcase-heading heading-section text-center">
-          <span>Testimonios</span>
+          <span>TESTIMONIOS</span>
           <h3>Lo que dicen nuestros alumnos</h3>
           <p>
             Experiencias reales de quienes han transformado su futuro con

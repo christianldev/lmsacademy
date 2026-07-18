@@ -42,7 +42,7 @@
 }
 
 .contact-phone {
-    color: #ffd700;
+    color: #30eef5;
     display: inline-block;
     font-size: clamp(28px, 3vw, 34px);
     font-weight: 800;
@@ -95,9 +95,9 @@
 
     a {
         align-items: center;
-        background: #ffffff;
+        background: #000000;
         border-radius: 50%;
-        color: #101112;
+        color: #30eef5;
         display: flex;
         font-size: 15px;
         height: 32px;
@@ -106,7 +106,7 @@
     }
 
     a:hover {
-        background: #8eff3f;
+        background: #ffffff;
         color: #101112;
     }
 }
