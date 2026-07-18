@@ -7,7 +7,7 @@ import BannerCountdown from "@/components/homes/fashion-elegantAbode/BannerCount
 import Categories from "@/components/homes/fashion-elegantAbode/Categories";
 import Hero from "@/components/homes/fashion-elegantAbode/Hero";
 import Lookbook from "@/components/homes/fashion-elegantAbode/Lookbook";
-import Products from "@/components/homes/fashion-elegantAbode/Products";
+import Products from "@/components/homes/fashion-elegantAbode/AboutUS";
 import Blogs from "@/components/common/Blogs";
 import React from "react";
 import Features from "@/components/common/Features";
