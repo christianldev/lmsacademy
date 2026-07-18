@@ -71,7 +71,7 @@ export default function AboutUS() {
         }
 
         .about-agency-eyebrow {
-          border: 1px solid #8eff3f;
+          border: 1px solid #ffd700;
           border-radius: 999px;
           color: #ffffff;
           display: inline-flex;
@@ -102,7 +102,7 @@ export default function AboutUS() {
 
         :global(.about-agency-button) {
           align-items: center;
-          background: #8eff3f;
+          background: #ffd700;
           border-radius: 999px;
           color: #0d0f10;
           display: inline-flex;
@@ -174,7 +174,7 @@ export default function AboutUS() {
 
         .about-agency-badge {
           align-items: center;
-          background: #8eff3f;
+          background: #ffd700;
           border-radius: 10px;
           color: #0b0d0e;
           display: flex;
