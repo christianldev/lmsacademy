@@ -1,4 +1,5 @@
 @use "../abstracts/mixin";
+@use "../abstracts/variable";
 
 .section-testimonials {
     padding: 56px 0;
@@ -39,12 +40,13 @@
     span {
         color: #4affd8;
         display: inline-block;
+        font-family: variable.$font-main;
         font-size: 40px;
-        font-weight: 700;
-        letter-spacing: 0.04em;
-        line-height: 1;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 1.16;
         margin-bottom: 18px;
-        text-transform: uppercase;
+        text-transform: none;
     }
 
     h3 {
