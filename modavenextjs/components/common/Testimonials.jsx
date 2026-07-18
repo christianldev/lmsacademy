@@ -2,7 +2,6 @@
 
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
 import { Pagination } from "swiper/modules";
 import { testimonialsWithProduct9 } from "@/data/products";
 
@@ -19,41 +18,35 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
   }, []);
 
   const renderTestimonialCard = (testimonial, index) => (
-    <article key={index} className="testimonial-item testimonial-item--compact style-4 wow fadeInUp">
-      <div className="content">
-        <div className="content-top">
-          <div className="list-star-default">
-            {[...Array(5)].map((_, i) => (
-              <i key={i} className="icon icon-star" />
-            ))}
-          </div>
-          <p className="testimonial-quote">“{testimonial.quote}”</p>
-        </div>
-      </div>
+    <article key={index} className="testimonial-showcase-card">
+      <span className="testimonial-quote-mark" aria-hidden="true">
+        “
+      </span>
+      <p>{testimonial.quote}</p>
     </article>
   );
 
   return (
-    <section className={`section-testimonials ${parentClass}`}>
-      <div className="container py-4">
-        <div className="text-center mb-4 heading-section">
-          <h3 className="wow fadeInUp text-primary mb-3 p-4">
-            Lo que dicen nuestros alumnos
-          </h3>
-          <p className="text-white mx-auto font-bold">
+    <section className={`section-testimonials testimonial-showcase ${parentClass}`}>
+      <div className="testimonial-map-pattern" aria-hidden="true" />
+      <div className="container">
+        <div className="testimonial-showcase-heading text-center">
+          <span>Testimonios</span>
+          <h3>Lo que dicen nuestros alumnos</h3>
+          <p>
             Experiencias reales de quienes han transformado su futuro con
             nuestra academia
           </p>
         </div>
 
         {isMobile ? (
-          <div className="testimonial-mobile-list">
+          <div className="testimonial-showcase-list">
             {testimonialsWithProduct9.map((testimonial, index) =>
               renderTestimonialCard(testimonial, index)
             )}
           </div>
         ) : (
-          <div className="swiper tf-sw-testimonial">
+          <div className="swiper tf-sw-testimonial testimonial-showcase-slider">
             <Swiper
               breakpoints={{
                 0: {
@@ -65,23 +58,16 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
                   spaceBetween: 15,
                 },
                 768: {
-                  slidesPerView: 1.3,
-                  spaceBetween: 20,
+                  slidesPerView: 2,
+                  spaceBetween: 32,
                 },
                 1024: {
-                  slidesPerView: 2.2,
-                  spaceBetween: 24,
-                },
-                1280: {
-                  slidesPerView: 3,
-                  spaceBetween: 30,
+                  slidesPerView: 2,
+                  spaceBetween: 48,
                 },
               }}
               modules={[Pagination]}
-              pagination={{
-                clickable: true,
-                el: ".spd7",
-              }}
+              pagination={false}
               dir="ltr"
               spaceBetween={15}
             >
@@ -90,8 +76,6 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
                   {renderTestimonialCard(testimonial, index)}
                 </SwiperSlide>
               ))}
-
-              <div className="sw-pagination-testimonial sw-dots type-circle d-flex justify-content-center spd7 text-primary" />
             </Swiper>
           </div>
         )}
