@@ -2977,6 +2977,11 @@ export const testimonialsWithProduct9 = [
     imgSrc: "/images/testimonial/tes-1.jpg",
     alt: "img-testimonial",
     quote:
+      "Hola Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
+    author: "Sybil Sharp",
+    avatar: "/images/avatar/user-4.jpg",
+    title: "Contrasting sheepskin sweatshirt",
+    price: 60,
       "Buscaba una escuela seria y superó mis expectativas. El trato es muy cercano y siempre están pendientes de tu progreso.",
   },
   {

@@ -2758,7 +2758,7 @@ header {
   
 }
 header.header-bg {
-  
+  background-color: #0a0a0a !important;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
