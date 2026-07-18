@@ -2976,7 +2976,7 @@ export const testimonialsWithProduct9 = [
     imgSrc: "/images/testimonial/tes-1.jpg",
     alt: "img-testimonial",
     quote:
-      "Fantastic shop! Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
+      "Hola Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
     author: "Sybil Sharp",
     avatar: "/images/avatar/user-4.jpg",
     title: "Contrasting sheepskin sweatshirt",

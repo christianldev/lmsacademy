@@ -34,6 +34,8 @@ export default function RootLayout({ children }) {
   useEffect(() => {
     const handleScroll = () => {
       const header = document.querySelector("header");
+      if (!header) return;
+
       if (window.scrollY > 100) {
         header.classList.add("header-bg");
       } else {
@@ -49,7 +51,7 @@ export default function RootLayout({ children }) {
     };
   }, []); // Empty dependency array means this effect runs once on mount and cleans up on unmount
 
-  const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollDirection, setScrollDirection] = useState("up");
 
   useEffect(() => {
     setScrollDirection("up");
@@ -66,7 +68,7 @@ export default function RootLayout({ children }) {
         }
       } else {
         // Below 250px
-        setScrollDirection("down");
+        setScrollDirection("up");
       }
 
       lastScrollY.current = currentScrollY;
@@ -108,8 +110,10 @@ export default function RootLayout({ children }) {
     if (header) {
       if (scrollDirection == "up") {
         header.style.top = "0px";
+        header.style.transform = "translateY(0)";
       } else {
-        header.style.top = "-185px";
+        header.style.top = "0px";
+        header.style.transform = `translateY(-${header.offsetHeight}px)`;
       }
     }
   }, [scrollDirection]);
@@ -125,7 +129,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="preload-wrapper popup-loader">
         <Context>
-          <div id="wrapper" key="wrapper">{children}</div>
+          <div id="wrapper" key="wrapper">
+            {children}
+          </div>
           <CartModal key="cart-modal" />
           <QuickView key="quick-view" />
           <QuickAdd key="quick-add" />
