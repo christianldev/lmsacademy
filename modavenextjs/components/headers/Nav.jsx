@@ -51,7 +51,7 @@ export default function Nav() {
         } `}
       >
         <a href="#" className="item-link">
-          Clases
+          Nosotros
         
         </a>
        
@@ -66,7 +66,7 @@ export default function Nav() {
         } `}
       >
         <a href="#" className="item-link">
-          Testimonios
+          Clases
          
         </a>
        
@@ -81,7 +81,7 @@ export default function Nav() {
         } `}
       >
         <a href="#" className="item-link">
-         Nosotros
+         Testimonios
       
         </a>
         

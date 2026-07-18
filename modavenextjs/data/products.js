@@ -2972,18 +2972,8 @@ export const lookbookProducts = [
 
 export const testimonialsWithProduct9 = [
  
-  {
-    id: 217,
-    imgSrc: "/images/testimonial/tes-1.jpg",
-    alt: "img-testimonial",
-    quote:
-      "Hola Great selection, fair prices, and friendly staff. Highly recommended. The quality of the products is exceptional, and the prices are very reasonable!",
-    author: "Sybil Sharp",
-    avatar: "/images/avatar/user-4.jpg",
-    title: "Contrasting sheepskin sweatshirt",
-    price: 60,
-      "Buscaba una escuela seria y superó mis expectativas. El trato es muy cercano y siempre están pendientes de tu progreso.",
-  },
+  
+   
   {
     id: 218,
     imgSrc: "/images/testimonial/tes-2.jpg",
@@ -3004,6 +2994,13 @@ export const testimonialsWithProduct9 = [
     alt: "img-testimonial",
     quote:
       "Mi hija esperaba con emoción cada clase. Además de mejorar su voz, desarrolló disciplina, seguridad y amor por la música.",
+  },
+  {
+    id: 221,
+    imgSrc: "/images/testimonial/tes-2.jpg",
+    alt: "img-testimonial",
+    quote:
+      "Lo que más me gustó fue el ambiente. Nunca me sentí juzgado y eso me ayudó a perder el miedo al micrófono.",
   },
 ];
 
