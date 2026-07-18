@@ -8,7 +8,7 @@ import Categories from "@/components/homes/fashion-elegantAbode/Categories";
 import Hero from "@/components/homes/fashion-elegantAbode/Hero";
 import Lookbook from "@/components/homes/fashion-elegantAbode/Lookbook";
 import Products from "@/components/homes/fashion-elegantAbode/AboutUS";
-import Blogs from "@/components/common/Blogs";
+import Blogs from "@/components/common/ContactForm";
 import React from "react";
 import Features from "@/components/common/Features";
 import Brands from "@/components/common/Brands";
@@ -35,7 +35,7 @@ export default function HomeFashionElegantAbodePage() {
         <Lookbook />
         <Products2 title="Top Trending" parentClass="flat-spacing pt-0" />
         <Testimonials parentClass="flat-spacing pt-0" />
-        <Blogs parentClass="" readMore />
+        <Blogs />
         <Features parentClass="flat-spacing-5" />
         <Brands />
       </main>

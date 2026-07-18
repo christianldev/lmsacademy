@@ -71,7 +71,7 @@ export default function AboutUS() {
         }
 
         .about-agency-eyebrow {
-          border: 1px solid #ffd700;
+          border: 1px solid #4affd8;
           border-radius: 999px;
           color: #ffffff;
           display: inline-flex;

@@ -2,7 +2,7 @@
 
 .section-testimonials {
     padding: 56px 0;
-    background: linear-gradient(135deg, #121212 0%, #1a1a1a 100%);
+    background: #101112;
 
     h3 {
         font-size: clamp(1.4rem, 2.4vw, 2rem);
@@ -22,16 +22,19 @@
     background-color: var(--white);
     border-radius: 8px;
     overflow: hidden;
+
     .img-style {
         max-width: 234px;
         width: 100%;
         position: relative;
         flex-shrink: 0;
+
         img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
+
         .box-icon {
             position: absolute;
             top: 50%;
@@ -45,11 +48,13 @@
             font-size: 18px;
             border-radius: 50%;
             z-index: 5;
+
             &:hover {
                 background-color: var(--main);
                 color: var(--white);
             }
         }
+
         &::before {
             position: absolute;
             z-index: 2;
@@ -64,9 +69,11 @@
             visibility: hidden;
         }
     }
+
     .content {
         padding: 26px;
     }
+
     .content-top {
         display: grid;
         gap: 8px;
@@ -74,58 +81,70 @@
         margin-bottom: 20px;
         border-bottom: 1px solid var(--line);
     }
-   
-    
+
+
     .box-icon {
         width: 40px;
         height: 40px;
         border-radius: 50%;
         background-color: var(--main);
         color: var(--white);
+
         .icon {
             font-size: 16px;
         }
     }
+
     .box-rate-author {
         margin-top: 8px;
         display: grid;
         gap: 4px;
     }
+
     &.style-2 {
         padding: 24px;
         display: block;
+
         .content-top {
             padding-bottom: 16px;
         }
     }
+
     &.style-3 {
         border: none;
         border-radius: 12px;
     }
+
     &.style-4 {
         border-radius: 12px;
         padding: 32px;
         display: block;
         border: 2px solid var(--line);
         @include mixin.transition3();
+
         .content-top {
             padding-bottom: 0px;
             border: 0;
         }
+
         &:hover {
             border-color: var(--main);
         }
     }
+
     &.style-row {
         flex-direction: column;
+
         .img-style {
             max-width: 100%;
             height: 273px;
         }
     }
+
     &.no-border {
         border: 0;
     }
+
     &:hover {
         .img-style {
             &::before {
@@ -135,16 +154,20 @@
         }
     }
 }
+
 .testimonial-item-v2 {
     display: grid;
     gap: 16px;
+
     .quote-box {
         display: grid;
         gap: 16px;
+
         .icon {
             font-size: 40px;
         }
     }
+
     .tes-box {
         margin-left: auto;
         margin-right: auto;
@@ -157,14 +180,17 @@
         border-radius: 12px;
         border: 1px solid var(--line);
     }
+
     .rate-box {
         margin-left: auto;
         margin-right: auto;
         display: grid;
         gap: 8px;
+
         .list-star-default {
             justify-content: center;
             gap: 4px;
+
             .icon {
                 font-size: 22px;
                 color: var(--primary);
@@ -211,7 +237,7 @@
         color: #f7f8f8ce;
     }
 
-   
+
 
 }
 
@@ -252,18 +278,22 @@
 .testimonial-item-2 {
     display: grid;
     gap: 20px;
+
     .content-top {
         display: grid;
         gap: 12px;
     }
+
     .box-author {
         display: flex;
         align-items: center;
         gap: 20px;
+
         .info {
             display: grid;
             gap: 4px;
         }
+
         .avt {
             max-width: 68px;
             border-radius: 50%;
