@@ -26,12 +26,12 @@ export default function AboutUS() {
 
             <div className="about-agency-stats" aria-label="Resultados de la escuela">
               <div className="about-agency-stat">
-                <strong>240+</strong>
+                <strong>2000+</strong>
                 <span>Voces formadas con confianza</span>
               </div>
               <div className="about-agency-stat">
-                <strong>23+</strong>
-                <span>Programas y talleres vocales</span>
+                <strong>15 años</strong>
+                <span>Experiencia</span>
               </div>
             </div>
           </div>
@@ -163,11 +163,11 @@ export default function AboutUS() {
 
         .about-agency-video {
           aspect-ratio: 0.82;
-          background: #1f2021 url("/images/nosotros/foto-katty.webp") center/cover no-repeat;
+          background: url("/images/nosotros/foto-katty.webp") center/cover no-repeat;
           border: 0;
           border-radius: 22px;
           display: block;
-          filter: grayscale(1);
+        
           object-fit: cover;
           width: 100%;
         }

@@ -206,46 +206,33 @@ export const collections4 = [
 export const collectionData = [
   {
     id: 1,
-    imageSrc: "/images/categories/Técnica Vocal Inicial.jpg",
-    title: "Técnica Vocal Inicial",
-
+    imageSrc: "/images/categories/categoria4.webp",
+    title: "NIVEL UNO",
+    descripcion:"Pierde el miedo y aprende a respirar y afinar correctamente. El punto de partida perfecto desde cero.",
     delay: "0s",
   },
   {
     id: 2,
-    imageSrc: "/images/categories/Repertorio Pop_Rock.jpg",
-    title: "Repertorio Pop/Rock",
-
+    imageSrc: "/images/categories/categoria2.webp",
+    title: "NIVEL DOS",
+    descripcion:"Amplía tu rango y canta agudos y graves con potencia, soltura y sin lastimar tu garganta.",
     delay: "0.1s",
   },
   {
     id: 3,
-    imageSrc: "/images/categories/Manejo Escénico.jpg",
-    title: "Manejo Escénico",
-
+    imageSrc: "/images/categories/categoria1.webp",
+    title: "NIVEL TRES",
+    descripcion:"Domina tu técnica y desarrolla tu estilo único como cantante profesional.",
     delay: "0.2s",
   },
   {
     id: 4,
-    imageSrc: "/images/categories/Armonía Vocal.jpg",
-    title: "Armonía Vocal",
-
+    imageSrc: "/images/categories/categoria3.webp",
+    title: "NIVEL CUATRO",
+    descripcion:"Aprende a interpretar canciones complejas y a transmitir emociones con tu voz.",
     delay: "0.3s",
   },
-  {
-    id: 5,
-    imageSrc: "/images/categories/Grabación en Estudio.jpg",
-    title: "Grabación en Estudio",
-
-    delay: "0.4s",
-  },
-  {
-    id: 6,
-    imageSrc: "/images/categories/Canto para Niños.jpg",
-    title: "Canto para Niños",
-
-    delay: "0.5s",
-  },
+ 
 ];
 
 export const categories2 = [

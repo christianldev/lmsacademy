@@ -28,16 +28,16 @@ export default function HomeFashionElegantAbodePage() {
       <Header1 />
       <main className="katty-home-page">
         <Hero />
-        <Categories />
         <Products />
-        <BannerCountdown />
-        <MarqueeSection2 parentClass={"tf-marquee marquee-white bg-purple-2"} />
-        <Lookbook />
-        <Products2 title="Top Trending" parentClass="flat-spacing pt-0" />
+        <Categories />
+      
+      
+      
+       
         <Testimonials parentClass="flat-spacing pt-0" />
         <Blogs />
         <Features parentClass="flat-spacing-5" />
-        <Brands />
+     
       </main>
       <Footer1 dark />
     </>
