@@ -100,7 +100,7 @@ export const slideshowData = [
 ];
 
 export const slidesData = [
-   {
+  {
     id: 1,
     imageSrc: "/images/banner/banner1.webp",
     heading: "La música no tiene edad. Tu voz tampoco. <br />",
@@ -108,14 +108,14 @@ export const slidesData = [
     buttonText: "Comienza hoy",
   },
   {
-    id: 1,
+    id: 2,
     imageSrc: "/images/banner/banner3.webp",
     heading: "La música no tiene edad. Tu voz tampoco. <br />",
     description: "Canta con confianza, técnica y pasión",
     buttonText: "Comienza hoy",
   },
   {
-    id: 2,
+    id: 3,
     imageSrc: "/images/banner/banner6.webp",
     heading: "Layer in Style <br /> with Our Jackets",
     description:
@@ -123,7 +123,7 @@ export const slidesData = [
     buttonText: "Comienza hoy",
   },
   {
-    id: 3,
+    id: 4,
     imageSrc: "/images/banner/banner7.webp",
     heading: "Every Coat Tells <br /> a Story",
     description: "Choose outerwear that reflects your unique narrative.",
