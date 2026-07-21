@@ -1,10 +1,11 @@
 "use client";
 import React, { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+
 export default function Contact2() {
   const formRef = useRef();
   const [success, setSuccess] = useState(true);
   const [showMessage, setShowMessage] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const handleShowMessage = () => {
     setShowMessage(true);
@@ -13,26 +14,41 @@ export default function Contact2() {
     }, 2000);
   };
 
-  const sendMail = (e) => {
+  const sendMail = async (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm("service_noj8796", "template_fs3xchn", formRef.current, {
-        publicKey: "iG4SCmR-YtJagQ4gV",
-      })
-      .then((res) => {
-        if (res.status === 200) {
-          setSuccess(true);
-          handleShowMessage();
+    setLoading(true);
 
-          formRef.current.reset();
-        } else {
-          setSuccess(false);
-          handleShowMessage();
-        }
-      })
-      .catch((err) => {
-        console.log(err);
+    const formData = new FormData(formRef.current);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message'),
+    };
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
+
+      if (response.ok) {
+        setSuccess(true);
+        handleShowMessage();
+        formRef.current.reset();
+      } else {
+        setSuccess(false);
+        handleShowMessage();
+      }
+    } catch (err) {
+      console.log(err);
+      setSuccess(false);
+      handleShowMessage();
+    } finally {
+      setLoading(false);
+    }
   };
   return (
     <section className="flat-spacing">
@@ -105,8 +121,10 @@ export default function Contact2() {
                 </fieldset>
               </div>
               <div className="button-submit send-wrap">
-                <button className="tf-btn btn-fill" type="submit">
-                  <span className="text text-button">Send message</span>
+                <button className="tf-btn btn-fill" type="submit" disabled={loading}>
+                  <span className="text text-button">
+                    {loading ? "Sending..." : "Send message"}
+                  </span>
                 </button>
               </div>
             </form>

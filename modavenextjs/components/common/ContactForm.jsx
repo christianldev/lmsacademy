@@ -1,6 +1,51 @@
+"use client";
+import React, { useRef, useState } from "react";
+
 export default function ContactForm({
   parentClass = "contact-form-section",
 }) {
+  const formRef = useRef();
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccess(false);
+    setError(false);
+
+    const formData = new FormData(formRef.current);
+    const data = {
+      name: formData.get("name"),
+      email: formData.get("email"),
+      subject: formData.get("subject"),
+      message: formData.get("message"),
+    };
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (response.ok) {
+        setSuccess(true);
+        formRef.current.reset();
+      } else {
+        setError(true);
+      }
+    } catch (err) {
+      console.error(err);
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className={parentClass}>
       <div className="container contact-form-container">
@@ -63,29 +108,41 @@ export default function ContactForm({
             adecuado para tu nivel, estilo y objetivos.
           </p>
 
-          <form className="contact-form" id="contactform">
+          <form className="contact-form" id="contactform" ref={formRef} onSubmit={handleSubmit}>
+            {success && (
+              <p style={{ color: "green", marginBottom: "15px" }}>
+                ¡Mensaje enviado correctamente!
+              </p>
+            )}
+            {error && (
+              <p style={{ color: "red", marginBottom: "15px" }}>
+                Hubo un error al enviar el mensaje. Inténtalo de nuevo.
+              </p>
+            )}
             <div className="contact-form-row">
               <label>
+                <input type="text" name="name" autoComplete="name" required placeholder=" " />
                 <span>Nombre</span>
-                <input type="text" name="name" autoComplete="name" required />
               </label>
               <label>
+                <input type="email" name="email" autoComplete="email" required placeholder=" " />
                 <span>Email</span>
-                <input type="email" name="email" autoComplete="email" required />
               </label>
             </div>
 
             <label>
+              <input type="text" name="subject" required placeholder=" " />
               <span>Asunto</span>
-              <input type="text" name="subject" required />
             </label>
 
             <label>
+              <textarea name="message" rows={6} required placeholder=" " />
               <span>Mensaje</span>
-              <textarea name="message" rows={6} required />
             </label>
 
-            <button type="submit">Enviar Mensaje</button>
+            <button type="submit" disabled={loading}>
+              {loading ? "Enviando..." : "Enviar Mensaje"}
+            </button>
           </form>
         </div>
       </div>

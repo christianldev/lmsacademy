@@ -162,8 +162,21 @@
         line-height: 1;
         pointer-events: none;
         position: absolute;
-        top: 21px;
+        top: 21px; // Posición inicial (cuando está vacío)
         z-index: 1;
+        transition: 0.3s ease all;
+        opacity: 0.7;
+    }
+
+    /* Animación del label al hacer foco, o si ya tiene texto válido o escrito */
+    input:focus~span,
+    input:not(:placeholder-shown)~span,
+    textarea:focus~span,
+    textarea:not(:placeholder-shown)~span {
+        top: 8px;
+        font-size: 12px;
+        opacity: 1;
+        color: #8eff3f;
     }
 
     input,
@@ -176,7 +189,7 @@
         font-size: 16px;
         font-weight: 500;
         outline: none;
-        padding: 22px 28px 16px;
+        padding: 24px 28px 12px; // Ajustado el padding top para darle espacio al label pequeño
         transition: border-color 0.2s ease, box-shadow 0.2s ease;
         width: 100%;
     }
