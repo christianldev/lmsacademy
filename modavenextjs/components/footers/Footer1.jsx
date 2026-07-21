@@ -109,24 +109,12 @@ export default function Footer1({
                     </div>
                     <div className="footer-address">
                       <p>Guayaquil, Ecuador</p>
-                      <Link
-                        href={`/contact`}
-                        className={`tf-btn-default fw-6 ${
-                          dark ? "style-white" : ""
-                        } `}
-                      >
-                        CÓMO LLEGAR
-                        <i className="icon-arrowUpRight" />
-                      </Link>
+                    
                     </div>
                     <ul className="footer-info">
                       <li>
-                        <i className="icon-mail" />
-                        <p>info@lmsacademy.com</p>
-                      </li>
-                      <li>
                         <i className="icon-phone" />
-                        <p>+593 99 999 9999</p>
+                        <p>+593 968886183</p>
                       </li>
                     </ul>
                     <ul
@@ -178,88 +166,7 @@ export default function Footer1({
                     ))}
                   </div>
                 </div>
-                <div className="col-lg-4">
-                  <div className="footer-col-block">
-                    <div className="footer-heading text-button footer-heading-mobile">
-                      Boletín
-                    </div>
-                    <div className="tf-collapse-content">
-                      <div className="footer-newsletter">
-                        <p className="text-caption-1">
-                          Regístrate en nuestro boletín y recibe 10% de descuento en tu primera matrícula
-                        </p>
-                        <div
-                          className={`tfSubscribeMsg  footer-sub-element ${
-                            showMessage ? "active" : ""
-                          }`}
-                        >
-                          {success ? (
-                            <p style={{ color: "rgb(52, 168, 83)" }}>
-                              Te has suscrito con éxito.
-                            </p>
-                          ) : (
-                            <p style={{ color: "red" }}>Algo salió mal</p>
-                          )}
-                        </div>
-                        <form
-                          onSubmit={sendEmail}
-                          className={`form-newsletter subscribe-form ${
-                            dark ? "style-black" : ""
-                          }`}
-                        >
-                          <div className="subscribe-content">
-                            <fieldset className="email">
-                              <input
-                                type="email"
-                                name="email"
-                                className="subscribe-email"
-                                placeholder="Ingresa tu e-mail"
-                                tabIndex={0}
-                                aria-required="true"
-                              />
-                            </fieldset>
-                            <div className="button-submit">
-                              <button
-                                className="subscribe-button"
-                                type="submit"
-                              >
-                                <i className="icon icon-arrowUpRight" />
-                              </button>
-                            </div>
-                          </div>
-                          <div className="subscribe-msg" />
-                        </form>
-                        <div className="tf-cart-checkbox">
-                          <div className="tf-checkbox-wrapp">
-                            <input
-                              className=""
-                              type="checkbox"
-                              id="footer-Form_agree"
-                              name="agree_checkbox"
-                            />
-                            <div>
-                              <i className="icon-check" />
-                            </div>
-                          </div>
-                          <label
-                            className="text-caption-1"
-                            htmlFor="footer-Form_agree"
-                          >
-                            Al hacer clic en suscribirte, aceptas los{" "}
-                            <Link className="fw-6 link" href={`/term-of-use`}>
-                              Términos y Condiciones
-                            </Link>{" "}
-                            y la{" "}
-                            <a className="fw-6 link" href="#">
-                              Política de Privacidad
-                            </a>
-                            .
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -270,7 +177,7 @@ export default function Footer1({
                   <div className="footer-bottom-wrap">
                     <div className="left">
                       <p className="text-caption-1">
-                        ©{new Date().getFullYear()} LMS Academy Guayaquil. Todos los derechos reservados.
+                        ©{new Date().getFullYear()} IC Web Studio. Todos los derechos reservados.
                       </p>
                       <div className="tf-cur justify-content-end">
                         <div className="tf-currencies">

@@ -36,36 +36,16 @@ export default function Sidebar2() {
             efficitur, convallis lelobortis elit.
           </p>
           <ul className="tf-social-icon">
-            <li>
-              <a href="#" className="social-facebook">
-                <i className="icon icon-fb" />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social-twiter">
-                <i className="icon icon-x" />
-              </a>
-            </li>
+           
+          
             <li>
               <a href="#" className="social-instagram">
                 <i className="icon icon-instagram" />
               </a>
             </li>
-            <li>
-              <a href="#" className="social-tiktok">
-                <i className="icon icon-tiktok" />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social-amazon">
-                <i className="icon icon-amazon" />
-              </a>
-            </li>
-            <li>
-              <a href="#" className="social-pinterest">
-                <i className="icon icon-pinterest" />
-              </a>
-            </li>
+           
+           
+           
           </ul>
         </div>
       </div>

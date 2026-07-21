@@ -149,21 +149,7 @@ export default function BlogDetail1({ blog }) {
           <div className="d-flex align-items-center justify-content-between gap-16">
             <p>Share this post:</p>
             <ul className="tf-social-icon style-1">
-              <li>
-                <a href="#" className="social-facebook">
-                  <i className="icon icon-fb" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="social-twiter">
-                  <i className="icon icon-x" />
-                </a>
-              </li>
-              <li>
-                <a href="#" className="social-pinterest">
-                  <i className="icon icon-pinterest" />
-                </a>
-              </li>
+           
               <li>
                 <a href="#" className="social-instagram">
                   <i className="icon icon-instagram" />
