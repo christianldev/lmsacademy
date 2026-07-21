@@ -7,7 +7,7 @@ export default function ScrollTop({ hasPaddingBottom = false }) {
 
   useEffect(() => {
     const checkScroll = () => {
-      const scrollTop = window.scrollY; // Get the vertical scroll position
+      const scrollTop = window.scrollY;
 
       if (scrollTop > 500 && !isButtonVisible) {
         setIsButtonVisible(true);
@@ -27,45 +27,50 @@ export default function ScrollTop({ hasPaddingBottom = false }) {
     };
   }, [isButtonVisible]);
 
-  const handleScrollToTop = (e) => {
+  const handleWhatsAppClick = (e) => {
     e.preventDefault();
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const phoneNumber = "593968886183"; // Reemplaza con tu número
+    const message = "Hola, me gustaría obtener más información.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url, '_blank');
   };
 
   return (
     <button
-      id="scroll-top"
-      className={`scroll-top-button ${hasPaddingBottom ? "type-1" : ""} ${
+      id="whatsapp-button"
+      className={`whatsapp-floating-button ${hasPaddingBottom ? "type-1" : ""} ${
         isButtonVisible ? "show" : ""
       }`}
-      onClick={handleScrollToTop}
+      onClick={handleWhatsAppClick}
+      style={{
+        position: 'fixed',
+        bottom: '20px',
+        right: '20px',
+        zIndex: 9999,
+        width: '60px',
+        height: '60px',
+        borderRadius: '50%',
+        backgroundColor: '#25d366',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        boxShadow: '0px 4px 10px rgba(0,0,0,0.3)',
+        border: 'none',
+        cursor: 'pointer',
+        transition: 'transform 0.3s ease',
+        transform: isButtonVisible ? 'scale(1)' : 'scale(0)'
+      }}
     >
-      <svg
-        width={24}
-        height={25}
-        viewBox="0 0 24 25"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
+     <svg 
+       width="35" 
+       height="35" 
+       style={{ display: 'block', width: '35px', height: '35px' }} 
+       xmlns="http://www.w3.org/2000/svg" 
+       aria-label="WhatsApp" 
+       role="img" 
+       viewBox="0 0 512 512"
       >
-        <g clipPath="url(#clip0_15741_24194)">
-          <path
-            d="M3 11.9175L12 2.91748L21 11.9175H16.5V20.1675C16.5 20.3664 16.421 20.5572 16.2803 20.6978C16.1397 20.8385 15.9489 20.9175 15.75 20.9175H8.25C8.05109 20.9175 7.86032 20.8385 7.71967 20.6978C7.57902 20.5572 7.5 20.3664 7.5 20.1675V11.9175H3Z"
-            stroke="white"
-            strokeWidth="1.5"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </g>
-        <defs>
-          <clipPath id="clip0_15741_24194">
-            <rect
-              width={24}
-              height={24}
-              fill="white"
-              transform="translate(0 0.66748)"
-            />
-          </clipPath>
-        </defs>
+        <path fill="#ffffff" d="M308 273c-3-2-6-3-9 1l-12 16c-3 2-5 3-9 1-15-8-36-17-54-47-1-4 1-6 3-8l9-14c2-2 1-4 0-6l-12-29c-3-8-6-7-9-7h-8c-2 0-6 1-10 5-22 22-13 53 3 73 3 4 23 40 66 59 32 14 39 12 48 10 11-1 22-10 27-19 1-3 6-16 2-18"></path><path fill="none" stroke="#ffffff" strokeWidth="26" d="M123 393l14-65a138 138 0 1150 47z"></path>
       </svg>
     </button>
   );

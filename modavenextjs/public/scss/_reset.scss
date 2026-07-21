@@ -284,7 +284,7 @@ button {
     @include mixin.transition3;
     background-color: var(--main);
     color: var(--white);
-    padding: 15px 32px;
+
     border-radius: 99px;
     @include mixin.flex(center, space-between);
     gap: 8px;
