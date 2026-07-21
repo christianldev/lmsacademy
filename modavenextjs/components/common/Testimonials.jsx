@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import { testimonialsWithProduct9 } from "@/data/products";
 
 export default function Testimonials({ parentClass = "flat-spacing" }) {
@@ -66,7 +66,8 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
                   spaceBetween: 48,
                 },
               }}
-              modules={[Pagination]}
+              modules={[Pagination, Autoplay]}
+              autoplay={{ delay: 3000, disableOnInteraction: false }}
               pagination={false}
               dir="ltr"
               spaceBetween={15}
