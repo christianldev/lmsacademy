@@ -110,23 +110,22 @@ export const slidesData = [
   {
     id: 2,
     imageSrc: "/images/banner/banner3.webp",
-    heading: "La música no tiene edad. Tu voz tampoco. <br />",
+    heading: "Aprende desde el primer día. <br />",
     description: "Canta con confianza, técnica y pasión",
     buttonText: "Comienza hoy",
   },
   {
     id: 3,
     imageSrc: "/images/banner/banner6.webp",
-    heading: "Layer in Style <br /> with Our Jackets",
-    description:
-      "Find your next go-to jacket for stylish layering in any season.",
+    heading: "Desarrolla tu técnica. <br />",
+    description: "Aplica lo que aprendes mientras exploras distintos estilos.",
     buttonText: "Comienza hoy",
   },
   {
     id: 4,
     imageSrc: "/images/banner/banner7.webp",
-    heading: "Every Coat Tells <br /> a Story",
-    description: "Choose outerwear that reflects your unique narrative.",
+    heading: "Pasión para empezar.  <br />",
+    description: "Descubre cómo cantar cualquier canción con destreza.",
     buttonText: "Comienza hoy",
   },
 ];

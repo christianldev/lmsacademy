@@ -1,44 +1,27 @@
 "use client";
 
-import { iconboxItems } from "@/data/features";
-import { Pagination } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { baquetaFeatures } from "@/data/features";
 
-export default function Features({ parentClass = "flat-spacing" }) {
+export default function Features({ parentClass = "flat-spacing baqueta-features-section" }) {
   return (
     <section className={parentClass}>
       <div className="container">
-        <Swiper
-          dir="ltr"
-          className="swiper tf-sw-iconbox"
-          spaceBetween={15}
-          breakpoints={{
-            1200: { slidesPerView: 4 },
-            768: { slidesPerView: 3 },
-            576: { slidesPerView: 2 },
-            0: { slidesPerView: 1 },
-          }}
-          modules={[Pagination]}
-          pagination={{
-            clickable: true,
-            el: ".spd2",
-          }}
-        >
-          {iconboxItems.map((item) => (
-            <SwiperSlide key={item.id}>
-              <div className="tf-icon-box">
-                <div className="icon-box">
-                  <span className={`icon ${item.icon}`} />
-                </div>
-                <div className="content text-center">
-                  <h6>{item.title}</h6>
-                  <p className="text-secondary">{item.description}</p>
-                </div>
-              </div>
-            </SwiperSlide>
+        <div className="baqueta-features-header">
+          <h2>
+            ¿Por qué elegirnos?
+          </h2>
+          <p>Lo que nos hace únicos en la enseñanza musical</p>
+        </div>
+
+        <div className="baqueta-features-grid">
+          {baquetaFeatures.map((item) => (
+            <div key={item.id} className="baqueta-feature-card">
+              <div className="feature-emoji">{item.emoji}</div>
+              <h6 className="feature-title">{item.title}</h6>
+              <p className="feature-description">{item.description}</p>
+            </div>
           ))}
-          <div className="sw-pagination-iconbox spd2 sw-dots type-circle justify-content-center" />
-        </Swiper>
+        </div>
       </div>
     </section>
   );

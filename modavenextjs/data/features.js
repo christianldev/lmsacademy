@@ -1,3 +1,34 @@
+export const baquetaFeatures = [
+  {
+    id: 1,
+    emoji: "📚",
+    title: "Metodología propia",
+    description:
+      "Cancioneros Baqueta: aprendizaje progresivo y práctico desde el primer día.",
+  },
+  {
+    id: 2,
+    emoji: "👨‍👩‍👧‍👦",
+    title: "Todas las edades",
+    description:
+      "Desde 4 años hasta adultos. Nunca es tarde para empezar a tocar.",
+  },
+  {
+    id: 3,
+    emoji: "🎓",
+    title: "Formación integral",
+    description:
+      "Si quieres formarte de manera integral y desempeñarte en el campo profesional de la música, nuestras clases te gustarán",
+  },
+  {
+    id: 4,
+    emoji: "🎪",
+    title: "Festivales y eventos",
+    description:
+      "Conciertos, festivales de bandas y cursos vacacionales durante el año.",
+  },
+];
+
 export const iconboxItems = [
   {
     id: 1,
