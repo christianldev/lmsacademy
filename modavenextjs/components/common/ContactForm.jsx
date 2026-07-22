@@ -47,7 +47,7 @@ export default function ContactForm({
   };
 
   return (
-    <section className={parentClass}>
+    <section className={parentClass} id="contacto">
       <div className="container contact-form-container">
         <aside className="contact-info-card">
           <div className="contact-map-pattern" aria-hidden="true" />

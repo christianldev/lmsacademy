@@ -95,7 +95,7 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="#" className="item-link">
+        <a href="#contacto" className="item-link">
          Contacto
          
         </a>
