@@ -15,17 +15,23 @@ export default function Categories() {
               <span ></span>
             </h3>
             <p>
-            Avanza paso a paso a través de nuestro método estructurado. Desde tus primeras respiraciones hasta el dominio del escenario, aquí trazas el camino de tu propia evolución musical.
-            </p>
-            <Link href={`/shop-collection`} className="btn-line py_8">
-              Explorar Programas
+            Todo gran artista comienza desde el mismo lugar. En escuela de Artistas con Katty Elisa, todos nuestros estudiantes inician en el Nivel 1, donde descubrirán las bases para desarrollar una voz segura, fuerte y llena de confianza. <br />
+
+             No importa si es tu primera vez cantando o si ya tienes experiencia. Nuestro programa está diseñado para que avances paso a paso, disfrutando cada logro en el camino.
+           </p>
+            <Link href={`/shop-collection`} className="cls-btn">
+                  Inscribete Aqui
+                  <i className="icon icon-arrowUpRight" />
             </Link>
+            <p className="btn-line py_8">
+              NUESTROS NIVELES
+            </p>
           </div>
         </div>
       </div>
 
       <div className="container categories-voz-grid-wrap">
-        <div className="categories-voz-grid">
+        <div className="categories-voz-grid ">
           {collectionData.map((item) => (
             <div className="categories-voz-card wow fadeInUp" key={item.id} data-wow-delay={item.delay}>
               <div className="img-style">
@@ -41,10 +47,7 @@ export default function Categories() {
               <div className="content">
                 <h6 className="text">{item.title}</h6>
                 <p className="category-desc">{item.descripcion}</p>
-                <Link href={`/shop-collection`} className="cls-btn">
-                  Ver Nivel
-                  <i className="icon icon-arrowUpRight" />
-                </Link>
+                
               </div>
             </div>
           ))}

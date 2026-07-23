@@ -1,13 +1,20 @@
 @use "../abstracts/mixin";
 
 .categories-voz-section {
-    background-color: #fdfdfd;
+    background:  url("/images/categories/fondo-nivel.svg") center bottom / cover no-repeat;
+      
+      
     overflow: hidden;
+    position: relative;
 }
+
+
 
 .categories-voz-wrap {
     padding-top: 1rem;
     padding-bottom:1.5rem;
+    position: relative;
+    z-index: 1;
 }
 
 .categories-voz-heading {
@@ -29,7 +36,7 @@
         font-weight: 900;
         font-family: "Montserrat", "Arial Black", sans-serif;
         text-transform: uppercase;
-        color: #070707;
+        color: #ffffff;
         line-height: 1.2;
         margin: 0;
 
@@ -43,7 +50,7 @@
         margin: 10px auto 0;
         font-size: 1.1rem;
         line-height: 1.6;
-        color: #0e0d0d;
+        color: #f5f5f5;
     }
 
     .btn-line {
@@ -53,6 +60,7 @@
         background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b, #d4af37);
         background-size: 300% 300%;
         animation: goldShimmerText 3s ease infinite;
+        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         position: relative;

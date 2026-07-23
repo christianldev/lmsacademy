@@ -204,35 +204,62 @@ export const collections4 = [
 ];
 
 export const collectionData = [
-  {
-    id: 1,
-    imageSrc: "/images/categories/categoria4.webp",
-    title: "NIVEL UNO",
-    descripcion:"Pierde el miedo y aprende a respirar y afinar correctamente. El punto de partida perfecto desde cero.",
-    delay: "0s",
-  },
-  {
-    id: 2,
-    imageSrc: "/images/categories/categoria2.webp",
-    title: "NIVEL DOS",
-    descripcion:"Amplía tu rango y canta agudos y graves con potencia, soltura y sin lastimar tu garganta.",
-    delay: "0.1s",
-  },
-  {
-    id: 3,
-    imageSrc: "/images/categories/categoria1.webp",
-    title: "NIVEL TRES",
-    descripcion:"Domina tu técnica y desarrolla tu estilo único como cantante profesional.",
-    delay: "0.2s",
-  },
-  {
-    id: 4,
-    imageSrc: "/images/categories/categoria3.webp",
-    title: "NIVEL CUATRO",
-    descripcion:"Aprende a interpretar canciones complejas y a transmitir emociones con tu voz.",
-    delay: "0.3s",
-  },
- 
+ {
+  id: 1,
+  imageSrc: "/images/categories/categoria4.webp",
+  title: "NIVEL UNO",
+  descripcion: `
+Da tus primeros pasos en el canto aprendiendo las bases para desarrollar una voz segura y con confianza.
+
+✓ Respiración
+✓ Afinación
+✓ Ritmo
+✓ Técnica vocal
+  `,
+  delay: "0.0s",
+},
+ {
+  id: 2,
+  imageSrc: "/images/categories/categoria1.webp",
+  title: "NIVEL DOS",
+  descripcion: `
+Fortalece tu técnica vocal y mejora el control de tu voz para interpretar cada canción con mayor seguridad.
+
+✓ Afinación
+✓ Proyección vocal
+✓ Interpretación
+✓ Confianza escénica
+  `,
+  delay: "0.1s",
+},
+{
+  id: 3,
+  imageSrc: "/images/categories/categoria2.webp",
+  title: "NIVEL TRES",
+  descripcion: `
+Desarrolla tu estilo artístico y fortalece tu presencia escénica para transmitir emociones con cada interpretación.
+
+✓ Expresión artística
+✓ Presencia escénica
+✓ Dominio vocal
+✓ Interpretación
+  `,
+  delay: "0.2s",
+},
+{
+  id: 4,
+  imageSrc: "/images/categories/categoria3.webp",
+  title: "NIVEL CUATRO",
+  descripcion: `
+Perfecciona tu talento y prepárate para destacar en el escenario con interpretaciones llenas de confianza y emoción.
+
+✓ Técnica avanzada
+✓ Dominio escénico
+✓ Repertorio
+✓ Presentaciones en vivo
+  `,
+  delay: "0.3s",
+},
 ];
 
 export const categories2 = [

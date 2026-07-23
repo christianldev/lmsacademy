@@ -9,28 +9,25 @@ export default function AboutUS() {
         <div className="about-agency-grid">
           <div className="about-agency-content">
             <span className="about-agency-eyebrow">Sobre Nosotros</span>
-            <h2>Descubre tu voz con Katty Elisa</h2>
+           <h2>Descubre tu voz con <span style={{color: '#4affd8'}}>Katty Elisa</span></h2>
             <p>
-              En nuestra escuela creemos que todas las personas pueden aprender a
-              cantar cuando reciben la guía adecuada, una metodología clara y un
-              ambiente que inspire confianza.
+             En 2016, la cantante Katty Elisa fundó este espacio con un propósito claro: acompañar a cada estudiante a descubrir, formar y potenciar su talento vocal único. Lo que comenzó como un sueño musical se ha convertido en una comunidad vibrante con más de una década de experiencia formando a voces de todas las edades.
             </p>
-            <p>
-              Más que enseñar técnica vocal, ayudamos a nuestros estudiantes a
-              descubrir su propia voz, desarrollar seguridad en sí mismos y disfrutar
-              el proceso de cantar.
-            </p>
-            <Link href="/about-us" className="about-agency-button">
-              Conoce Más
-            </Link>
+            <p>Fundada y dirigida por la reconocida cantante Katty Elisa, nuestra escuela respira música, técnica y escenario en cada clase.</p>
+             <p>Contamos con un equipo docente de profesionales altamente cualificados, enfocados en la técnica vocal, la salud de tu voz y el desarrollo de tu confianza escénica.</p>
+             
+            <p>10 Años Transformando Voces, nuestra trayectoria de más de una década respalda una metodología probada que combina disciplina, expresión artística y disfrute.</p>
+            
+
+            
 
             <div className="about-agency-stats" aria-label="Resultados de la escuela">
               <div className="about-agency-stat">
-                <strong>2000+</strong>
+                <strong>1000+</strong>
                 <span>Voces formadas con confianza</span>
               </div>
               <div className="about-agency-stat">
-                <strong>15 años</strong>
+                <strong>10 años </strong>
                 <span>Experiencia</span>
               </div>
             </div>
@@ -52,18 +49,25 @@ export default function AboutUS() {
       </div>
       <style jsx>{`
         .about-agency-section {
-          background: #101112;
+          background:
+          
+            url("/images/nosotros/fondo.svg") center top / cover no-repeat;
           color: #f7f7f4;
           font-family: "Kumbh Sans", sans-serif;
-          padding: clamp(72px, 8vw, 118px) 0;
           overflow: hidden;
+          padding: clamp(72px, 8vw, 118px) 0;
+          position: relative;
         }
+
+        
 
         .about-agency-grid {
           align-items: center;
           display: grid;
           gap: clamp(48px, 7vw, 96px);
           grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+          position: relative;
+          z-index: 1;
         }
 
         .about-agency-content {
@@ -134,7 +138,7 @@ export default function AboutUS() {
         }
 
         .about-agency-stat + .about-agency-stat {
-          border-left: 1px solid rgba(255, 255, 255, 0.16);
+          border-left: 1px solid #4affd8;
           padding-left: 42px;
         }
 
