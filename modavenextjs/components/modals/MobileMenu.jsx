@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import LanguageSelect from "../common/LanguageSelect";
 import CurrencySelect from "../common/CurrencySelect";
 import {
   blogLinks,
@@ -580,9 +579,7 @@ export default function MobileMenu() {
             <div className="tf-currencies">
               <CurrencySelect />
             </div>
-            <div className="tf-languages">
-              <LanguageSelect parentClassName="image-select center style-default type-languages" />
-            </div>
+           
           </div>
         </div>
       </div>

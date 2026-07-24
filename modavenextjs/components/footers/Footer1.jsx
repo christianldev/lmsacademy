@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 import CurrencySelect from "../common/CurrencySelect";
-import LanguageSelect from "../common/LanguageSelect";
 import ToolbarBottom from "../headers/ToolbarBottom";
 import ScrollTop from "../common/ScrollTop";
 import { footerLinks, socialLinks } from "@/data/footerLinks";
@@ -175,76 +174,18 @@ export default function Footer1({
               <div className="row">
                 <div className="col-12">
                   <div className="footer-bottom-wrap">
-                    <div className="left">
+                    <div >
                       <p className="text-caption-1">
                         ©{new Date().getFullYear()} IC Web Studio. Todos los derechos reservados.
                       </p>
-                      <div className="tf-cur justify-content-end">
+                      <div className="tf-cur ">
                         <div className="tf-currencies">
                           <CurrencySelect light={dark ? true : false} />
                         </div>
-                        <div className="tf-languages">
-                          <LanguageSelect
-                            parentClassName={`image-select center style-default type-languages ${
-                              dark ? "color-white" : ""
-                            }`}
-                          />
-                        </div>
+                        
                       </div>
                     </div>
-                    <div className="tf-payment">
-                      <p className="text-caption-1">Pagos:</p>
-                      <ul>
-                        <li>
-                          <Image
-                            alt=""
-                            src="/images/payment/img-1.png"
-                            width={100}
-                            height={64}
-                          />
-                        </li>
-                        <li>
-                          <Image
-                            alt=""
-                            src="/images/payment/img-2.png"
-                            width={100}
-                            height={64}
-                          />
-                        </li>
-                        <li>
-                          <Image
-                            alt=""
-                            src="/images/payment/img-3.png"
-                            width={100}
-                            height={64}
-                          />
-                        </li>
-                        <li>
-                          <Image
-                            alt=""
-                            src="/images/payment/img-4.png"
-                            width={98}
-                            height={64}
-                          />
-                        </li>
-                        <li>
-                          <Image
-                            alt=""
-                            src="/images/payment/img-5.png"
-                            width={102}
-                            height={64}
-                          />
-                        </li>
-                        <li>
-                          <Image
-                            alt=""
-                            src="/images/payment/img-6.png"
-                            width={98}
-                            height={64}
-                          />
-                        </li>
-                      </ul>
-                    </div>
+                    
                   </div>
                 </div>
               </div>

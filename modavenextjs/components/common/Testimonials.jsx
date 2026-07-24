@@ -27,7 +27,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
   );
 
   return (
-    <section className={`section-testimonials testimonial-showcase ${parentClass}`}>
+    <section className={`section-testimonials categories-voz-section testimonial-showcase ${parentClass}`}>
       <div className="testimonial-map-pattern" aria-hidden="true" />
       <div className="container">
         <div className="testimonial-showcase-heading heading-section text-center">
