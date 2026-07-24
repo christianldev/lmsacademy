@@ -86,101 +86,78 @@ export default function Footer1({
         } `}
       >
         <div className={`footer-wrap ${!border ? "border-0" : ""}`}>
-          <div className="footer-body">
+          <div className="footer-body py-4">
             <div className="container">
-              <div className="row" style={{ display: 'flex', justifyContent: 'center' }}>
-                <div className="col-lg-4">
-                  <div className="footer-infor">
-                    <div className="footer-logo">
-                      <Link href={`/`}>
-                        <Image
-                          alt=""
-                          src={
-                            dark
-                              ? "/images/logo/logo.svg"
-                              : "/images/logo/logo.svg"
-                          }
-                          width={180}
-                          height={60}
-                       
-                        />
-                      </Link>
-                    </div>
-                    <div className="footer-address">
-                      <p>Guayaquil, Ecuador</p>
-                    
-                    </div>
-                    <ul className="footer-info">
-                      <li>
-                        <i className="icon-phone" />
-                        <p>+593 968886183</p>
-                      </li>
-                    </ul>
-                    <ul
-                      className={`tf-social-icon  ${
-                        dark ? "style-white" : ""
-                      } `}
-                    >
+              <div className="row d-flex align-items-center justify-content-between" style={{ borderBottom: '1px solid #e5e7eb', paddingBottom: '24px' }}>
+                <div className="col-auto">
+                  <div className="footer-logo">
+                    <Link href={`/`}>
+                      <Image
+                        alt="Logo"
+                        src={
+                          dark
+                            ? "/images/logo/logo.svg"
+                            : "/images/logo/logo.svg"
+                        }
+                        width={140}
+                        height={40}
+                      />
+                    </Link>
+                  </div>
+                </div>
+                <div className="col-auto">
+                  <div className="footer-menu d-flex gap-4">
+                    {footerLinks.map((section, sectionIndex) => (
+                      <React.Fragment key={sectionIndex}>
+                        {section.items.map((item, itemIndex) => (
+                          <div className="text-caption-1 d-flex align-items-center" key={itemIndex}>
+                            {item.isLink ? (
+                              <Link
+                                href={item.href}
+                                className="footer-menu_item text-decoration-none text-secondary"
+                              >
+                                {item.label}
+                              </Link>
+                            ) : (
+                              <a
+                                href={item.href}
+                                className="footer-menu_item text-decoration-none text-secondary"
+                              >
+                                {item.label}
+                              </a>
+                            )}
+                            {(sectionIndex !== footerLinks.length - 1 || itemIndex !== section.items.length - 1) && (
+                              <span className="mx-2 text-secondary" style={{opacity: 0.5}}>/</span>
+                            )}
+                          </div>
+                        ))}
+                      </React.Fragment>
+                    ))}
+                  </div>
+                </div>
+                
+                <div className="col-auto">
+                    <ul className={`tf-social-icon d-flex gap-3 m-0 p-0 list-unstyled ${dark ? "style-white" : ""}`}>
                       {socialLinks.map((link, index) => (
                         <li key={index}>
-                          <a href={link.href} className={link.className}>
-                            <i className={`icon ${link.iconClass}`} />
+                          <a href={link.href} className={`text-secondary ${link.className}`}>
+                            <i className={`icon ${link.iconClass}`} style={{fontSize: '18px'}} />
                           </a>
                         </li>
                       ))}
                     </ul>
-                  </div>
                 </div>
-                <div className="col-lg-4">
-                    <div className="footer-menu" style={{ display: 'flex', gap: '40px' }}>
-                    {footerLinks.map((section, sectionIndex) => (
-                      <div className="footer-col-block" key={sectionIndex}>
-                        <div className="footer-heading text-button footer-heading-mobile">
-                          {section.heading}
-                        </div>
-                        <div className="tf-collapse-content">
-                          <ul className="footer-menu-list">
-                            {section.items.map((item, itemIndex) => (
-                              <li className="text-caption-1" key={itemIndex}>
-                                {item.isLink ? (
-                                  <Link
-                                    href={item.href}
-                                    className="footer-menu_item"
-                                  >
-                                    {item.label}
-                                  </Link>
-                                ) : (
-                                  <a
-                                    href={item.href}
-                                    className="footer-menu_item"
-                                  >
-                                    {item.label}
-                                  </a>
-                                )}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-               
+
               </div>
             </div>
           </div>
-          <div className="footer-bottom">
+          <div className="footer-bottom py-4">
             <div className="container">
               <div className="row">
-                <div className="col-12" style={{ display: 'flex', justifyContent: 'center' }}>
-                  <div className="footer-bottom-wrap">
-                    <div >
-                      <p className="text-caption-1" style={{ textAlign: 'center', width: '100%' }}>
-                        ©{new Date().getFullYear()} IC Web Studio. Todos los derechos reservados.
-                      </p>
-                    </div>
-                    
-                  </div>
+                <div className="col-12 d-flex justify-content-center">
+                  <p className="text-caption-1 text-secondary m-0">
+                    © {new Date().getFullYear()} IC Web Studio. Todos los derechos reservados.
+                  </p>
                 </div>
               </div>
             </div>
