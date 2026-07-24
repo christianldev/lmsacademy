@@ -1,9 +1,9 @@
 @use "../abstracts/mixin";
 
 .categories-voz-section {
-    background:  url("/images/categories/fondo-nivel.svg") center bottom / cover no-repeat;
-      
-      
+    background: url("/images/categories/fondo-nivel.svg") center bottom / cover no-repeat;
+
+
     overflow: hidden;
     position: relative;
 }
@@ -12,7 +12,7 @@
 
 .categories-voz-wrap {
     padding-top: 1rem;
-    padding-bottom:1.5rem;
+    padding-bottom: 1.5rem;
     position: relative;
     z-index: 1;
 }

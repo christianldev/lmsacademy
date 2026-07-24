@@ -97,7 +97,7 @@ export default function AboutUS() {
         }
 
         .about-agency-content p {
-          color: #aeb5be;
+          color: #ffffff;
           font-size: 18px;
           line-height: 1.75;
           margin-bottom: 24px;
