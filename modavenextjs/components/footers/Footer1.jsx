@@ -88,7 +88,7 @@ export default function Footer1({
         <div className={`footer-wrap ${!border ? "border-0" : ""}`}>
           <div className="footer-body">
             <div className="container">
-              <div className="row">
+              <div className="row" style={{ display: 'flex', justifyContent: 'center' }}>
                 <div className="col-lg-4">
                   <div className="footer-infor">
                     <div className="footer-logo">
@@ -132,7 +132,7 @@ export default function Footer1({
                   </div>
                 </div>
                 <div className="col-lg-4">
-                  <div className="footer-menu">
+                    <div className="footer-menu" style={{ display: 'flex', gap: '40px' }}>
                     {footerLinks.map((section, sectionIndex) => (
                       <div className="footer-col-block" key={sectionIndex}>
                         <div className="footer-heading text-button footer-heading-mobile">
@@ -172,18 +172,12 @@ export default function Footer1({
           <div className="footer-bottom">
             <div className="container">
               <div className="row">
-                <div className="col-12">
+                <div className="col-12" style={{ display: 'flex', justifyContent: 'center' }}>
                   <div className="footer-bottom-wrap">
                     <div >
-                      <p className="text-caption-1">
+                      <p className="text-caption-1" style={{ textAlign: 'center', width: '100%' }}>
                         ©{new Date().getFullYear()} IC Web Studio. Todos los derechos reservados.
                       </p>
-                      <div className="tf-cur ">
-                        <div className="tf-currencies">
-                          <CurrencySelect light={dark ? true : false} />
-                        </div>
-                        
-                      </div>
                     </div>
                     
                   </div>
