@@ -18,21 +18,29 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
   }, []);
 
   const renderTestimonialCard = (testimonial, index) => (
-    <article key={index} className="testimonial-showcase-card">
-      <span className="testimonial-quote-mark " aria-hidden="true">
-        “
-      </span>
+    <article key={index} className="testimonial-custom-card">
+      <div className="testimonial-quote-cyan">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="40"
+          height="40"
+          viewBox="0 0 24 24"
+          fill="#4affd8"
+          stroke="none"
+        >
+          <path d="M6 17h3l2-4V7H5v6h3l-2 4zm8 0h3l2-4V7h-6v6h3l-2 4z"></path>
+        </svg>
+      </div>
       <p>{testimonial.quote}</p>
     </article>
   );
 
   return (
-    <section className={`section-testimonials categories-voz-section testimonial-showcase ${parentClass}`}>
-      <div className="testimonial-map-pattern" aria-hidden="true" />
+    <section className={`section-testimonials-clean ${parentClass}`}>
       <div className="container">
-        <div className="testimonial-showcase-heading heading-section text-center">
-          <span>TESTIMONIOS</span>
-          <h3>Lo que dicen nuestros alumnos</h3>
+        <div className="clean-heading text-center">
+          <span className="subtitle-cyan">TESTIMONIOS</span>
+          <h2>Lo que dicen nuestros alumnos</h2>
           <p>
             Experiencias reales de quienes han transformado su futuro con
             nuestra academia
@@ -40,13 +48,13 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
         </div>
 
         {isMobile ? (
-          <div className="testimonial-showcase-list">
+          <div className="clean-list">
             {testimonialsWithProduct9.map((testimonial, index) =>
               renderTestimonialCard(testimonial, index)
             )}
           </div>
         ) : (
-          <div className="swiper tf-sw-testimonial testimonial-showcase-slider">
+          <div className="swiper tf-sw-testimonial clean-slider position-relative flex-center-wrapper">
             <Swiper
               breakpoints={{
                 0: {
@@ -59,15 +67,15 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
                 },
                 768: {
                   slidesPerView: 2,
-                  spaceBetween: 32,
+                  spaceBetween: 30,
                 },
                 1024: {
                   slidesPerView: 2,
-                  spaceBetween: 48,
+                  spaceBetween: 40,
                 },
               }}
               modules={[Pagination, Autoplay]}
-              autoplay={{ delay: 3000, disableOnInteraction: false }}
+              autoplay={{ delay: 4000, disableOnInteraction: false }}
               pagination={false}
               dir="ltr"
               spaceBetween={15}
