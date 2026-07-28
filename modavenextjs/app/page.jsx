@@ -17,9 +17,12 @@ import MarqueeSection2 from "@/components/common/MarqueeSection2";
 import ContactForm from "@/components/common/ContactForm";
 
 export const metadata = {
-  title:
-    "Escuela de canto || Katty Elisa",
-  description: "Aprende a cantar con Katty Elisa, tu escuela de canto de confianza. Mejora tu técnica vocal y alcanza tus metas musicales con nuestros cursos personalizados.",
+  title: "Escuela de canto y formación vocal | LMS Academy",
+  description:
+    "Descubre cursos de canto, técnica vocal y desarrollo artístico en LMS Academy. Aprende con clases personalizadas y alcanza tu mejor versión como cantante.",
+  alternates: {
+    canonical: "https://lmsacademy.com",
+  },
 };
 
 export default function HomeFashionElegantAbodePage() {
