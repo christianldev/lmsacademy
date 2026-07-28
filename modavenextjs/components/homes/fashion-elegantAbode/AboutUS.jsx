@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function AboutUS() {
   return (
-    <section className="about-agency-section">
+    <section className="about-agency-section" id="nosotros">
       <div className="container">
         <div className="about-agency-grid">
           <div className="about-agency-content">

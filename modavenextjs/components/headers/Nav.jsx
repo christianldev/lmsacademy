@@ -50,7 +50,7 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="#" className="item-link">
+        <a href="#nosotros" className="item-link">
           Nosotros
         
         </a>
@@ -80,7 +80,7 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="#" className="item-link">
+        <a href="#testimonials" className="item-link">
          Testimonios
       
         </a>
