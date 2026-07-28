@@ -59,7 +59,7 @@ export default function HomeFashionElegantAbodePage() {
         <Hero />
         <Products />
         <Categories />
-        <Testimonials parentClass="flat-spacing pt-0" />
+        <Testimonials  />
         <ContactForm />
         <Features parentClass="flat-spacing-5" />
       </main>

@@ -14,7 +14,6 @@ import SizeGuide from "@/components/modals/SizeGuide";
 import Wishlist from "@/components/modals/Wishlist";
 import DemoModal from "@/components/modals/DemoModal";
 import Categories from "@/components/modals/Categories";
-import RtlToggler from "@/components/common/RtlToggler";
 import AccountSidebar from "@/components/modals/AccountSidebar";
 
 export default function ClientLayout({ children }) {
@@ -134,7 +133,6 @@ export default function ClientLayout({ children }) {
         <AccountSidebar key="account-sidebar" />
       </Context>
       <ScrollTop />
-      <RtlToggler />
     </>
   );
 }
