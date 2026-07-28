@@ -1,11 +1,24 @@
 @use "../abstracts/mixin";
 
 .categories-voz-section {
-    background-color:#000;
+    background-color: #0d0f10;
 
 
     overflow: hidden;
     position: relative;
+}
+
+.heading-routes {
+    background: #d4f3f1;
+    color: #4dbfb6;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
 
 

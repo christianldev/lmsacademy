@@ -1,7 +1,7 @@
 "use client";
 import { collectionData } from "@/data/collections";
 import React from "react";
-import Link from "next/link";
+
 import Image from "next/image";
 
 export default function Categories() {
@@ -10,8 +10,8 @@ export default function Categories() {
       <div className="categories-voz-wrap">
         <div className="container">
           <div className="categories-voz-heading wow fadeInUp text-center">
-            <h3 className="heading">
-            Nuestra Ruta Vocal<br />
+            <h3 className="heading-routes">
+            Ruta de aprendizaje<br />
               <span ></span>
             </h3>
             <p>

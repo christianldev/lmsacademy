@@ -34,7 +34,7 @@
   .categories-voz-heading h3.heading,
   .flat-countdown-banner-2 .box-title h3 {
     font-family: variable.$font-main !important;
-    font-size: clamp(42px, 5vw, 64px) !important;
+    font-size: clamp(42px, 5vw, 40px) !important;
     font-weight: 800 !important;
     letter-spacing: 0 !important;
     line-height: 1.16 !important;
@@ -388,15 +388,22 @@ ul.list-text {
   white-space: nowrap;
   display: flex;
   gap: 2px;
+  color: #ffd700;
+  /* Asegurar dorado de base si no heredan de la clase icon */
 
-  .icon {
+  .icon,
+  i.icon-star,
+  svg {
     font-size: 14px;
-    color: var(--yellow);
+    color: #ffd700 !important;
+    /* Dorado explícito para los testimonios */
+    fill: #ffd700;
   }
 
   &.color-primary {
     .icon {
-      color: var(--primary);
+      color: #ffd700 !important;
+      /* Sobreescribir el cyan por el dorado uniformemente */
     }
   }
 }

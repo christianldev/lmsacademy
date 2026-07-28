@@ -128,14 +128,28 @@
         }
     }
 
-    &.btn-white {
-        color: #ffffff;
-        background: linear-gradient(90deg,
-                #936F33,
-                #DFBC67,
-                #936F33);
-        background-position: 100% 50%;
-        background-size: 200% 100%;
+    &.btn-hero-slider {
+        background: linear-gradient(45deg, #d4af37, #ffd700, #ffec8b, #d4af37);
+        background-size: 300% 300%;
+        animation: goldShimmer 3s ease infinite;
+        color: #0b0d0e !important;
+        padding: 12px 30px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 99px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 700;
+        text-transform: capitalize;
+        box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.3s ease;
 
 
         &:hover {
