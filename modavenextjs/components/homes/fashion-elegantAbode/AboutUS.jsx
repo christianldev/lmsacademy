@@ -5,6 +5,16 @@ import Link from "next/link";
 export default function AboutUS() {
   return (
     <section className="about-agency-section" id="nosotros">
+      {/* Background Animated Notes */}
+      <div className="animated-notes">
+        <div className="note note-1">&#9835;</div>
+        <div className="note note-2">&#9833;</div>
+        <div className="note note-3">&#9834;</div>
+        <div className="note note-4">&#9836;</div>
+        <div className="note note-5">&#9835;</div>
+        <div className="note note-6">&#9834;</div>
+      </div>
+
       <div className="container">
         <div className="about-agency-grid">
           <div className="about-agency-content">
@@ -49,14 +59,63 @@ export default function AboutUS() {
       </div>
       <style jsx>{`
         .about-agency-section {
-          background:
-          
-            url("/images/nosotros/fondo.svg") center top / cover no-repeat;
+          background: #0d0f10; /* Color base oscuro */
           color: #f7f7f4;
           font-family: "Kumbh Sans", sans-serif;
           overflow: hidden;
           padding: clamp(72px, 8vw, 118px) 0;
           position: relative;
+        }
+
+        /* Ocultar el fondo svg original que tenías si quieres dejarlo libre para las notas */
+        /* background: url("/images/nosotros/fondo.svg") center top / cover no-repeat; */
+
+        /* Animaciones para las notas musicales */
+        .animated-notes {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        .note {
+          position: absolute;
+          font-size: 3rem;
+          opacity: 0.15;
+          animation: float 15s linear infinite;
+        }
+
+        /* Configuraciones individuales de posición, tamaño, color y velocidad */
+        .note-1 { left: 10%; bottom: -5%; color: #4affd8; font-size: 4rem; animation-duration: 18s; animation-delay: 0s; }
+        .note-2 { left: 80%; bottom: -10%; color: #ffd700; font-size: 5rem; animation-duration: 22s; animation-delay: 2s; }
+        .note-3 { left: 50%; bottom: -5%; color: #a155b9; font-size: 3.5rem; animation-duration: 20s; animation-delay: 5s; }
+        .note-4 { left: 25%; bottom: -15%; color: #ff5588; font-size: 4.5rem; animation-duration: 25s; animation-delay: 1s; }
+        .note-5 { left: 90%; bottom: -20%; color: #4affd8; font-size: 3rem; animation-duration: 19s; animation-delay: 8s; }
+        .note-6 { left: 65%; bottom: -10%; color: #ffd700; font-size: 5.5rem; animation-duration: 26s; animation-delay: 4s; }
+
+        @keyframes float {
+          0% {
+            transform: translateY(0) rotate(0deg) scale(0.8);
+            opacity: 0;
+          }
+          10% {
+            opacity: 0.25;
+          }
+          50% {
+            transform: translateY(-50vh) rotate(180deg) scale(1.2);
+            opacity: 0.3;
+          }
+          90% {
+            opacity: 0.15;
+          }
+          100% {
+            transform: translateY(-120vh) rotate(360deg) scale(0.8);
+            opacity: 0;
+          }
         }
 
         
