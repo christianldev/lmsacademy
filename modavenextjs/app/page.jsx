@@ -61,7 +61,7 @@ export default function HomeFashionElegantAbodePage() {
         <Categories />
         <Testimonials  />
         <ContactForm />
-        <Features parentClass="flat-spacing-5" />
+        <Features />
       </main>
       <Footer1 dark />
     </>
