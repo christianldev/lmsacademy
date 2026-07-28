@@ -19,10 +19,7 @@ export default function Categories() {
 
              No importa si es tu primera vez cantando o si ya tienes experiencia. Nuestro programa está diseñado para que avances paso a paso, disfrutando cada logro en el camino.
            </p>
-            <Link href={`/shop-collection`} className="cls-btn">
-                  Inscribete Aqui
-                  <i className="icon icon-arrowUpRight" />
-            </Link>
+       
             <p className="btn-line py_8">
               NUESTROS NIVELES
             </p>

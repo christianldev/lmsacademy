@@ -152,7 +152,7 @@ export default function AboutUS() {
         }
 
         .about-agency-stat span {
-          color: #aeb5be;
+          color: #ffffff;
           display: block;
           font-size: 17px;
           line-height: 1.45;

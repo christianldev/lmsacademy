@@ -14,6 +14,7 @@ import Features from "@/components/common/Features";
 import Brands from "@/components/common/Brands";
 import Footer1 from "@/components/footers/Footer1";
 import MarqueeSection2 from "@/components/common/MarqueeSection2";
+import ContactForm from "@/components/common/ContactForm";
 
 export const metadata = {
   title:
@@ -35,7 +36,7 @@ export default function HomeFashionElegantAbodePage() {
       
        
         <Testimonials parentClass="flat-spacing pt-0" />
-        
+        <ContactForm  />
         <Features parentClass="flat-spacing-5" />
      
       </main>
