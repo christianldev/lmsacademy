@@ -11,7 +11,7 @@ export default function Categories() {
         <div className="container">
           <div className="categories-voz-heading wow fadeInUp text-center">
             <h3 className="heading">
-            NUESTRA RUTA VOCAL<br />
+            Nuestra Ruta Vocal<br />
               <span ></span>
             </h3>
             <p>

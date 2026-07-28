@@ -23,8 +23,8 @@ export default function Features({ parentClass = "" }) {
                 New <strong>Courses & Study</strong>?
               </h2>
               <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
-                <input type="email" placeholder="Type Your E-Mail" required />
-                <button type="submit" className="subscribe-btn">Subscribe Now</button>
+                <input type="email" placeholder="Escribe tu correo electrónico" required />
+                <button type="submit" className="subscribe-btn">Inscribirse ahora</button>
               </form>
             </div>
           </div>
