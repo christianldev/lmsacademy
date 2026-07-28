@@ -10,8 +10,12 @@ import Testimonials from "@/components/otherPages/Testimonials";
 import React from "react";
 
 export const metadata = {
-  title: "About Us || Modave - Multipurpose React Nextjs eCommerce Template",
-  description: "Modave - Multipurpose React Nextjs eCommerce Template",
+  title: "Sobre nosotros | Katty Elisa",
+  description:
+    "Conoce la historia de Katty Elisa, su metodología y el equipo que acompaña a cada estudiante en su formación vocal.",
+  alternates: {
+    canonical: "https://lmsacademy.com/about-us",
+  },
 };
 
 export default function AboutUsPage() {

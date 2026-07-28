@@ -22,12 +22,12 @@ export async function POST(req) {
     const mailOptions = {
       from: process.env.EMAIL_USER,
       to: process.env.EMAIL_USER, // A donde quieres que lleguen los mensajes
-      subject: `🎵 LMS Academy: Nuevo mensaje de aspirante - ${name}`,
+      subject: `🎵 Katty Elisa: Nuevo mensaje de aspirante - ${name}`,
       text: `Nombre: ${name}\nCorreo: ${email}\nAsunto: ${subject}\n\nMensaje:\n${message}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;">
           <div style="text-align: center; margin-bottom: 20px;">
-            <h2 style="color: #101112; margin: 0;">LMS Academy</h2>
+            <h2 style="color: #101112; margin: 0;">Katty Elisa</h2>
             <p style="color: #666; margin: 5px 0 0 0; font-size: 14px;">Notificación de Nuevo Aspirante</p>
           </div>
           
@@ -44,7 +44,7 @@ export async function POST(req) {
           </div>
           
           <div style="margin-top: 30px; text-align: center; font-size: 12px; color: #999; border-top: 1px solid #eee; padding-top: 20px;">
-            <p>Este correo fue generado automáticamente desde la web de LMS Academy.</p>
+            <p>Este correo fue generado automáticamente desde la web de Katty Elisa.</p>
           </div>
         </div>
       `,

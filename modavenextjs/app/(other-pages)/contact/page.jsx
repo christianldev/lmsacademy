@@ -5,8 +5,12 @@ import Contact2 from "@/components/otherPages/Contact2";
 import React from "react";
 
 export const metadata = {
-  title: "Contact || Modave - Multipurpose React Nextjs eCommerce Template",
-  description: "Modave - Multipurpose React Nextjs eCommerce Template",
+  title: "Contacto | Katty Elisa",
+  description:
+    "Ponte en contacto con Katty Elisa para recibir información sobre clases de canto, técnica vocal y formación artística.",
+  alternates: {
+    canonical: "https://lmsacademy.com/contact",
+  },
 };
 
 export default function ContactPage() {

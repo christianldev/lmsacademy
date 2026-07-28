@@ -7,35 +7,35 @@ import ClientLayout from "./ClientLayout";
 export const metadata = {
   metadataBase: new URL("https://lmsacademy.com"),
   title: {
-    default: "LMS Academy | Escuela de canto y voz",
-    template: "%s | LMS Academy",
+    default: "Katty Elisa | Escuela de canto y voz",
+    template: "%s | Katty Elisa",
   },
   description:
-    "Descubre cursos de canto, técnica vocal, desarrollo artístico y formación musical con LMS Academy. Aprende con clases personalizadas y resultados reales.",
+    "Descubre cursos de canto, técnica vocal, desarrollo artístico y formación musical con Katty Elisa. Aprende con clases personalizadas y resultados reales.",
   keywords: [
     "escuela de canto",
     "cursos de canto",
     "clases de voz",
     "técnica vocal",
     "entrenamiento vocal",
-    "LMS Academy",
+    "Katty Elisa",
     "formación musical",
   ],
   alternates: {
     canonical: "https://lmsacademy.com",
   },
   openGraph: {
-    title: "LMS Academy | Escuela de canto y voz",
+    title: "Katty Elisa | Escuela de canto y voz",
     description:
-      "Mejora tu técnica vocal, tu presencia escénica y tu confianza con los cursos de LMS Academy.",
+      "Mejora tu técnica vocal, tu presencia escénica y tu confianza con los cursos de Katty Elisa.",
     url: "https://lmsacademy.com",
-    siteName: "LMS Academy",
+    siteName: "Katty Elisa",
     locale: "es_EC",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "LMS Academy | Escuela de canto y voz",
+    title: "Katty Elisa | Escuela de canto y voz",
     description:
       "Cursos de canto y desarrollo vocal para principiantes y artistas avanzados.",
   },
