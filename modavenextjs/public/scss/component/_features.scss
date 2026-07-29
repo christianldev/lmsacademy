@@ -140,14 +140,16 @@
 }
 
 .baqueta-features-start-badge {
+    background: #d4f3f1;
+    color: #4dbfb6;
     display: inline-block;
-    background-color: #6366f1;
-    color: #ffffff;
-    padding: 8px 24px;
-    border-radius: 999px;
     font-size: 14px;
     font-weight: 500;
-    margin-bottom: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
 
 .baqueta-features-header h2 {
@@ -185,7 +187,7 @@
 .feature-svg-icon svg {
     width: 64px;
     height: 64px;
-    stroke: #a78bfa;
+    stroke: #30eef5;
     /* Color morado claro de los iconos */
     stroke-width: 1.5;
 }

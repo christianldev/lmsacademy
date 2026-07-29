@@ -64,13 +64,9 @@ export default function ContactForm({
           <div className="contact-info-group">
             <h3>Email</h3>
             <p>
-              <a href="mailto:info@lmsacademy.com">info@lmsacademy.com</a>
+              <a href="mailto:admisionesescuelakattyelisa@outlook.es">admisionesescuelakattyelisa@outlook.es</a>
             </p>
-            <p>
-              <a href="mailto:admisiones@lmsacademy.com">
-                admisiones@lmsacademy.com
-              </a>
-            </p>
+           
           </div>
 
           <div className="contact-info-group contact-follow-group">
