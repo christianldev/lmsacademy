@@ -1,5 +1,5 @@
 .about-agency-section {
-    background: #0d0f10;
+    background: #fdfdfd;
     /* Color base oscuro */
     color: #f7f7f4;
     font-family: "Kumbh Sans", sans-serif;
@@ -23,7 +23,7 @@
 .note {
     position: absolute;
     font-size: 3rem;
-    opacity: 0.15;
+    opacity: 0.90;
     animation: float 15s linear infinite;
 }
 
@@ -134,7 +134,7 @@
 }
 
 .about-agency-content h2 {
-    color: #ffffff;
+    color: #000000;
     font-size: clamp(42px, 5vw, 40px);
     font-weight: 800;
     letter-spacing: 0;
@@ -144,7 +144,7 @@
 }
 
 .about-agency-content p {
-    color: #ffffff;
+    color: #4e4e4e;
     font-size: 18px;
     line-height: 1.75;
     margin-bottom: 24px;
@@ -190,7 +190,7 @@
 }
 
 .about-agency-stat strong {
-    color: #efffe9;
+    color: #4affd8;
     display: block;
     font-size: clamp(40px, 4vw, 56px);
     font-weight: 800;
@@ -199,7 +199,7 @@
 }
 
 .about-agency-stat span {
-    color: #ffffff;
+    color: #0b0b0b;
     display: block;
     font-size: 17px;
     line-height: 1.45;
