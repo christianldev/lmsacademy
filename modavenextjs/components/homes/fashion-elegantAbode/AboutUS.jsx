@@ -19,7 +19,7 @@ export default function AboutUS() {
         <div className="about-agency-grid">
           <div className="about-agency-content">
             <span className="about-agency-eyebrow">Sobre Nosotros</span>
-           <h2>Descubre tu voz con <span style={{color: '#4affd8'}}>Katty Elisa</span></h2>
+           <h2>Descubre tu voz con <span style={{color: '#04f5e2'}}>Katty Elisa</span></h2>
             <p>
              En 2016, la cantante Katty Elisa fundó este espacio con un propósito claro: acompañar a cada estudiante a descubrir, formar y potenciar su talento vocal único. Lo que comenzó como un sueño musical se ha convertido en una comunidad vibrante con más de una década de experiencia formando a voces de todas las edades.
             </p>
