@@ -102,7 +102,7 @@ export const slideshowData = [
 export const slidesData = [
   {
     id: 1,
-    imageSrc: "/images/banner/banner1.webp",
+    imageSrc: "/images/slider/carrusel1.webp",
     heading:
       'La música<br/> no tiene edad.<br/> <span style="color: #30eef5">Tu voz</span> tampoco.',
     description:
