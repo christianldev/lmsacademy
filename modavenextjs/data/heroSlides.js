@@ -111,7 +111,7 @@ export const slidesData = [
   },
   {
     id: 2,
-    imageSrc: "/images/banner/banner3.webp",
+    imageSrc: "/images/slider/carrusel2.webp",
     heading:
       'Descubre<br/> el poder<br/> de <span style="color: #30eef5">tu voz</span>',
     description:
