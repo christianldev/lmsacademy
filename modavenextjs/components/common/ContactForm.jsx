@@ -58,7 +58,7 @@ export default function ContactForm({
           <div className="contact-info-group">
             <h3>Dirección</h3>
             <p>Guayaquil, Ecuador</p>
-            <p>Modalidad online y presencial con agenda previa.</p>
+            <p>Modalidad  presencial </p>
           </div>
 
           <div className="contact-info-group">
@@ -73,23 +73,13 @@ export default function ContactForm({
             <h3>Síguenos</h3>
             <ul className="contact-social-list" aria-label="Redes sociales">
               <li>
-                <a href="#" aria-label="Facebook">
-                  <i className="icon icon-fb" />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="Instagram">
+                <a href="https://www.instagram.com/escuelakattyelisa/" aria-label="Instagram">
                   <i className="icon icon-instagram" />
                 </a>
               </li>
               <li>
-                <a href="#" aria-label="TikTok">
+                <a href="https://www.tiktok.com/@artistaskattyelisa" aria-label="TikTok">
                   <i className="icon icon-tiktok" />
-                </a>
-              </li>
-              <li>
-                <a href="#" aria-label="X">
-                  <i className="icon icon-x" />
                 </a>
               </li>
             </ul>
@@ -99,10 +89,7 @@ export default function ContactForm({
         <div className="contact-form-panel">
           <span className="contact-eyebrow">Contáctanos</span>
           <h2>Comienza hoy y transforma tu voz.</h2>
-          <p>
-            Cuéntanos qué quieres lograr y te guiaremos hacia el programa vocal
-            adecuado para tu nivel, estilo y objetivos.
-          </p>
+         
 
           <form className="contact-form" id="contactform" ref={formRef} onSubmit={handleSubmit}>
             {success && (

@@ -19,8 +19,8 @@ export default function Features({ parentClass = "" }) {
             <div className="newsletter-content-col">
               <div className="decor-lines"></div>
               <h2>
-                Want To Stay <strong>Informed</strong> About<br />
-                New <strong>Courses & Study</strong>?
+                 ¿Quieres ser parte de nuestra escuela de canto? <br />
+                <strong>Conoce nuestros próximos cursos, horarios y fechas de inscripción.</strong>
               </h2>
               <form className="newsletter-form" onSubmit={(e) => e.preventDefault()}>
                 <input type="email" placeholder="Escribe tu correo electrónico" required />
@@ -35,9 +35,9 @@ export default function Features({ parentClass = "" }) {
       <section className="baqueta-features-section">
         <div className="container">
           <div className="baqueta-features-header">
-            <span className="baqueta-features-start-badge">How We Start Journey</span>
-            <h2>Start Your Learning Journey Today!</h2>
-            <p>Groove's intuitive shared inbox makesteam members together<br/>organize, prioritize and.In this episode.</p>
+            <span className="baqueta-features-start-badge">Nuestros Beneficios</span>
+            <h2>Tu voz, nuestro compromiso</h2>
+            <p>Una formación musical pensada para desarrollar tu talento, fortalecer tu confianza y disfrutar cada etapa del aprendizaje.</p>
           </div>
 
           <div className="baqueta-features-grid">
