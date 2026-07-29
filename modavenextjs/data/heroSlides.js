@@ -103,30 +103,38 @@ export const slidesData = [
   {
     id: 1,
     imageSrc: "/images/banner/banner1.webp",
-    heading: "La música no tiene edad. Tu voz tampoco. <br />",
-    description: "Más de 10 años formando artistas con técnica, pasión y confianza escénica.",
-    buttonText: "Comienza hoy",
+    heading:
+      'La música<br/> no tiene edad.<br/> <span style="color: #30eef5">Tu voz</span> tampoco.',
+    description:
+      "Más de 10 años formando artistas con técnica,<br/> pasión y confianza escénica.",
+    buttonText: "Comienza Hoy",
   },
   {
     id: 2,
     imageSrc: "/images/banner/banner3.webp",
-    heading: "Descubre el poder de tu voz<br />",
-    description: "Clases de canto para niños, jóvenes y adultos. Desarrolla tu técnica, confianza y presencia escénica.",
-    buttonText: "Comienza hoy",
+    heading:
+      'Descubre<br/> el poder<br/> de <span style="color: #30eef5">tu voz</span>',
+    description:
+      "Clases de canto para niños, jóvenes y adultos.<br/> Desarrolla tu técnica y presencia escénica.",
+    buttonText: "Comienza Hoy",
   },
   {
     id: 3,
     imageSrc: "/images/banner/banner6.webp",
-    heading: "Más que clases de canto, formamos artistas. <br />",
-    description: "Potencia tu técnica vocal, presencia escénica y expresión musical con docentes especializados.",
-    buttonText: "Comienza hoy",
+    heading:
+      'Más que<br/> clases de canto,<br/> <span style="color: #30eef5">formamos</span> artistas.',
+    description:
+      "Potencia tu técnica vocal, presencia escénica<br/> y expresión musical con profesionales.",
+    buttonText: "Comienza Hoy",
   },
   {
     id: 4,
     imageSrc: "/images/banner/banner7.webp",
-    heading: "Atrévete a cantar. Atrévete a brillar. <br />",
-    description: "No importa tu nivel de experiencia, aquí encontrarás el espacio para crecer.",
-    buttonText: "Comienza hoy",
+    heading:
+      'Atrévete<br/> a cantar.<br/> Atrévete a <span style="color: #30eef5">brillar</span>.',
+    description:
+      "No importa tu nivel de experiencia, aquí<br/> encontrarás el espacio para crecer.",
+    buttonText: "Comienza Hoy",
   },
 ];
 
