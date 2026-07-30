@@ -63,7 +63,8 @@ export default function Hero() {
                               fontSize: "clamp(26px, 5vw, 68px)", 
                               fontWeight: "800",
                               lineHeight: "1.1",
-                              marginBottom: "24px" // Separación titulo - descripción
+                              marginBottom: "24px", // Separación titulo - descripción
+                              paddingTop: "20px"
                             }}
                           />
                           <p 
