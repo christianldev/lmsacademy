@@ -18,80 +18,86 @@ import { usePathname } from "next/navigation";
 export default function MobileMenu() {
   const pathname = usePathname();
   return (
-    <div className="offcanvas offcanvas-start canvas-mb" id="mobileMenu">
+    <div
+      className="offcanvas offcanvas-start canvas-mb"
+      id="mobileMenu"
+      style={{ backgroundColor: "#000000", color: "#ffffff" }}
+    >
       <span
         className="icon-close icon-close-popup"
         data-bs-dismiss="offcanvas"
         aria-label="Close"
+        style={{ color: "#ffffff" }}
       />
+      
       <div className="mb-canvas-content">
         <div className="mb-body">
           <div className="mb-content-top">
+            <div className="mb-4 px-3">
+              <Link href="/" className="d-block">
+                <img
+                  src="/images/logo/logo.svg"
+                  alt="Logo"
+                  className="img-fluid"
+                  style={{ maxHeight: "80px" }}
+                />
+              </Link>
+            </div>
 
             <ul className="nav-ul-mb" id="wrapper-menu-navigation">
-              <li className="nav-mb-item active">
+              <li className="nav-mb-item my-4">
                 <a
-                  href="#dropdown-menu-one"
-                  className={`collapsed mb-menu-link ${[...demoItems].some(
-                    (elm) => elm.href.split("/")[1] == pathname.split("/")[1]
-                  )
-                      ? "active"
-                      : ""
-                    } `}
-                  data-bs-toggle="collapse"
-                  aria-expanded="true"
-                  aria-controls="dropdown-menu-one"
+                  href="/"
+                  style={{ color: "#ffffff" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
                 >
-                  <span></span>
-                  <span className="btn-open-sub" />
+                  Inicio
                 </a>
-                <div id="dropdown-menu-one" className="collapse">
-                  <ul className="sub-nav-menu">
-                    {demoItems.map((link, i) => (
-                      <li key={i}>
-                        <Link
-                          href={link.href}
-                          className={`sub-nav-link ${pathname.split("/")[1] == link.href.split("/")[1]
-                              ? "active"
-                              : ""
-                            } `}
-                        >
-                          {link.name}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
               </li>
-              <li className="nav-mb-item">
-                <a href="/">Inicio</a>
+              <li className="nav-mb-item my-4">
+                <a
+                  href="#nosotros"
+                  style={{ color: "#ffffff" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                >
+                  Nosotros
+                </a>
               </li>
-              <li className="nav-mb-item">
-
-                <a href="#nosotros">Nosotros</a>
-
+              <li className="nav-mb-item my-4">
+                <a
+                  href="#niveles"
+                  style={{ color: "#ffffff" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                >
+                  Niveles
+                </a>
               </li>
-               <li className="nav-mb-item">
-
-                <a href="#niveles">Niveles</a>
-
+              <li className="nav-mb-item my-4">
+                <a
+                  href="#testimonios"
+                  style={{ color: "#ffffff" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                >
+                  Testimonios
+                </a>
               </li>
-               <li className="nav-mb-item">
-                <a href="#testimonios">Testimonios</a>
+              <li className="nav-mb-item my-4">
+                <a
+                  href="#contacto"
+                  style={{ color: "#ffffff" }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                >
+                  Contacto
+                </a>
               </li>
-                <li className="nav-mb-item">
-                <a href="#contacto">Contacto</a>
-              </li>
-
-
-
-             
             </ul>
           </div>
           <div className="mb-other-content">
-
-
-
           </div>
         </div>
 
