@@ -40,11 +40,10 @@ export default function Categories() {
                   width={600}
                   height={800}
                 />
-              </div>
-              <div className="content">
-                <h6 className="text">{item.title}</h6>
-                <p className="category-desc">{item.descripcion}</p>
-                
+                <div className="content">
+                  <h6 className="text">{item.title}</h6>
+                  <p className="category-desc">{item.descripcion}</p>
+                </div>
               </div>
             </div>
           ))}
