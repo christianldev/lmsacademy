@@ -64,7 +64,7 @@ export default function Hero() {
                               fontWeight: "800",
                               lineHeight: "1.1",
                               marginBottom: "10px", // Separación titulo - descripción
-                              marginTop: "24px",
+                              marginTop: "50px",
                               paddingTop: "20px"
                             }}
                           />
@@ -76,7 +76,7 @@ export default function Hero() {
                               fontWeight: "400", 
                               lineHeight: "1.6",
                               maxWidth: "500px",
-                              marginBottom: "40px" // Separación descripción - botón
+                              marginBottom: "20px" // Separación descripción - botón
                             }}
                           />
                         </div>
@@ -102,8 +102,8 @@ export default function Hero() {
                         <div className="fade-item fade-item-4" style={{
                           display: "flex",
                           gap: "30px",
-                          marginTop: "60px",
-                          marginBottom: "60px",
+                          marginTop: "20px",
+                          marginBottom: "50px",
                           alignItems: "stretch"
                         }}>
                           {/* Item 1 */}
