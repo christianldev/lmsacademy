@@ -80,7 +80,7 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="#testimonials" className="item-link">
+        <a href="#testimonios" className="item-link">
          Testimonios
       
         </a>

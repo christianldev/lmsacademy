@@ -116,7 +116,7 @@ export default function ContactForm({
             <div className="contact-form-row">
             <label>
               <input type="tel" name="phone" autoComplete="tel" placeholder=" " />
-              <span>Teléfono (Opcional)</span>
+              <span>Teléfono</span>
             </label>
 
             <label>

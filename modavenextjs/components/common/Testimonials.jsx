@@ -51,7 +51,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
   );
 
   return (
-    <section id="testimonials" className={`section-testimonials-light-gradient ${parentClass} `}>
+    <section id="testimonios" className={`section-testimonials-light-gradient ${parentClass} `}>
       <div className="container">
         
         <div className="light-heading-wrapper">
