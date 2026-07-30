@@ -60,7 +60,7 @@ export default function Hero() {
                               __html: slide.heading,
                             }}
                             style={{ 
-                              fontSize: "clamp(36px, 5vw, 68px)", 
+                              fontSize: "clamp(26px, 5vw, 68px)", 
                               fontWeight: "800",
                               lineHeight: "1.1",
                               marginBottom: "24px" // Separación titulo - descripción

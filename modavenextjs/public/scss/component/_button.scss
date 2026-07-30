@@ -30,6 +30,19 @@
         color: #000 !important;
         background-position: 0% 50%;
     }
+
+    //responsive
+    @media (max-width: 768px) {
+        padding: 10px 20px;
+        font-size: 10px !important;
+    }
+
+    @media (max-width: 480px) {
+        padding: 8px 20px;
+        font-size: 8px !important;
+    }
+
+
 }
 
 @keyframes goldShimmer {
