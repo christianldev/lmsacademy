@@ -77,7 +77,7 @@ export default function MobileMenu() {
 
               </li>
                <li className="nav-mb-item">
-                <a href="#">Testimonios</a>
+                <a href="#testimonios">Testimonios</a>
               </li>
                 <li className="nav-mb-item">
                 <a href="#contacto">Contacto</a>
@@ -85,14 +85,7 @@ export default function MobileMenu() {
 
 
 
-              <li className="nav-mb-item">
-                <a
-                  href="https://themeforest.net/user/themesflat"
-                  className="mb-menu-link"
-                >
-                  Inscribirme
-                </a>
-              </li>
+             
             </ul>
           </div>
           <div className="mb-other-content">
