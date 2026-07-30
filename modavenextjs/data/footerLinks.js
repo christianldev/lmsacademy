@@ -11,11 +11,11 @@ export const footerLinks = [
   {
     heading: "Información",
     items: [
-      { label: "Sobre Nosotros", href: "/about-us", isLink: true },
-      { label: "Nuestra Historia", href: "#", isLink: false },
-      { label: "Guía de Niveles", href: "#", isLink: false },
-      { label: "Contáctanos", href: "/contact", isLink: true },
-      { label: "Mi Cuenta", href: "/my-account", isLink: true },
+      { label: "Inicio", href: "/", isLink: true },
+      { label: "Nosotros", href: "#", isLink: false },
+      { label: "Niveles", href: "#", isLink: false },
+      { label: "Contáctanos", href: "#contacto", isLink: true },
+     
     ],
   },
   

@@ -104,7 +104,7 @@ export const slidesData = [
     id: 1,
     imageSrc: "/images/slider/carrusel1.webp",
     heading:
-      'La música<br/> no tiene edad.<br/> <span style="color: #30eef5">Tu voz</span> tampoco.',
+      'La música<br/> no tiene edad.<br/> <span style="color: #30eef5">Tu voz</span> tampoco',
     description:
       "Más de 10 años formando artistas con técnica,<br/> pasión y confianza escénica.",
     buttonText: "Comienza Hoy",
@@ -115,7 +115,7 @@ export const slidesData = [
     heading:
       'Descubre<br/> el poder<br/> de <span style="color: #30eef5">tu voz</span>',
     description:
-      "Clases de canto para niños, jóvenes y adultos.<br/> Desarrolla tu técnica y presencia escénica.",
+      "Clases de canto para niños, jóvenes y adultos<br/> Desarrolla tu técnica y presencia escénica",
     buttonText: "Comienza Hoy",
   },
   {
@@ -124,7 +124,7 @@ export const slidesData = [
     heading:
       'Más que<br/> clases de canto,<br/> <span style="color: #30eef5">formamos</span> artistas.',
     description:
-      "Potencia tu técnica vocal, presencia escénica<br/> y expresión musical con profesionales.",
+      "Potencia tu técnica vocal, presencia escénica<br/> y expresión musical con profesionales",
     buttonText: "Comienza Hoy",
   },
   {
@@ -133,7 +133,7 @@ export const slidesData = [
     heading:
       'Atrévete<br/> a cantar.<br/> Atrévete a <span style="color: #30eef5">brillar</span>.',
     description:
-      "No importa tu nivel de experiencia, aquí<br/> encontrarás el espacio para crecer.",
+      "No importa tu nivel de experiencia, aquí<br/> encontrarás el espacio para crecer",
     buttonText: "Comienza Hoy",
   },
 ];

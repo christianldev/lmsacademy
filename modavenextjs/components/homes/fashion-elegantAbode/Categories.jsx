@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Categories() {
   return (
-    <section className="categories-voz-section flat-spacing">
+    <section className="categories-voz-section flat-spacing" id="niveles">
       <div className="categories-voz-wrap">
         <div className="container">
           <div className="categories-voz-heading wow fadeInUp text-center">

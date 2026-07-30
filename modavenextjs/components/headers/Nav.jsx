@@ -65,8 +65,8 @@ export default function Nav() {
             : ""
         } `}
       >
-        <a href="#" className="item-link">
-          Clases
+        <a href="#niveles" className="item-link">
+          Niveles
          
         </a>
        
@@ -101,11 +101,7 @@ export default function Nav() {
         </a>
         
       </li>
-      <li className="menu-item">
-        <a href="https://themeforest.net/user/themesflat" className="item-link">
-          Pago en línea
-        </a>
-      </li>
+     
 
 
 
