@@ -3,27 +3,22 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
-    const { name, email, subject, message } = await req.json();
+    const { name, email, phone, subject, message } = await req.json();
 
-    // Configura aquí tu servicio de correo
+    // Configuración de Gmail usando una contraseña de aplicación
     const transporter = nodemailer.createTransport({
-      host: "smtp-mail.outlook.com",
-      port: 587,
-      secure: false, // true for 465, false for other ports
+      service: "gmail",
       auth: {
-        user: process.env.EMAIL_USER, // Tu correo
-        pass: process.env.EMAIL_PASS, // Tu contraseña o contraseña de aplicación
-      },
-      tls: {
-        ciphers: "SSLv3",
+        user: process.env.GMAIL_EMAIL,
+        pass: process.env.GMAIL_APP_PASSWORD,
       },
     });
 
     const mailOptions = {
-      from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // A donde quieres que lleguen los mensajes
+      from: process.env.GMAIL_EMAIL,
+      to: "admisionesescuelakattyelisa@gmail.com", // A donde quieres que lleguen los mensajes
       subject: `🎵 Katty Elisa: Nuevo mensaje de aspirante - ${name}`,
-      text: `Nombre: ${name}\nCorreo: ${email}\nAsunto: ${subject}\n\nMensaje:\n${message}`,
+      text: `Nombre: ${name}\nCorreo: ${email}\nTeléfono: ${phone}\nAsunto: ${subject}\n\nMensaje:\n${message}`,
       html: `
         <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; border: 1px solid #e0e0e0; border-radius: 10px;">
           <div style="text-align: center; margin-bottom: 20px;">
@@ -35,6 +30,7 @@ export async function POST(req) {
             <h3 style="color: #333; margin-top: 0; border-bottom: 2px solid #30eef5; padding-bottom: 10px;">Detalles del Contacto</h3>
             <p style="margin-bottom: 8px;"><strong>🗣️ Nombre:</strong> ${name}</p>
             <p style="margin-bottom: 8px;"><strong>✉️ Email:</strong> <a href="mailto:${email}" style="color: #0066cc;">${email}</a></p>
+            <p style="margin-bottom: 8px;"><strong>📞 Teléfono:</strong> ${phone}</p>
             <p style="margin-bottom: 8px;"><strong>📌 Asunto:</strong> ${subject}</p>
           </div>
 

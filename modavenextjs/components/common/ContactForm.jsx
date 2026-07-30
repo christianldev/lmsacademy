@@ -19,6 +19,7 @@ export default function ContactForm({
     const data = {
       name: formData.get("name"),
       email: formData.get("email"),
+      phone: formData.get("phone"),
       subject: formData.get("subject"),
       message: formData.get("message"),
     };
@@ -64,7 +65,7 @@ export default function ContactForm({
           <div className="contact-info-group">
             <h3>Email</h3>
             <p>
-              <a href="mailto:admisionesescuelakattyelisa@outlook.es">admisionesescuelakattyelisa@outlook.es</a>
+              <a href="mailto:admisionesescuelakattyelisa@gmail.com">admisionesescuelakattyelisa@gmail.com</a>
             </p>
            
           </div>
@@ -112,11 +113,18 @@ export default function ContactForm({
                 <span>Email</span>
               </label>
             </div>
+            <div className="contact-form-row">
+            <label>
+              <input type="tel" name="phone" autoComplete="tel" placeholder=" " />
+              <span>Teléfono (Opcional)</span>
+            </label>
 
             <label>
               <input type="text" name="subject" required placeholder=" " />
               <span>Asunto</span>
             </label>
+            </div>
+            
 
             <label>
               <textarea name="message" rows={6} required placeholder=" " />
