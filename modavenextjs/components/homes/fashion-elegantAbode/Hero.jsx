@@ -51,11 +51,11 @@ export default function Hero() {
               <div className="box-content" style={{ zIndex: 3, width: "100%" }}>
                 <div className="container">
                   <div className="row">
-                    <div className="col-md-7 col-sm-10">
+                    <div className="col-md-7 col-sm-10"  >
                      
-                        <div className="box-title-slider">
+                        <div className="box-title-slider " >
                           <h1
-                            className="fade-item fade-item-1 heading title-display text-white"
+                            className="fade-item fade-item-1 heading title-display text-white" 
                             dangerouslySetInnerHTML={{
                               __html: slide.heading,
                             }}
@@ -63,7 +63,8 @@ export default function Hero() {
                               fontSize: "clamp(26px, 5vw, 68px)", 
                               fontWeight: "800",
                               lineHeight: "1.1",
-                              marginBottom: "24px", // Separación titulo - descripción
+                              marginBottom: "10px", // Separación titulo - descripción
+                              marginTop: "50px",
                               paddingTop: "20px"
                             }}
                           />
@@ -75,7 +76,7 @@ export default function Hero() {
                               fontWeight: "400", 
                               lineHeight: "1.6",
                               maxWidth: "500px",
-                              marginBottom: "40px" // Separación descripción - botón
+                              marginBottom: "20px" // Separación descripción - botón
                             }}
                           />
                         </div>
@@ -101,7 +102,8 @@ export default function Hero() {
                         <div className="fade-item fade-item-4" style={{
                           display: "flex",
                           gap: "30px",
-                          marginTop: "60px",
+                          marginTop: "20px",
+                          marginBottom: "50px",
                           alignItems: "stretch"
                         }}>
                           {/* Item 1 */}
