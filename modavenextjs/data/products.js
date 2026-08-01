@@ -2971,13 +2971,13 @@ export const lookbookProducts = [
 ];
 
 export const testimonialsWithProduct9 = [
- 
-  
-   
   {
     id: 218,
     imgSrc: "/images/testimonial/tes-2.jpg",
     alt: "img-testimonial",
+    author: "Sofía M.",
+    level: "Nivel Uno",
+    rating: 5,
     quote:
       "Los profesores explican muy bien y corrigen sin hacerte sentir incómodo. Se nota que realmente les importa que aprendas.",
   },
@@ -2985,13 +2985,19 @@ export const testimonialsWithProduct9 = [
     id: 219,
     imgSrc: "/images/testimonial/tes-2.jpg",
     alt: "img-testimonial",
+    author: "Daniel R.",
+    level: "Nivel Dos",
+    rating: 5,
     quote:
       "Las técnicas de respiración y afinación me ayudaron muchísimo. Ahora canto con mucha más seguridad.",
   },
-   {
+  {
     id: 220,
     imgSrc: "/images/testimonial/tes-2.jpg",
     alt: "img-testimonial",
+    author: "Paula G.",
+    level: "Representante",
+    rating: 5,
     quote:
       "Mi hija esperaba con emoción cada clase. Además de mejorar su voz, desarrolló disciplina, seguridad y amor por la música.",
   },
@@ -2999,6 +3005,9 @@ export const testimonialsWithProduct9 = [
     id: 221,
     imgSrc: "/images/testimonial/tes-2.jpg",
     alt: "img-testimonial",
+    author: "Mateo C.",
+    level: "Nivel Tres",
+    rating: 5,
     quote:
       "Lo que más me gustó fue el ambiente. Nunca me sentí juzgado y eso me ayudó a perder el miedo al micrófono.",
   },
