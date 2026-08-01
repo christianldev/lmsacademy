@@ -4,7 +4,7 @@
 export const collectionData = [
  {
   id: 1,
-  imageSrc: "/images/categories/categoria4.webp",
+  imageSrc: "/images/categories/foto-nivel3.webp",
   title: "NIVEL UNO",
   descripcion: `
   <span style="color: #4ecdc4; font-weight: 700;">NIVEL UNO</span>
@@ -16,7 +16,7 @@ export const collectionData = [
 },
  {
   id: 2,
-  imageSrc: "/images/categories/categoria1.webp",
+  imageSrc: "/images/categories/foto-nivel2.webp",
   title: "NIVEL DOS",
   descripcion: `
   <span style="color: #4ecdc4; font-weight: 700;">NIVEL DOS</span>
@@ -28,7 +28,7 @@ Duracion: 5 meses
 },
 {
   id: 3,
-  imageSrc: "/images/categories/categoria2.webp",
+  imageSrc: "/images/categories/foto-nivel4.webp",
   title: "NIVEL TRES",
   descripcion: `
   <span style="color: #4ecdc4; font-weight: 700;">NIVEL TRES</span>
@@ -39,7 +39,7 @@ Duracion: 5 meses
 },
 {
   id: 4,
-  imageSrc: "/images/categories/categoria3.webp",
+  imageSrc: "/images/categories/foto-nivel1.webp",
   title: "NIVEL CUATRO",
   descripcion: `
   <span style="color: #4ecdc4; font-weight: 700;">NIVEL CUATRO</span>
