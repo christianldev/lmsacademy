@@ -20,6 +20,8 @@ import {
 import { usePathname } from "next/navigation";
 export default function Nav() {
   const pathname = usePathname();
+  const whatsappUrl = `https://wa.me/593968886183?text=${encodeURIComponent("Hola, me gustaría inscribirme en la escuela de artistas.")}`;
+
   return (
     <>
       {" "}
@@ -106,8 +108,8 @@ export default function Nav() {
 
 
       <li className="btn-inscribirme">
-        <a href="#" >
-        Inscribirme 
+        <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+          Inscribirme
         </a>
       </li>
     </>

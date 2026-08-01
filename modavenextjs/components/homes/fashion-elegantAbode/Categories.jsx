@@ -4,12 +4,9 @@ import React, { useState } from "react";
 
 import Image from "next/image";
 
-// primera línea del texto sirve de bajada corta para el overlay de la imagen
+// Muestra la descripción completa en el overlay de la imagen, respetando saltos de línea
 function getCaption(item) {
-  return item.descripcion
-    .split("\n")
-    .map((line) => line.trim())
-    .find((line) => line && !line.startsWith("✓"));
+  return item.descripcion.replace(/\r\n?/g, "\n").replace(/\n/g, "<br />");
 }
 
 export default function Categories() {
@@ -49,7 +46,7 @@ export default function Categories() {
                   priority={index === 0}
                 />
                 <div className="categories-voz-caption">
-                  <p>{getCaption(item)}</p>
+                  <p dangerouslySetInnerHTML={{ __html: getCaption(item) }} />
                 </div>
               </div>
             ))}

@@ -7,6 +7,8 @@ import Link from "next/link";
 import { Pagination, Autoplay } from "swiper/modules";
 
 export default function Hero() {
+  const whatsappUrl = `https://wa.me/593968886183?text=${encodeURIComponent("Hola, me gustaría inscribirme en la escuela de artistas.")}`;
+
   return (
     <section className="tf-slideshow slider-style2 slider-effect-fade">
       <Swiper
@@ -82,8 +84,10 @@ export default function Hero() {
                         </div>
                         <div className="fade-item fade-item-3 box-btn-slider">
                           <Link
-                            href={`/shop-default-grid`}
+                            href={whatsappUrl}
                             className="btn-inscribirme"
+                            target="_blank"
+                            rel="noopener noreferrer"
                           >
                             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                               <path d="M9 18V5L21 3V16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
