@@ -1,52 +1,79 @@
 "use client";
 import { collectionData } from "@/data/collections";
-import React from "react";
+import React, { useState } from "react";
 
 import Image from "next/image";
 
+// primera línea del texto sirve de bajada corta para el overlay de la imagen
+function getCaption(item) {
+  return item.descripcion
+    .split("\n")
+    .map((line) => line.trim())
+    .find((line) => line && !line.startsWith("✓"));
+}
+
 export default function Categories() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
   return (
-    <section className="categories-voz-section flat-spacing" id="niveles">
-      <div className="categories-voz-wrap">
-        <div className="container">
-          <div className="categories-voz-heading wow fadeInUp text-center">
-            <h3 className="heading-routes">
-            Ruta de aprendizaje<br />
-              <span ></span>
-            </h3>
-            <p>
-            Todo gran artista comienza desde el mismo lugar. En escuela de Artistas con Katty Elisa, todos nuestros estudiantes inician en el Nivel 1, donde descubrirán las bases para desarrollar una voz segura, fuerte y llena de confianza. <br />
-
-             No importa si es tu primera vez cantando o si ya tienes experiencia. Nuestro programa está diseñado para que avances paso a paso, disfrutando cada logro en el camino.
-           </p>
-       
-            <p className="btn-line py_8">
-              NUESTROS NIVELES
-            </p>
-          </div>
+    <section className="categories-voz-section" id="niveles">
+      <div className="container">
+        <div className="categories-voz-heading wow fadeInUp">
+          <span className="categories-voz-eyebrow">Nuestros niveles</span>
+          <h3 className="heading-routes">
+            Explora Nuestra <span className="text-accent">Ruta Completa</span>
+            <br />
+            de aprendizaje
+          </h3>
+          <p>
+            Todo gran artista comienza desde el mismo lugar. En Escuela de
+            Artistas con Katty Elisa, todos nuestros estudiantes inician en el
+            Nivel 1, donde descubrirán las bases para desarrollar una voz
+            segura, fuerte y llena de confianza.
+          </p>
         </div>
-      </div>
 
-      <div className="container categories-voz-grid-wrap">
-        <div className="categories-voz-grid ">
-          {collectionData.map((item) => (
-            <div className="categories-voz-card wow fadeInUp" key={item.id} data-wow-delay={item.delay}>
-              <div className="img-style">
+        <div className="categories-voz-content wow fadeInUp">
+          <div className="categories-voz-image">
+            {collectionData.map((item, index) => (
+              <div
+                key={item.id}
+                className={`categories-voz-slide ${index === activeIndex ? "active" : ""}`}
+              >
                 <Image
-                  className="lazyload"
-                  data-src={item.imageSrc}
-                  alt={`banner-cls-${item.id}`}
+                  className="categories-voz-img"
                   src={item.imageSrc}
+                  alt={item.title}
                   width={600}
-                  height={800}
+                  height={700}
+                  priority={index === 0}
                 />
-                <div className="content">
-                  <h6 className="text">{item.title}</h6>
-                  <p className="category-desc">{item.descripcion}</p>
+                <div className="categories-voz-caption">
+                  <p>{getCaption(item)}</p>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+
+          <div className="categories-voz-list">
+            {collectionData.map((item, index) => (
+              <button
+                key={item.id}
+                type="button"
+                className={`categories-voz-item ${index === activeIndex ? "active" : ""}`}
+                onMouseEnter={() => setActiveIndex(index)}
+                onClick={() => setActiveIndex(index)}
+              >
+                <span className="item-number">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="item-title">{item.title}</span>
+                <span className="item-arrow">
+                  {index === activeIndex ? "↗" : "→"}
+                </span>
+              </button>
+            ))}
+          </div>
         </div>
       </div>
     </section>
