@@ -52,6 +52,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
         </div>
         <div
           className="list-star-default"
+          role="img"
           aria-label={`${testimonial.rating} de 5 estrellas`}
         >
           {renderStars(testimonial.rating)}

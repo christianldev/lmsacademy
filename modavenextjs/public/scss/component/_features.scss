@@ -54,6 +54,7 @@
     bottom: -5px;
     /* Pull the image down so it sits on the base */
     display: block;
+    height: auto;
 }
 
 /* Columna del Contenido */
@@ -141,7 +142,7 @@
 
 .baqueta-features-start-badge {
     background: #04f5e2;
-    color: #fcfcfc;
+    color: #07383d;
     display: inline-block;
     font-size: 14px;
     font-weight: 500;
@@ -200,14 +201,14 @@
 }
 
 .feature-title {
-    color: #ffffff;
+    color: #101112;
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
 .feature-description {
-    color: rgba(255, 255, 255, 0.5);
+    color: #5f6875;
     /* Letra un poco mas tenue */
     font-size: 13px;
     line-height: 1.6;
