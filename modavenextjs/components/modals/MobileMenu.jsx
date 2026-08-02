@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import CurrencySelect from "../common/CurrencySelect";
 import {
@@ -29,16 +30,18 @@ export default function MobileMenu() {
         aria-label="Close"
         style={{ color: "#ffffff" }}
       />
-      
+
       <div className="mb-canvas-content">
         <div className="mb-body">
           <div className="mb-content-top">
             <div className="mb-4 px-3">
               <Link href="/" className="d-block">
-                <img
+                <Image
                   src="/images/logo/logo.svg"
                   alt="Logo"
                   className="img-fluid"
+                  width={180}
+                  height={45}
                   style={{ maxHeight: "80px" }}
                 />
               </Link>
@@ -49,8 +52,12 @@ export default function MobileMenu() {
                 <a
                   href="/"
                   style={{ color: "#ffffff" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#f5c542")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#ffffff")
+                  }
                 >
                   Inicio
                 </a>
@@ -59,8 +66,12 @@ export default function MobileMenu() {
                 <a
                   href="#nosotros"
                   style={{ color: "#ffffff" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#f5c542")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#ffffff")
+                  }
                 >
                   Nosotros
                 </a>
@@ -69,8 +80,12 @@ export default function MobileMenu() {
                 <a
                   href="#niveles"
                   style={{ color: "#ffffff" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#f5c542")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#ffffff")
+                  }
                 >
                   Niveles
                 </a>
@@ -79,8 +94,12 @@ export default function MobileMenu() {
                 <a
                   href="#testimonios"
                   style={{ color: "#ffffff" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#f5c542")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#ffffff")
+                  }
                 >
                   Testimonios
                 </a>
@@ -89,18 +108,20 @@ export default function MobileMenu() {
                 <a
                   href="#contacto"
                   style={{ color: "#ffffff" }}
-                  onMouseEnter={(e) => (e.currentTarget.style.color = "#f5c542")}
-                  onMouseLeave={(e) => (e.currentTarget.style.color = "#ffffff")}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#f5c542")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#ffffff")
+                  }
                 >
                   Contacto
                 </a>
               </li>
             </ul>
           </div>
-          <div className="mb-other-content">
-          </div>
+          <div className="mb-other-content"></div>
         </div>
-
       </div>
     </div>
   );

@@ -3,8 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-
-import ScrollTop from "../common/ScrollTop";
 import { footerLinks, socialLinks } from "@/data/footerLinks";
 import axios from "axios";
 export default function Footer1({
@@ -31,7 +29,7 @@ export default function Footer1({
         "https://express-brevomail.vercel.app/api/contacts",
         {
           email,
-        }
+        },
       );
 
       if ([200, 201].includes(response.status)) {
@@ -87,7 +85,13 @@ export default function Footer1({
         <div className={`footer-wrap ${!border ? "border-0" : ""}`}>
           <div className="footer-body py-4">
             <div className="container">
-              <div className="row d-flex align-items-center justify-content-between" style={{ borderBottom: '1px solid #e5e7eb', paddingBottom: '24px' }}>
+              <div
+                className="row d-flex align-items-center justify-content-between"
+                style={{
+                  borderBottom: "1px solid #e5e7eb",
+                  paddingBottom: "24px",
+                }}
+              >
                 <div className="col-auto">
                   <div className="footer-logo">
                     <Link href={`/`}>
@@ -109,7 +113,10 @@ export default function Footer1({
                     {footerLinks.map((section, sectionIndex) => (
                       <React.Fragment key={sectionIndex}>
                         {section.items.map((item, itemIndex) => (
-                          <div className="text-caption-1 d-flex align-items-center" key={itemIndex}>
+                          <div
+                            className="text-caption-1 d-flex align-items-center"
+                            key={itemIndex}
+                          >
                             {item.isLink ? (
                               <Link
                                 href={item.href}
@@ -125,8 +132,14 @@ export default function Footer1({
                                 {item.label}
                               </a>
                             )}
-                            {(sectionIndex !== footerLinks.length - 1 || itemIndex !== section.items.length - 1) && (
-                              <span className="mx-2 text-secondary" style={{opacity: 0.5}}>/</span>
+                            {(sectionIndex !== footerLinks.length - 1 ||
+                              itemIndex !== section.items.length - 1) && (
+                              <span
+                                className="mx-2 text-secondary"
+                                style={{ opacity: 0.5 }}
+                              >
+                                /
+                              </span>
                             )}
                           </div>
                         ))}
@@ -134,19 +147,27 @@ export default function Footer1({
                     ))}
                   </div>
                 </div>
-                
-                <div className="col-auto">
-                    <ul className={`tf-social-icon d-flex gap-3 m-0 p-0 list-unstyled ${dark ? "style-white" : ""}`}>
-                      {socialLinks.map((link, index) => (
-                        <li key={index}>
-                          <a href={link.href} className={`text-secondary ${link.className}`}>
-                            <i className={`icon ${link.iconClass}`} style={{fontSize: '18px'}} />
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                </div>
 
+                <div className="col-auto">
+                  <ul
+                    className={`tf-social-icon d-flex gap-3 m-0 p-0 list-unstyled ${dark ? "style-white" : ""}`}
+                  >
+                    {socialLinks.map((link, index) => (
+                      <li key={index}>
+                        <a
+                          href={link.href}
+                          className={`text-secondary ${link.className}`}
+                          aria-label={link.className.replace("social-", "")}
+                        >
+                          <i
+                            className={`icon ${link.iconClass}`}
+                            style={{ fontSize: "18px" }}
+                          />
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -155,7 +176,8 @@ export default function Footer1({
               <div className="row">
                 <div className="col-12 d-flex justify-content-center">
                   <p className="text-caption-1 text-secondary m-0">
-                    © {new Date().getFullYear()} IC Web Studio. Todos los derechos reservados.
+                    © {new Date().getFullYear()} IC Web Studio. Todos los
+                    derechos reservados.
                   </p>
                 </div>
               </div>
@@ -163,8 +185,6 @@ export default function Footer1({
           </div>
         </div>
       </footer>
-      <ScrollTop hasPaddingBottom={hasPaddingBottom} />
-     
     </>
   );
 }

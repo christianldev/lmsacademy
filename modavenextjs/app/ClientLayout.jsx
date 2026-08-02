@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import ScrollTop from "@/components/common/ScrollTop";
+
 import Context from "@/context/Context";
 import CartModal from "@/components/modals/CartModal";
 import QuickView from "@/components/modals/QuickView";
@@ -132,7 +132,6 @@ export default function ClientLayout({ children }) {
         <Categories key="categories" />
         <AccountSidebar key="account-sidebar" />
       </Context>
-      <ScrollTop />
     </>
   );
 }

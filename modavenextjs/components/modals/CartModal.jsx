@@ -28,7 +28,10 @@ export default function CartModal() {
             <div className="wrap-recommendations">
               <div className="list-cart">
                 {products41.map((product, index) => (
-                  <div className="list-cart-item" key={`${product.id}-${index}`}>
+                  <div
+                    className="list-cart-item"
+                    key={`${product.id}-${index}`}
+                  >
                     <div className="image">
                       <Image
                         className="lazyload"
@@ -53,6 +56,7 @@ export default function CartModal() {
                           ${product.price.toFixed(2)}
                         </div>
                         <a
+                          href="#cart"
                           className="link text-button"
                           onClick={() => addProductToCart(product.id, 1, false)}
                         >

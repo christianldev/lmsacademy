@@ -17,6 +17,7 @@ export default function Header1({ fullWidth = false }) {
               className="mobile-menu"
               data-bs-toggle="offcanvas"
               aria-controls="mobileMenu"
+              aria-label="Abrir menú de navegación"
             >
               <i className="icon icon-categories" />
             </a>
@@ -29,7 +30,6 @@ export default function Header1({ fullWidth = false }) {
                 src="/images/logo/logo.svg"
                 width={100}
                 height={25}
-              
               />
             </Link>
           </div>
