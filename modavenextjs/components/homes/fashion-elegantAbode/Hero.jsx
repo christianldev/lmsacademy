@@ -138,27 +138,9 @@ export default function Hero() {
                       </div>
 
                       {/* ================= ICONOS INFERIORES ================= */}
-                      <div
-                        className="fade-item fade-item-4"
-                        style={{
-                          display: "flex",
-                          gap: "30px",
-                          marginTop: "20px",
-                          marginBottom: "50px",
-                          alignItems: "stretch",
-                        }}
-                      >
+                      <div className="fade-item fade-item-4 hero-bottom-icons">
                         {/* Item 1 */}
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                            textAlign: "center",
-                            borderRight: "1px solid #30eef5",
-                            paddingRight: "30px",
-                          }}
-                        >
+                        <div className="hero-bottom-icon-item">
                           <svg
                             width="36"
                             height="36"
@@ -168,20 +150,14 @@ export default function Hero() {
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            style={{ marginBottom: "12px" }}
+                            className="hero-bottom-icon"
                           >
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
                             <circle cx="9" cy="7" r="4"></circle>
                             <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
                             <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                           </svg>
-                          <span
-                            style={{
-                              color: "#fff",
-                              fontSize: "14px",
-                              lineHeight: "1.4",
-                            }}
-                          >
+                          <span>
                             Para todas
                             <br />
                             las edades
@@ -189,16 +165,7 @@ export default function Hero() {
                         </div>
 
                         {/* Item 2 */}
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                            textAlign: "center",
-                            borderRight: "1px solid #30eef5",
-                            paddingRight: "30px",
-                          }}
-                        >
+                        <div className="hero-bottom-icon-item">
                           <svg
                             width="36"
                             height="36"
@@ -208,20 +175,14 @@ export default function Hero() {
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            style={{ marginBottom: "12px" }}
+                            className="hero-bottom-icon"
                           >
                             <circle cx="12" cy="12" r="10"></circle>
                             <path d="M10.5 15V8.5l6-1V14"></path>
                             <circle cx="9" cy="15" r="1.5"></circle>
                             <circle cx="15" cy="14" r="1.5"></circle>
                           </svg>
-                          <span
-                            style={{
-                              color: "#fff",
-                              fontSize: "14px",
-                              lineHeight: "1.4",
-                            }}
-                          >
+                          <span>
                             Formación
                             <br />
                             integral
@@ -229,14 +190,7 @@ export default function Hero() {
                         </div>
 
                         {/* Item 3 */}
-                        <div
-                          style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                            textAlign: "center",
-                          }}
-                        >
+                        <div className="hero-bottom-icon-item">
                           <svg
                             width="36"
                             height="36"
@@ -246,17 +200,11 @@ export default function Hero() {
                             strokeWidth="1.5"
                             strokeLinecap="round"
                             strokeLinejoin="round"
-                            style={{ marginBottom: "12px" }}
+                            className="hero-bottom-icon"
                           >
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
                           </svg>
-                          <span
-                            style={{
-                              color: "#fff",
-                              fontSize: "14px",
-                              lineHeight: "1.4",
-                            }}
-                          >
+                          <span>
                             Confianza
                             <br />
                             escénica
