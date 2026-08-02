@@ -471,6 +471,7 @@
       letter-spacing: 0.02em;
     }
   }
+
   .nav-icon {
     .icon {
       font-size: 24px;
@@ -600,6 +601,7 @@
 
 .logo-header img {
   width: 144px;
+  height: auto;
 }
 
 .box-nav-ul {
@@ -1239,6 +1241,7 @@
 
     img {
       width: 130px;
+      height: auto;
     }
   }
 }
@@ -1270,6 +1273,7 @@
 
   .logo-header img {
     width: 130px;
+    height: auto;
   }
 
   .wrapper-header-left {
@@ -1483,7 +1487,7 @@ header {
     .box-nav-ul .item-link,
     .nav-icon .nav-icon-item {
       color: var(--main);
-      
+
     }
 
     .box-nav-ul .item-link::before {
@@ -1504,7 +1508,7 @@ header {
   .box-nav-ul {
     .item-link {
       color: var(--white);
-    
+
     }
   }
 
