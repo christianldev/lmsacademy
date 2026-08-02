@@ -32,13 +32,13 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    top: 1.5rem;
+    top: 2.5rem;
 }
 
 .decor-yellow-circle {
     position: absolute;
     bottom: 0;
-    width: 250px;
+    width: 270px;
     height: 125px;
     background-color: transparent;
     border: 40px solid #ffd700;
@@ -51,7 +51,7 @@
 .student-img {
     position: relative;
     z-index: 2;
-    max-width: 180px;
+    max-width: 190px;
     bottom: -5px;
     /* Pull the image down so it sits on the base */
     display: block;
