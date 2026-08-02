@@ -122,6 +122,28 @@
     border-color: rgba(255, 255, 255, 0.3);
 }
 
+.newsletter-form input[aria-invalid="true"] {
+    border-color: #b42318;
+}
+
+.newsletter-status {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 0 0;
+    min-height: 20px;
+    position: relative;
+    z-index: 2;
+
+    &.invalid,
+    &.error {
+        color: #8f1610;
+    }
+
+    &.success {
+        color: #07383d;
+    }
+}
+
 /* El estilo de .subscribe-btn se maneja en _button.scss para que todos sean iguales */
 
 

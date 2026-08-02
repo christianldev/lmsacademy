@@ -2,8 +2,46 @@
 
 import { baquetaFeatures } from "@/data/features";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Features({ parentClass = "" }) {
+  const [email, setEmail] = useState("");
+  const [status, setStatus] = useState("idle");
+
+  const handleSubscription = async (event) => {
+    event.preventDefault();
+
+    if (!/^\S+@\S+\.\S+$/.test(email.trim())) {
+      setStatus("invalid");
+      return;
+    }
+
+    setStatus("sending");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: "Persona interesada en inscripción",
+          email: email.trim(),
+          phone: "No proporcionado",
+          subject: "Solicitud de información e inscripción",
+          message:
+            "Deseo recibir información sobre los próximos cursos, horarios y fechas de inscripción.",
+        }),
+      });
+
+      if (!response.ok) throw new Error("No se pudo enviar la solicitud.");
+
+      setEmail("");
+      setStatus("success");
+    } catch (error) {
+      console.error(error);
+      setStatus("error");
+    }
+  };
+
   return (
     <div className={`baqueta-full-section ${parentClass}`}>
       {/* SECCIÓN SUPERIOR: BANNER NEWSLETTER */}
@@ -33,19 +71,39 @@ export default function Features({ parentClass = "" }) {
                   inscripción.
                 </strong>
               </h2>
-              <form
-                className="newsletter-form"
-                onSubmit={(e) => e.preventDefault()}
-              >
+              <form className="newsletter-form" onSubmit={handleSubscription}>
                 <input
                   type="email"
                   placeholder="Escribe tu correo electrónico"
+                  value={email}
+                  onChange={(event) => {
+                    setEmail(event.target.value);
+                    if (status !== "idle") setStatus("idle");
+                  }}
+                  aria-invalid={status === "invalid"}
+                  aria-describedby="newsletter-status"
                   required
                 />
-                <button type="submit" className="subscribe-btn">
-                  Inscribirse ahora
+                <button
+                  type="submit"
+                  className="subscribe-btn"
+                  disabled={status === "sending"}
+                >
+                  {status === "sending" ? "Enviando..." : "Inscribirse ahora"}
                 </button>
               </form>
+              <p
+                id="newsletter-status"
+                className={`newsletter-status ${status}`}
+                aria-live="polite"
+              >
+                {status === "invalid" &&
+                  "Ingresa un correo electrónico válido."}
+                {status === "success" &&
+                  "Recibimos tu solicitud. Te contactaremos pronto."}
+                {status === "error" &&
+                  "No pudimos enviar tu solicitud. Inténtalo nuevamente."}
+              </p>
             </div>
           </div>
         </div>
