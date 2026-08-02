@@ -22,12 +22,15 @@ export default function Categories() {
             <br />
             de aprendizaje
           </h3>
-          <p>
-            Todo gran artista comienza desde el mismo lugar. En Escuela de
-            Artistas con Katty Elisa, todos nuestros estudiantes inician en el
-            Nivel 1, donde descubrirán las bases para desarrollar una voz
-            segura, fuerte y llena de confianza.
-          </p>
+          <p>¿Qué aprenderás?</p>
+          <ul className="categories-voz-list-descriptions">
+            <li>Dominio escénico</li>
+            <li>Proyección vocal</li>
+            <li>Técnica de respiración</li>
+            <li>Interpretación de canciones</li>
+            <li>Seguridad y desenvolvimiento en el escenario</li>
+            <li>Formación en instrumento (piano o guitarra a tu elección)</li>
+          </ul>
         </div>
 
         <div className="categories-voz-content wow fadeInUp">
