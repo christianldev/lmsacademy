@@ -3,6 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import ScrollTop from "../common/ScrollTop";
 import { footerLinks, socialLinks } from "@/data/footerLinks";
 import axios from "axios";
 export default function Footer1({
@@ -157,7 +158,6 @@ export default function Footer1({
                         <a
                           href={link.href}
                           className={`text-secondary ${link.className}`}
-                          aria-label={link.className.replace("social-", "")}
                         >
                           <i
                             className={`icon ${link.iconClass}`}
@@ -185,6 +185,7 @@ export default function Footer1({
           </div>
         </div>
       </footer>
+      <ScrollTop hasPaddingBottom={hasPaddingBottom} />
     </>
   );
 }
