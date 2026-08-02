@@ -20,9 +20,10 @@ function validateField(name, value) {
         ? ""
         : "Ingresa un correo electrónico válido.";
     case "phone":
-      return !trimmedValue || /^[+\d][\d\s()-]{6,19}$/.test(trimmedValue)
-        ? ""
-        : "Ingresa un teléfono válido o déjalo vacío.";
+      return trimmedValue.length < 10 &&
+        !/^[+\d][\d\s()-]{6,19}$/.test(trimmedValue)
+        ? "Ingresa un teléfono válido o déjalo vacío."
+        : "";
     case "subject":
       return trimmedValue.length < 3
         ? "El asunto debe tener al menos 3 caracteres."

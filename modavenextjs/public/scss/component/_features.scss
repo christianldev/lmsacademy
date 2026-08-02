@@ -32,6 +32,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    top: 1.5rem;
 }
 
 .decor-yellow-circle {
@@ -117,7 +118,7 @@
 }
 
 .newsletter-form input:focus {
-    background-color: rgba(69, 65, 222, 1);
+    background-color: #03a093;
     border-color: rgba(255, 255, 255, 0.3);
 }
 
