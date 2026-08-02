@@ -4,17 +4,12 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import Context from "@/context/Context";
-import CartModal from "@/components/modals/CartModal";
 import QuickView from "@/components/modals/QuickView";
-import QuickAdd from "@/components/modals/QuickAdd";
-import Compare from "@/components/modals/Compare";
 import MobileMenu from "@/components/modals/MobileMenu";
 import SearchModal from "@/components/modals/SearchModal";
 import SizeGuide from "@/components/modals/SizeGuide";
-import Wishlist from "@/components/modals/Wishlist";
 import DemoModal from "@/components/modals/DemoModal";
 import Categories from "@/components/modals/Categories";
-import AccountSidebar from "@/components/modals/AccountSidebar";
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
@@ -120,17 +115,12 @@ export default function ClientLayout({ children }) {
         <div id="wrapper" key="wrapper">
           {children}
         </div>
-        <CartModal key="cart-modal" />
         <QuickView key="quick-view" />
-        <QuickAdd key="quick-add" />
-        <Compare key="compare" />
         <MobileMenu key="mobile-menu" />
         <SearchModal key="search-modal" />
         <SizeGuide key="size-guide" />
-        <Wishlist key="wishlist" />
         <DemoModal key="demo-modal" />
         <Categories key="categories" />
-        <AccountSidebar key="account-sidebar" />
       </Context>
     </>
   );
