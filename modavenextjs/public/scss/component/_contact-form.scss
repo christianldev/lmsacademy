@@ -211,6 +211,25 @@
         box-shadow: 0 0 0 3px rgba(142, 255, 63, 0.12);
     }
 
+    label.has-error {
+
+        input,
+        textarea {
+            border-color: #ff7272;
+        }
+
+        .field-error {
+            color: #ff9b9b;
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            left: 0;
+            line-height: 1.4;
+            padding-top: 6px;
+            position: static;
+        }
+    }
+
     button {
         align-items: center;
         background: #ffd700;
