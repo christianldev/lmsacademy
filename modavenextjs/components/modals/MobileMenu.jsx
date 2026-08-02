@@ -42,7 +42,7 @@ export default function MobileMenu() {
                   className="img-fluid"
                   width={180}
                   height={45}
-                  style={{ maxHeight: "80px" }}
+                  style={{ width: "auto", height: "auto", maxHeight: "80px" }}
                 />
               </Link>
             </div>
