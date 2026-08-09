@@ -47,7 +47,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/images/slider/carrusel1.webp",
+        url: "/images/slider/escuela-katty-elisa-clases.webp",
         width: 1200,
         height: 630,
         alt: "Katty Elisa - Escuela de canto en Guayaquil",
@@ -59,7 +59,7 @@ export const metadata = {
     title: "Katty Elisa | Escuela de canto en Guayaquil",
     description:
       "Cursos de canto y desarrollo vocal para principiantes y artistas avanzados.",
-    images: ["/images/slider/carrusel1.webp"],
+    images: ["/images/slider/escuela-katty-elisa-clases.webp"],
   },
   icons: {
     icon: "/favicon.ico",
