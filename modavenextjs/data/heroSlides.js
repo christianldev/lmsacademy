@@ -106,14 +106,13 @@ export const slidesData = [
     heading:
       "La mejor Escuela de Canto en <span style='color: #30eef5'> Guayaquil</span>",
     description:
-      "Formación musical y desarrollo artístico integral<br/> para cantantes.",
+      "Más de 10 años formando artistas con técnica<br/> pasión y confianza escénica.",
     buttonText: "Comienza Hoy",
   },
   {
     id: 2,
     imageSrc: "/images/slider/clases-de-canto-guayaquil.webp",
-    heading:
-      'Tu técnica vocal<br/> es tu firma <span style="color: #30eef5">estelar</span>',
+    heading: 'Descubre el poder de tu <span style="color: #30eef5">voz</span>',
     description:
       "Clases de canto para niños, jóvenes y adultos<br/> Desarrolla tu técnica y presencia escénica",
     buttonText: "Comienza Hoy",
