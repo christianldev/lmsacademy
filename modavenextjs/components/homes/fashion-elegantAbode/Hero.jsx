@@ -63,20 +63,37 @@ export default function Hero() {
                   <div className="row">
                     <div className="col-md-7 col-sm-10">
                       <div className="box-title-slider ">
-                        <h1
-                          className="fade-item fade-item-1 heading title-display text-white"
-                          dangerouslySetInnerHTML={{
-                            __html: slide.heading,
-                          }}
-                          style={{
-                            fontSize: "clamp(26px, 5vw, 68px)",
-                            fontWeight: "800",
-                            lineHeight: "1.1",
-                            marginBottom: "10px", // Separación titulo - descripción
-                            marginTop: "50px",
-                            paddingTop: "20px",
-                          }}
-                        />
+                        {slide.id === slidesData[0].id ? (
+                          <h1
+                            className="fade-item fade-item-1 heading title-display text-white"
+                            dangerouslySetInnerHTML={{
+                              __html: slide.heading,
+                            }}
+                            style={{
+                              fontSize: "clamp(26px, 5vw, 68px)",
+                              fontWeight: "800",
+                              lineHeight: "1.1",
+                              marginBottom: "10px", // Separación titulo - descripción
+                              marginTop: "50px",
+                              paddingTop: "20px",
+                            }}
+                          />
+                        ) : (
+                          <h2
+                            className="fade-item fade-item-1 heading title-display text-white"
+                            dangerouslySetInnerHTML={{
+                              __html: slide.heading,
+                            }}
+                            style={{
+                              fontSize: "clamp(26px, 5vw, 68px)",
+                              fontWeight: "800",
+                              lineHeight: "1.1",
+                              marginBottom: "10px", // Separación titulo - descripción
+                              marginTop: "50px",
+                              paddingTop: "20px",
+                            }}
+                          />
+                        )}
                         <p
                           className="fade-item fade-item-2 body-text-1 text-white"
                           dangerouslySetInnerHTML={{

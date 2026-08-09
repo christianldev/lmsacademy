@@ -103,17 +103,16 @@ export const slidesData = [
   {
     id: 1,
     imageSrc: "/images/slider/escuela-katty-elisa-clases.webp",
-    heading:
-      'La música<br/> no tiene edad.<br/> <span style="color: #30eef5">Tu voz</span> tampoco',
+    heading: "Escuela de Canto en Guayaquil<br/> Katty Elisa",
     description:
-      "Más de 10 años formando artistas con técnica,<br/> pasión y confianza escénica.",
+      "Formación musical y desarrollo artístico integral<br/> para cantantes.",
     buttonText: "Comienza Hoy",
   },
   {
     id: 2,
     imageSrc: "/images/slider/clases-de-canto-guayaquil.webp",
     heading:
-      'Descubre<br/> el poder<br/> de <span style="color: #30eef5">tu voz</span>',
+      'Tu técnica vocal<br/> es tu firma <span style="color: #30eef5">estelar</span>',
     description:
       "Clases de canto para niños, jóvenes y adultos<br/> Desarrolla tu técnica y presencia escénica",
     buttonText: "Comienza Hoy",
@@ -124,7 +123,7 @@ export const slidesData = [
     heading:
       'Más que<br/> clases de canto,<br/> <span style="color: #30eef5">formamos</span> artistas.',
     description:
-      "Potencia tu técnica vocal, presencia escénica<br/> y expresión musical con profesionales",
+      "Potencia tu entrenamiento vocal y expresión musical con profesionales",
     buttonText: "Comienza Hoy",
   },
   {
@@ -133,7 +132,7 @@ export const slidesData = [
     heading:
       'Atrévete<br/> a cantar.<br/> Atrévete a <span style="color: #30eef5">brillar</span>.',
     description:
-      "No importa tu nivel de experiencia, aquí<br/> encontrarás el espacio para crecer",
+      "No importa tu nivel, en la escuela Katty Elisa encontrarás tu espacio",
     buttonText: "Comienza Hoy",
   },
 ];
