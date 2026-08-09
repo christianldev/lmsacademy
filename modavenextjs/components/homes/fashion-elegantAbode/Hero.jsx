@@ -30,7 +30,7 @@ export default function Hero() {
         }}
         dir="ltr"
       >
-        {slidesData.map((slide) => (
+        {slidesData.map((slide, index) => (
           <SwiperSlide key={slide.id}>
             <div className="wrap-slider">
               {/* IMAGEN DE NEXT.JS USANDO FILL */}
@@ -39,8 +39,9 @@ export default function Hero() {
                 src={slide.imageSrc}
                 fill
                 sizes="100vw"
-                priority={slide.id === slidesData[0].id}
-                fetchPriority={slide.id === slidesData[0].id ? "high" : "auto"}
+                priority={index === 0}
+                fetchPriority={index === 0 ? "high" : "auto"}
+                loading={index === 0 ? "eager" : "lazy"}
                 quality={70}
                 style={{ objectFit: "cover", objectPosition: "top center" }} // ← Cambiado a top center
               />

@@ -45,7 +45,7 @@ export default function Categories() {
                   alt={item.title}
                   width={600}
                   height={700}
-                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
                 />
                 <div className="categories-voz-caption">
                   <p dangerouslySetInnerHTML={{ __html: getCaption(item) }} />

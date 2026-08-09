@@ -6,9 +6,7 @@ import { useEffect, useState } from "react";
 import Context from "@/context/Context";
 import QuickView from "@/components/modals/QuickView";
 import MobileMenu from "@/components/modals/MobileMenu";
-import SearchModal from "@/components/modals/SearchModal";
-import SizeGuide from "@/components/modals/SizeGuide";
-import DemoModal from "@/components/modals/DemoModal";
+
 import Categories from "@/components/modals/Categories";
 
 export default function ClientLayout({ children }) {
@@ -117,9 +115,7 @@ export default function ClientLayout({ children }) {
         </div>
         <QuickView key="quick-view" />
         <MobileMenu key="mobile-menu" />
-        <SearchModal key="search-modal" />
-        <SizeGuide key="size-guide" />
-        <DemoModal key="demo-modal" />
+
         <Categories key="categories" />
       </Context>
     </>
