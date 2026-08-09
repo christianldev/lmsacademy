@@ -183,6 +183,7 @@ export default function HomeFashionElegantAbodePage() {
       <Header1 />
       <main className="katty-home-page">
         <Hero />
+
         <Products />
         <Categories />
         <Testimonials />

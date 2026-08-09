@@ -102,38 +102,37 @@ export const slideshowData = [
 export const slidesData = [
   {
     id: 1,
-    imageSrc: "/images/slider/carrusel1.webp",
+    imageSrc: "/images/slider/escuela-katty-elisa-clases.webp",
     heading:
-      'La música<br/> no tiene edad.<br/> <span style="color: #30eef5">Tu voz</span> tampoco',
+      "La mejor Escuela de Canto en <span style='color: #30eef5'> Guayaquil</span>",
     description:
-      "Más de 10 años formando artistas con técnica,<br/> pasión y confianza escénica.",
+      "Más de 10 años formando artistas con técnica<br/> pasión y confianza escénica.",
     buttonText: "Comienza Hoy",
   },
   {
     id: 2,
-    imageSrc: "/images/slider/carrusel2.webp",
-    heading:
-      'Descubre<br/> el poder<br/> de <span style="color: #30eef5">tu voz</span>',
+    imageSrc: "/images/slider/clases-de-canto-guayaquil.webp",
+    heading: 'Descubre el poder de tu <span style="color: #30eef5">voz</span>',
     description:
       "Clases de canto para niños, jóvenes y adultos<br/> Desarrolla tu técnica y presencia escénica",
     buttonText: "Comienza Hoy",
   },
   {
     id: 3,
-    imageSrc: "/images/banner/banner6.webp",
+    imageSrc: "/images/banner/escuela-de-canto-para-jovenes.webp",
     heading:
       'Más que<br/> clases de canto,<br/> <span style="color: #30eef5">formamos</span> artistas.',
     description:
-      "Potencia tu técnica vocal, presencia escénica<br/> y expresión musical con profesionales",
+      "Potencia tu entrenamiento vocal y expresión musical con profesionales",
     buttonText: "Comienza Hoy",
   },
   {
     id: 4,
-    imageSrc: "/images/banner/banner7.webp",
+    imageSrc: "/images/banner/escuela-de-artistas-katty-elisa.webp",
     heading:
       'Atrévete<br/> a cantar.<br/> Atrévete a <span style="color: #30eef5">brillar</span>.',
     description:
-      "No importa tu nivel de experiencia, aquí<br/> encontrarás el espacio para crecer",
+      "No importa tu nivel, en la escuela Katty Elisa encontrarás tu espacio",
     buttonText: "Comienza Hoy",
   },
 ];

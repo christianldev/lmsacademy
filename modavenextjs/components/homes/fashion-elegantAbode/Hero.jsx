@@ -4,7 +4,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
-import { Pagination, Autoplay } from "swiper/modules";
+
+
+import { Autoplay, EffectFade, Pagination } from "swiper/modules";
+
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/593968886183?text=${encodeURIComponent("Hola, me gustaría inscribirme en la escuela de artistas.")}`;
@@ -16,8 +19,18 @@ export default function Hero() {
         centeredSlides={false}
         spaceBetween={0}
         loop={true}
+
+
+
+        speed={1000}
+        effect="fade"
+        fadeEffect={{ crossFade: true }}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
-        modules={[Pagination, Autoplay]}
+        observer={true}
+        observeParents={true}
+        runCallbacksOnInit={true}
+        modules={[Pagination, Autoplay, EffectFade]}
+
         pagination={{
           clickable: true,
           el: ".spd33",
@@ -29,7 +42,7 @@ export default function Hero() {
             <div className="wrap-slider">
               {/* IMAGEN DE NEXT.JS USANDO FILL */}
               <Image
-                alt="fashion-slideshow"
+                alt={`Escuela de canto Katty Elisa Guayaquil - ${slide.heading?.replace(/<[^>]*>?/gm, "")}`}
                 src={slide.imageSrc}
                 fill
                 sizes="100vw"
@@ -57,20 +70,37 @@ export default function Hero() {
                   <div className="row">
                     <div className="col-md-7 col-sm-10">
                       <div className="box-title-slider ">
-                        <h1
-                          className="fade-item fade-item-1 heading title-display text-white"
-                          dangerouslySetInnerHTML={{
-                            __html: slide.heading,
-                          }}
-                          style={{
-                            fontSize: "clamp(26px, 5vw, 68px)",
-                            fontWeight: "800",
-                            lineHeight: "1.1",
-                            marginBottom: "10px", // Separación titulo - descripción
-                            marginTop: "50px",
-                            paddingTop: "20px",
-                          }}
-                        />
+                        {slide.id === slidesData[0].id ? (
+                          <h1
+                            className="fade-item fade-item-1 heading title-display text-white"
+                            dangerouslySetInnerHTML={{
+                              __html: slide.heading,
+                            }}
+                            style={{
+                              fontSize: "clamp(26px, 5vw, 68px)",
+                              fontWeight: "800",
+                              lineHeight: "1.1",
+                              marginBottom: "10px", // Separación titulo - descripción
+                              marginTop: "50px",
+                              paddingTop: "20px",
+                            }}
+                          />
+                        ) : (
+                          <h2
+                            className="fade-item fade-item-1 heading title-display text-white"
+                            dangerouslySetInnerHTML={{
+                              __html: slide.heading,
+                            }}
+                            style={{
+                              fontSize: "clamp(26px, 5vw, 68px)",
+                              fontWeight: "800",
+                              lineHeight: "1.1",
+                              marginBottom: "10px", // Separación titulo - descripción
+                              marginTop: "50px",
+                              paddingTop: "20px",
+                            }}
+                          />
+                        )}
                         <p
                           className="fade-item fade-item-2 body-text-1 text-white"
                           dangerouslySetInnerHTML={{

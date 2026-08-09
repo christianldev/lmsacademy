@@ -12917,7 +12917,7 @@ ul.breadcrumbs i {
 }
 .blog-detail-wrap > .image {
   height: 568px;
-  background-image: url(./../images/blog/blog-details-1.jpg);
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14505,7 +14505,7 @@ ul.list-text.type-number {
 }
 
 .section-pet-store {
-  background-image: url(./../images/section/bg-1.png);
+  
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
