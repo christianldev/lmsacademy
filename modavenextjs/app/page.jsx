@@ -39,7 +39,7 @@ export default function HomeFashionElegantAbodePage() {
       <StructuredData
         data={{
           "@context": "https://schema.org",
-          "@type": "MusicSchool",
+          "@type": "LocalBusiness",
           name: "Katty Elisa",
           url: "https://escuelakattyelisa.ec",
           logo: "https://escuelakattyelisa.ec/images/logo/logo.svg",
