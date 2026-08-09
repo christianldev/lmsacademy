@@ -127,16 +127,9 @@ export default function HomeFashionElegantAbodePage() {
                   description:
                     "Formación vocal para principiantes y estudiantes avanzados.",
                   provider: {
-                    "@type": "MusicSchool",
+                    "@type": "Organization",
                     name: "Katty Elisa",
                     url: "https://escuelakattyelisa.ec",
-                    address: {
-                      "@type": "PostalAddress",
-                      streetAddress: "Guayaquil",
-                      addressLocality: "Guayaquil",
-                      addressRegion: "Guayas",
-                      addressCountry: "EC",
-                    },
                   },
                 },
               },
@@ -148,16 +141,9 @@ export default function HomeFashionElegantAbodePage() {
                   description:
                     "Entrenamiento vocal profesional para mejorar el control, el timbre y la proyección de la voz.",
                   provider: {
-                    "@type": "MusicSchool",
+                    "@type": "Organization",
                     name: "Katty Elisa",
                     url: "https://escuelakattyelisa.ec",
-                    address: {
-                      "@type": "PostalAddress",
-                      streetAddress: "Guayaquil",
-                      addressLocality: "Guayaquil",
-                      addressRegion: "Guayas",
-                      addressCountry: "EC",
-                    },
                   },
                 },
               },
@@ -169,16 +155,9 @@ export default function HomeFashionElegantAbodePage() {
                   description:
                     "Desarrollo de la confianza, el lenguaje corporal y la expresión artística en el escenario.",
                   provider: {
-                    "@type": "MusicSchool",
+                    "@type": "Organization",
                     name: "Katty Elisa",
                     url: "https://escuelakattyelisa.ec",
-                    address: {
-                      "@type": "PostalAddress",
-                      streetAddress: "Guayaquil",
-                      addressLocality: "Guayaquil",
-                      addressRegion: "Guayas",
-                      addressCountry: "EC",
-                    },
                   },
                 },
               },
