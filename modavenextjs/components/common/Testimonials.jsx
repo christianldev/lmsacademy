@@ -71,11 +71,10 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
         <div className="light-heading-wrapper">
           <div className="heading-content">
             <span className="subtitle-badge">Testimonios Reales</span>
-            <h2>Formación Musical y Entrenamiento Vocal</h2>
+            <h2>Voces que cuentan su historia</h2>
             <p>
-              Nuestra escuela de artistas Katty Elisa te ayuda a descubrir cómo
-              nuestros estudiantes desarrollan técnica vocal, confianza y una
-              conexión genuina con la música en nuestros cursos de canto.
+              Descubre cómo nuestros estudiantes desarrollan técnica, confianza
+              y una conexión genuina con la música.
             </p>
           </div>
         </div>
