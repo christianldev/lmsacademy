@@ -50,6 +50,7 @@ export default function HomeFashionElegantAbodePage() {
             "Escuela de canto y formación vocal especializada en técnica vocal, desarrollo artístico y confianza escénica.",
           address: {
             "@type": "PostalAddress",
+            streetAddress: "Guayaquil",
             addressLocality: "Guayaquil",
             addressRegion: "Guayas",
             addressCountry: "EC",
@@ -131,8 +132,9 @@ export default function HomeFashionElegantAbodePage() {
                     url: "https://escuelakattyelisa.ec",
                     address: {
                       "@type": "PostalAddress",
+                      streetAddress: "Guayaquil",
                       addressLocality: "Guayaquil",
-                      addressRegion: "GuayasW",
+                      addressRegion: "Guayas",
                       addressCountry: "EC",
                     },
                   },
@@ -151,6 +153,7 @@ export default function HomeFashionElegantAbodePage() {
                     url: "https://escuelakattyelisa.ec",
                     address: {
                       "@type": "PostalAddress",
+                      streetAddress: "Guayaquil",
                       addressLocality: "Guayaquil",
                       addressRegion: "Guayas",
                       addressCountry: "EC",
@@ -171,6 +174,7 @@ export default function HomeFashionElegantAbodePage() {
                     url: "https://escuelakattyelisa.ec",
                     address: {
                       "@type": "PostalAddress",
+                      streetAddress: "Guayaquil",
                       addressLocality: "Guayaquil",
                       addressRegion: "Guayas",
                       addressCountry: "EC",

@@ -29,7 +29,6 @@ export default function Categories() {
             <li>Técnica de respiración</li>
             <li>Interpretación de canciones</li>
             <li>Seguridad y desenvolvimiento en el escenario</li>
-            <li>Formación en instrumento (piano o guitarra a tu elección)</li>
           </ul>
         </div>
 
