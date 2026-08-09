@@ -180,7 +180,7 @@ export default function Footer1({
               <div className="row">
                 <div className="col-12 d-flex justify-content-center">
                   <p className="text-caption-1 text-secondary m-0">
-                    © {new Date().getFullYear()} IC Web Studio. Todos los
+                    © {new Date().getFullYear()} Teracode. Todos los
                     derechos reservados.
                   </p>
                 </div>
