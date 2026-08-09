@@ -38,7 +38,7 @@ export default function AboutUS() {
             </p>
             <p>
               Contamos con un equipo docente de profesionales altamente
-              cualificados, enfocados en la técnica vocal, la salud de tu voz y
+              calificados, enfocados en la técnica vocal, la salud de tu voz y
               el desarrollo de tu confianza escénica.
             </p>
 
