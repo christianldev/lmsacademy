@@ -10,7 +10,7 @@ import ContactForm from "@/components/common/ContactForm";
 import StructuredData from "@/components/common/StructuredData";
 
 export const metadata = {
-  title: "Escuela de canto y formación vocal | Katty Elisa",
+  title: "Escuela de canto en Guayaquil | Katty Elisa",
   description:
     "Clases de canto, técnica vocal y desarrollo artístico en Katty Elisa. Aprende con docentes expertos, mejora tu voz y construye tu proyecto musical.",
   alternates: {
@@ -27,7 +27,7 @@ export const metadata = {
         url: "/images/slider/carrusel1.webp",
         width: 1200,
         height: 630,
-        alt: "Katty Elisa - Escuela de canto y formación vocal",
+        alt: "Katty Elisa - Escuela de canto en Guayaquil",
       },
     ],
   },
@@ -47,7 +47,7 @@ export default function HomeFashionElegantAbodePage() {
           telephone: "+593968886183",
           sameAs: ["https://www.instagram.com/escuelakattyelisa/"],
           description:
-            "Escuela de canto y formación vocal especializada en técnica vocal, desarrollo artístico y confianza escénica.",
+            "Escuela de canto en Guayaquil especializada en técnica vocal, desarrollo artístico y confianza escénica.",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Guayaquil",
@@ -171,7 +171,7 @@ export default function HomeFashionElegantAbodePage() {
           "@type": "WebSite",
           name: "Katty Elisa",
           url: "https://escuelakattyelisa.ec",
-          description: "Escuela de canto y formación vocal con Katty Elisa",
+          description: "Escuela de canto en Guayaquil con Katty Elisa",
           inLanguage: "es-EC",
           publisher: {
             "@type": "Organization",
