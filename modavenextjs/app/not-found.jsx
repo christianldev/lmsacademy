@@ -2,9 +2,10 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 export const metadata = {
-  title:
-    "Page Not Found || Modave - Multipurpose React Nextjs eCommerce Template",
-  description: "Modave - Multipurpose React Nextjs eCommerce Template",
+  title: "Página no encontrada",
+  description:
+    "La página que buscas no existe. Vuelve al inicio y explora los cursos de canto de Katty Elisa.",
+  robots: { index: false, follow: false },
 };
 
 export default function PageNotFoundPage() {

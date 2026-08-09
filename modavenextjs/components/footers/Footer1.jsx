@@ -158,10 +158,14 @@ export default function Footer1({
                         <a
                           href={link.href}
                           className={`text-secondary ${link.className}`}
+                          aria-label={link.ariaLabel}
+                          target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <i
                             className={`icon ${link.iconClass}`}
                             style={{ fontSize: "18px" }}
+                            aria-hidden="true"
                           />
                         </a>
                       </li>

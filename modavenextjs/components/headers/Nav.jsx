@@ -28,17 +28,15 @@ export default function Nav() {
       <li
         className={`menu-item ${
           [...demoItems].some(
-            (elm) => elm.href.split("/")[1] == pathname.split("/")[1]
+            (elm) => elm.href.split("/")[1] == pathname.split("/")[1],
           )
             ? "active"
             : ""
         } `}
       >
-        <a href="#" className="item-link">
+        <a href="/" className="item-link">
           Inicio
-       
         </a>
-       
       </li>
       <li
         className={`menu-item ${
@@ -54,14 +52,12 @@ export default function Nav() {
       >
         <a href="#nosotros" className="item-link">
           Nosotros
-        
         </a>
-       
       </li>
       <li
         className={`menu-item ${
           [...productLinks, ...swatchLinks, ...productFeatures].some(
-            (elm) => elm.href.split("/")[1] == pathname.split("/")[1]
+            (elm) => elm.href.split("/")[1] == pathname.split("/")[1],
           )
             ? "active"
             : ""
@@ -69,44 +65,34 @@ export default function Nav() {
       >
         <a href="#niveles" className="item-link">
           Niveles
-         
         </a>
-       
       </li>
       <li
         className={`menu-item position-relative ${
           [...blogLinks].some(
-            (elm) => elm.href.split("/")[1] == pathname.split("/")[1]
+            (elm) => elm.href.split("/")[1] == pathname.split("/")[1],
           )
             ? "active"
             : ""
         } `}
       >
         <a href="#testimonios" className="item-link">
-         Testimonios
-      
+          Testimonios
         </a>
-        
       </li>
       <li
         className={`menu-item position-relative ${
           [...otherPageLinks].some(
-            (elm) => elm.href.split("/")[1] == pathname.split("/")[1]
+            (elm) => elm.href.split("/")[1] == pathname.split("/")[1],
           )
             ? "active"
             : ""
         } `}
       >
         <a href="#contacto" className="item-link">
-         Contacto
-         
+          Contacto
         </a>
-        
       </li>
-     
-
-
-
       <li className="btn-inscribirme">
         <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
           Inscribirme

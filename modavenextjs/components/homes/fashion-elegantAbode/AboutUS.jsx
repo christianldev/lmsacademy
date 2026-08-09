@@ -19,19 +19,39 @@ export default function AboutUS() {
         <div className="about-agency-grid">
           <div className="about-agency-content">
             <span className="about-agency-eyebrow">Sobre Nosotros</span>
-           <h2>Descubre tu voz con <span style={{color: '#04f5e2'}}>Katty Elisa</span></h2>
+            <h2>
+              Descubre tu voz con{" "}
+              <span style={{ color: "#04f5e2" }}>Katty Elisa</span>
+            </h2>
             <p>
-             En 2016, la cantante Katty Elisa fundó este espacio con un propósito claro: acompañar a cada estudiante a descubrir, formar y potenciar su talento vocal único. Lo que comenzó como un sueño musical se ha convertido en una comunidad vibrante con más de una década de experiencia formando a voces de todas las edades.
+              En 2016, la cantante Katty Elisa fundó este espacio con un
+              propósito claro: acompañar a cada estudiante a descubrir, formar y
+              potenciar su talento vocal único. Lo que comenzó como un sueño
+              musical se ha convertido en una comunidad vibrante con más de una
+              década de experiencia formando a voces de todas las edades.
             </p>
-            <p>Fundada y dirigida por la reconocida cantante Katty Elisa, nuestra escuela respira música, técnica y escenario en cada clase.</p>
-             <p>Contamos con un equipo docente de profesionales altamente cualificados, enfocados en la técnica vocal, la salud de tu voz y el desarrollo de tu confianza escénica.</p>
-             
-            <p>10 Años Transformando Voces, nuestra trayectoria de más de una década respalda una metodología probada que combina disciplina, expresión artística y disfrute.</p>
-            
+            <p>
+              Fundada y dirigida por la reconocida cantante Katty Elisa, nuestra
+              escuela respira música, técnica y escenario en cada clase.
+              Ganadora de una gaviota en el Festival de Viña del Mar 2025 , uno
+              de los escenarios musicales más importantes de Latinoamérica.
+            </p>
+            <p>
+              Contamos con un equipo docente de profesionales altamente
+              cualificados, enfocados en la técnica vocal, la salud de tu voz y
+              el desarrollo de tu confianza escénica.
+            </p>
 
-            
+            <p>
+              10 Años Transformando Voces, nuestra trayectoria de más de una
+              década respalda una metodología probada que combina disciplina,
+              expresión artística y disfrute.
+            </p>
 
-            <div className="about-agency-stats" aria-label="Resultados de la escuela">
+            <div
+              className="about-agency-stats"
+              aria-label="Resultados de la escuela"
+            >
               <div className="about-agency-stat">
                 <strong>1000+</strong>
                 <span>Voces formadas con confianza</span>
@@ -53,7 +73,6 @@ export default function AboutUS() {
             >
               <source src="/videos/KATTYELISA-2.mp4" type="video/mp4" />
             </video>
-            
           </div>
         </div>
       </div>
