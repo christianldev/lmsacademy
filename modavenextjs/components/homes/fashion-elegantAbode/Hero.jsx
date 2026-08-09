@@ -35,7 +35,7 @@ export default function Hero() {
             <div className="wrap-slider">
               {/* IMAGEN DE NEXT.JS USANDO FILL */}
               <Image
-                alt="fashion-slideshow"
+                alt={`Escuela de canto Katty Elisa Guayaquil - ${slide.heading?.replace(/<[^>]*>?/gm, "")}`}
                 src={slide.imageSrc}
                 fill
                 sizes="100vw"

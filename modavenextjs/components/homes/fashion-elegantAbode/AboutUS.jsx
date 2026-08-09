@@ -20,7 +20,7 @@ export default function AboutUS() {
           <div className="about-agency-content">
             <span className="about-agency-eyebrow">Sobre Nosotros</span>
             <h2>
-              Descubre tu voz con{" "}
+              Descubre tu voz y aprende a cantar con{" "}
               <span style={{ color: "#04f5e2" }}>Katty Elisa</span>
             </h2>
             <p>
@@ -28,7 +28,8 @@ export default function AboutUS() {
               propósito claro: acompañar a cada estudiante a descubrir, formar y
               potenciar su talento vocal único. Lo que comenzó como un sueño
               musical se ha convertido en una comunidad vibrante con más de una
-              década de experiencia formando a voces de todas las edades.
+              década de experiencia ofreciendo escuela de canto para niños,
+              jóvenes y adultos.
             </p>
             <p>
               Fundada y dirigida por la reconocida cantante Katty Elisa, nuestra

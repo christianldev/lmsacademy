@@ -14,7 +14,9 @@ export const metadata = {
   description:
     "Descubre cursos de canto, técnica vocal, desarrollo artístico y formación musical con Katty Elisa. Aprende con clases personalizadas y resultados reales.",
   keywords: [
-    "escuela de canto",
+    "escuela Katty Elisa",
+    "escuela de Katty Elisa",
+    "escuela de artistas Katty Elisa",
     "escuela de canto en Guayaquil",
     "escuela de canto para niños",
     "escuela de canto para jóvenes",
