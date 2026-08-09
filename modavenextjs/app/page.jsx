@@ -174,7 +174,7 @@ export default function HomeFashionElegantAbodePage() {
           description: "Escuela de canto y formación vocal con Katty Elisa",
           inLanguage: "es-EC",
           publisher: {
-            "@type": "MusicSchool",
+            "@type": "Organization",
             name: "Katty Elisa",
             url: "https://escuelakattyelisa.ec",
           },
