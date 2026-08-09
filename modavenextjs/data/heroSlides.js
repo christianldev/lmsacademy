@@ -103,7 +103,8 @@ export const slidesData = [
   {
     id: 1,
     imageSrc: "/images/slider/escuela-katty-elisa-clases.webp",
-    heading: "Escuela de Canto en Guayaquil<br/> Katty Elisa",
+    heading:
+      "La mejor Escuela de Canto en <span style='color: #30eef5'> Guayaquil</span>",
     description:
       "Formación musical y desarrollo artístico integral<br/> para cantantes.",
     buttonText: "Comienza Hoy",
