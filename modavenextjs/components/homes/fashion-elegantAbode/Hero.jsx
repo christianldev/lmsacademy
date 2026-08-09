@@ -5,20 +5,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Pagination, Autoplay } from "swiper/modules";
-import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [isMobile, setIsMobile] = useState(false);
   const whatsappUrl = `https://wa.me/593968886183?text=${encodeURIComponent("Hola, me gustaría inscribirme en la escuela de artistas.")}`;
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 767px)");
-    const updateViewport = () => setIsMobile(mediaQuery.matches);
-
-    updateViewport();
-    mediaQuery.addEventListener("change", updateViewport);
-    return () => mediaQuery.removeEventListener("change", updateViewport);
-  }, []);
 
   return (
     <section className="tf-slideshow slider-style2 slider-effect-fade">
@@ -27,9 +16,7 @@ export default function Hero() {
         centeredSlides={false}
         spaceBetween={0}
         loop={true}
-        autoplay={
-          isMobile ? false : { delay: 4000, disableOnInteraction: false }
-        }
+        autoplay={{ delay: 4000, disableOnInteraction: false }}
         modules={[Pagination, Autoplay]}
         pagination={{
           clickable: true,
