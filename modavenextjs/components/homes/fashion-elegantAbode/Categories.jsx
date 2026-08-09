@@ -29,10 +29,6 @@ export default function Categories() {
             <li>Técnica de respiración</li>
             <li>Interpretación de canciones</li>
             <li>Seguridad y desenvolvimiento en el escenario</li>
-<<<<<<< HEAD
-=======
-            
->>>>>>> 072c6d249eb6c9c446e73eab67436547c4ddcf52
           </ul>
         </div>
 
