@@ -32,10 +32,7 @@ export default function AboutUS() {
               jóvenes y adultos.
             </p>
             <p>
-              Fundada y dirigida por la reconocida cantante Katty Elisa, nuestra
-              escuela respira música, técnica y escenario en cada clase.
-              Ganadora de una gaviota en el Festival de Viña del Mar 2025 , uno
-              de los escenarios musicales más importantes de Latinoamérica.
+              Dirigida por Katty Elisa, ganadora de la Gaviota de Plata en Viña del Mar 2025, nuestra escuela respira música, técnica y pasión por el escenario. Aquí no solo aprendes a cantar: formas la confianza y el carácter de un verdadero artista.
             </p>
             <p>
               Contamos con un equipo docente de profesionales altamente
