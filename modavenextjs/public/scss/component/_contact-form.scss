@@ -155,7 +155,7 @@
         position: relative;
     }
 
-    span {
+    span:not(.checkbox-text) {
         color: #ffffff;
         font-size: 16px;
         font-weight: 800;
@@ -163,18 +163,18 @@
         line-height: 1;
         pointer-events: none;
         position: absolute;
-        top: 21px; // Posición inicial (cuando está vacío)
+        top: 21px;
         z-index: 1;
         transition: 0.3s ease all;
         opacity: 0.7;
     }
 
     /* Animación del label al hacer foco, o si ya tiene texto válido o escrito */
-    input:focus~span,
-    input:not(:placeholder-shown)~span,
-    textarea:focus~span,
-    textarea:not(:placeholder-shown)~span {
-        top: 8px;
+    input:focus~span:not(.checkbox-text),
+    input:not(:placeholder-shown)~span:not(.checkbox-text),
+    textarea:focus~span:not(.checkbox-text),
+    textarea:not(:placeholder-shown)~span:not(.checkbox-text) {
+
         font-size: 12px;
         opacity: 1;
         color: #04f5e2;

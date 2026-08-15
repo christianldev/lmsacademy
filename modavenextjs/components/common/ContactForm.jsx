@@ -7,9 +7,18 @@ const initialValues = {
   phone: "",
   subject: "",
   message: "",
+  acceptTerms: false,
 };
 
 function validateField(name, value) {
+  // Para checkboxes, value es un boolean
+  if (name === "acceptTerms") {
+    return value
+      ? ""
+      : "Debes aceptar la Política de Privacidad y Términos y Condiciones para continuar.";
+  }
+
+  // Para inputs de texto, hacer trim
   const trimmedValue = value.trim();
 
   switch (name) {
@@ -47,24 +56,27 @@ export default function ContactForm({ parentClass = "contact-form-section" }) {
   const [loading, setLoading] = useState(false);
 
   const updateField = ({ target }) => {
-    const { name, value } = target;
-    const nextValues = { ...values, [name]: value };
+    const { name, type, value, checked } = target;
+    const nextValues = {
+      ...values,
+      [name]: type === "checkbox" ? checked : value,
+    };
     setValues(nextValues);
 
     if (touched[name]) {
       setFieldErrors((currentErrors) => ({
         ...currentErrors,
-        [name]: validateField(name, value),
+        [name]: validateField(name, type === "checkbox" ? checked : value),
       }));
     }
   };
 
   const touchField = ({ target }) => {
-    const { name, value } = target;
+    const { name, type, value, checked } = target;
     setTouched((currentTouched) => ({ ...currentTouched, [name]: true }));
     setFieldErrors((currentErrors) => ({
       ...currentErrors,
-      [name]: validateField(name, value),
+      [name]: validateField(name, type === "checkbox" ? checked : value),
     }));
   };
 
@@ -302,6 +314,40 @@ export default function ContactForm({ parentClass = "contact-form-section" }) {
                 </small>
               )}
             </label>
+
+            <div className="contact-form-checkbox">
+              <input
+                type="checkbox"
+                id="acceptTerms"
+                name="acceptTerms"
+                checked={values.acceptTerms}
+                onChange={updateField}
+                onBlur={touchField}
+                aria-invalid={Boolean(fieldErrors.acceptTerms)}
+                aria-describedby="acceptTerms-error"
+              />
+              <span
+                className={`checkbox-text${fieldErrors.acceptTerms && touched.acceptTerms ? " has-error" : ""}`}
+              >
+                Acepto la{" "}
+                <a
+                  href="/privacy-policy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Política de Privacidad
+                </a>{" "}
+                y los{" "}
+                <a href="/terms" target="_blank" rel="noopener noreferrer">
+                  Términos y Condiciones
+                </a>
+              </span>
+              {touched.acceptTerms && fieldErrors.acceptTerms && (
+                <small id="acceptTerms-error" className="field-error">
+                  {fieldErrors.acceptTerms}
+                </small>
+              )}
+            </div>
 
             <button type="submit" disabled={loading}>
               {loading ? "Enviando..." : "Enviar Mensaje"}

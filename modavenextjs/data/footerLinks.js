@@ -23,4 +23,12 @@ export const footerLinks = [
       { label: "Contáctanos", href: "#contacto", isLink: true },
     ],
   },
+  {
+    heading: "Legal",
+    items: [
+      { label: "Privacidad", href: "/privacy-policy", isLink: true },
+      { label: "Términos", href: "/terms", isLink: true },
+      { label: "Aviso Legal", href: "/legal-notice", isLink: true },
+    ],
+  },
 ];

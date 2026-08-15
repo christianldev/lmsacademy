@@ -4,6 +4,7 @@
   .range-slider__range {
     background: var(--main) !important;
   }
+
   .range-slider__thumb {
     background: var(--white) !important;
     border: 2px solid var(--main);
@@ -15,9 +16,11 @@
 #shoppingCart.show .tf-progress-bar .value {
   width: 60% !important;
 }
+
 .menu-item-li.active {
   .menu-link-text {
     color: var(--primary) !important;
+
     &::before {
       width: 100%;
       left: 0;
@@ -26,11 +29,13 @@
     }
   }
 }
+
 .sub-nav-link.active,
 .mb-menu-link.active,
 .sub-nav-link.active {
   color: var(--primary) !important;
 }
+
 @media only screen and (max-width: 767px) {
   .footer .footer-col-block .tf-collapse-content {
     overflow-y: hidden;
@@ -39,11 +44,13 @@
     transition: 0.5s;
   }
 }
+
 .tfSubscribeMsg {
   display: none;
   max-height: 0px;
   // transition: 0.4s;
   overflow: hidden;
+
   &.active {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -51,9 +58,11 @@
     display: block;
   }
 }
+
 .swiper-pagination-lock {
   display: none;
 }
+
 .show-mx-1200 {
   display: none;
 }
@@ -62,34 +71,42 @@
   .show-mx-1200 {
     display: block !important;
   }
+
   .hidden-mx-1200 {
     display: none;
   }
 }
+
 .tf-toolbar-bottom {
   overflow-x: hidden;
 }
+
 .mw-100p-scroll {
   max-width: 100%;
   overflow-y: auto;
 }
+
 .mw-100p-hidden,
 .tf-product-info-wrap {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 .tabFilter {
   transform: translateY(30px) !important;
   opacity: 0 !important;
   transition: 0.3s !important;
+
   &.filtered {
     transform: translateY(0px) !important;
     opacity: 1 !important;
   }
 }
+
 .icv__label {
   height: fit-content !important;
 }
+
 .home-gaming-testimonials {
   @media (max-width: 1200px) {
     .nav-prev-testimonial {
@@ -97,6 +114,7 @@
       bottom: 0;
       top: unset;
     }
+
     .nav-next-testimonial {
       right: 300px !important;
       bottom: 0;
@@ -108,8 +126,252 @@
 .bookstore-product-heading {
   @media (max-width: 580px) {
     flex-wrap: wrap;
+
     .btn-line {
       margin-top: 20px;
+    }
+  }
+}
+
+/* Legal Pages Styles */
+.legal-content-section {
+  padding: 60px 0;
+  min-height: 600px;
+  background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+}
+
+.legal-content-wrapper {
+  background: white;
+  border-radius: 12px;
+  padding: 60px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+  @media (max-width: 768px) {
+    padding: 30px 20px;
+  }
+}
+
+.legal-header {
+  margin-bottom: 50px;
+  text-align: center;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 30px;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+    }
+  }
+
+  .last-update {
+    color: #6b7280;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+.legal-body {
+  line-height: 1.8;
+  color: #374151;
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #d1d5db;
+    position: relative;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 1.25rem;
+      margin-top: 30px;
+    }
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #374151;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+
+  p {
+    margin-bottom: 18px;
+    font-size: 1rem;
+    text-align: justify;
+
+    strong {
+      color: #04f5e2;
+      font-weight: 600;
+    }
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  ul {
+    margin-bottom: 20px;
+    padding-left: 25px;
+    list-style: none;
+
+    li {
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 20px;
+
+      &:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #04f5e2;
+        font-weight: bold;
+        font-size: 1.2em;
+      }
+
+      strong {
+        color: #04f5e2;
+      }
+    }
+  }
+
+  a {
+    color: #04f5e2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #00d4c8;
+      text-decoration: underline;
+    }
+  }
+}
+
+.legal-disclaimer {
+  background: #f3f4f6;
+  border-left: 4px solid #04f5e2;
+  padding: 20px;
+  border-radius: 6px;
+  margin-top: 40px;
+
+  p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .legal-content-wrapper {
+    border-radius: 8px;
+  }
+
+  .legal-body {
+    h2 {
+      font-size: 1.3rem;
+    }
+
+    h3 {
+      font-size: 1rem;
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        font-size: 0.95rem;
+      }
+    }
+  }
+}
+
+/* Checkbox para términos y condiciones */
+.contact-form-checkbox {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    flex-shrink: 0;
+    cursor: pointer;
+    accent-color: #04f5e2;
+    margin: 0;
+
+    &:focus {
+      outline: 2px solid #04f5e2;
+      outline-offset: 2px;
+    }
+  }
+
+  .checkbox-text {
+    flex: 1;
+    min-width: 200px;
+    color: #9ca3af;
+    font-size: 0.9rem;
+    line-height: 1.5;
+
+    &.has-error {
+      color: #ef4444;
+    }
+
+    a {
+      color: #04f5e2;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #00d4c8;
+        text-decoration: underline;
+      }
+
+      &:focus {
+        outline: 2px solid #04f5e2;
+        outline-offset: 2px;
+        border-radius: 2px;
+      }
+    }
+  }
+
+  .field-error {
+    display: block;
+    width: 100%;
+    margin-top: 4px;
+    color: #ef4444;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+
+  @media (max-width: 480px) {
+    .checkbox-text {
+      min-width: 0;
+      font-size: 0.85rem;
     }
   }
 }
