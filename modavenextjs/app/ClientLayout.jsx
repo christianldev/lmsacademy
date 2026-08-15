@@ -4,10 +4,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 import Context from "@/context/Context";
-import QuickView from "@/components/modals/QuickView";
 import MobileMenu from "@/components/modals/MobileMenu";
-
-import Categories from "@/components/modals/Categories";
 
 export default function ClientLayout({ children }) {
   const pathname = usePathname();
@@ -113,10 +110,7 @@ export default function ClientLayout({ children }) {
         <div id="wrapper" key="wrapper">
           {children}
         </div>
-        <QuickView key="quick-view" />
         <MobileMenu key="mobile-menu" />
-
-        <Categories key="categories" />
       </Context>
     </>
   );

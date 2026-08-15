@@ -5,9 +5,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
 import Link from "next/link";
 
-
 import { Autoplay, EffectFade, Pagination } from "swiper/modules";
-
 
 export default function Hero() {
   const whatsappUrl = `https://wa.me/593968886183?text=${encodeURIComponent("Hola, me gustaría inscribirme en la escuela de artistas.")}`;
@@ -19,9 +17,6 @@ export default function Hero() {
         centeredSlides={false}
         spaceBetween={0}
         loop={true}
-
-
-
         speed={1000}
         effect="fade"
         fadeEffect={{ crossFade: true }}
@@ -30,7 +25,6 @@ export default function Hero() {
         observeParents={true}
         runCallbacksOnInit={true}
         modules={[Pagination, Autoplay, EffectFade]}
-
         pagination={{
           clickable: true,
           el: ".spd33",
@@ -82,8 +76,6 @@ export default function Hero() {
                               fontWeight: "800",
                               lineHeight: "1.1",
                               marginBottom: "10px", // Separación titulo - descripción
-                              marginTop: "50px",
-                              paddingTop: "20px",
                             }}
                           />
                         ) : (
@@ -97,8 +89,6 @@ export default function Hero() {
                               fontWeight: "800",
                               lineHeight: "1.1",
                               marginBottom: "10px", // Separación titulo - descripción
-                              marginTop: "50px",
-                              paddingTop: "20px",
                             }}
                           />
                         )}

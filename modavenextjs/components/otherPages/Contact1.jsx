@@ -88,17 +88,49 @@ export default function Contact1() {
               <textarea
                 className=""
                 rows={4}
-                placeholder="Your Message*"
+                placeholder="Mensaje*"
+                name="message"
                 tabIndex={2}
                 aria-required="true"
                 required
                 defaultValue={""}
               />
             </fieldset>
+
+            <fieldset
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "8px",
+                textAlign: "left",
+                marginBottom: "20px",
+              }}
+            >
+              <input
+                type="checkbox"
+                id="privacy-policy"
+                name="privacy-policy"
+                required
+                style={{ width: "auto", marginBottom: 0 }}
+              />
+              <label
+                htmlFor="privacy-policy"
+                style={{ margin: 0, fontSize: "14px", lineHeight: "1.2" }}
+              >
+                He leído y acepto la{" "}
+                <a
+                  href="/privacy-policy"
+                  target="_blank"
+                  style={{ textDecoration: "underline" }}
+                >
+                  Política de Privacidad
+                </a>
+              </label>
+            </fieldset>
           </div>
           <div className="button-submit text-center">
             <button className="tf-btn btn-fill" type="submit">
-              <span className="text text-button">Send message</span>
+              <span className="text text-button">Enviar mensaje</span>
             </button>
           </div>
         </form>

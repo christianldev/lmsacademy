@@ -3,7 +3,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { testimonialsWithProduct9 } from "@/data/products";
+import { testimonialsUsers } from "@/data/testimonials";
 
 export default function Testimonials({ parentClass = "flat-spacing" }) {
   const [isMobile, setIsMobile] = useState(false);
@@ -53,12 +53,12 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
         <div
           className="list-star-default"
           role="img"
-          aria-label={`${testimonial.rating} de 5 estrellas`}
+          aria-label={`${testimonial.stars} de 5 estrellas`}
         >
-          {renderStars(testimonial.rating)}
+          {renderStars(testimonial.stars)}
         </div>
       </div>
-      <p className="text-review">{testimonial.quote}</p>
+      <p className="text-review">{testimonial.text}</p>
     </article>
   );
 
@@ -82,7 +82,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
         <div className="testimonials-content">
           {isMobile ? (
             <div className="light-list">
-              {testimonialsWithProduct9.map((testimonial, index) =>
+              {testimonialsUsers.map((testimonial, index) =>
                 renderTestimonialCard(testimonial, index),
               )}
             </div>
@@ -117,7 +117,7 @@ export default function Testimonials({ parentClass = "flat-spacing" }) {
                 spaceBetween={30}
                 className="px-2"
               >
-                {testimonialsWithProduct9.map((testimonial, index) => (
+                {testimonialsUsers.map((testimonial, index) => (
                   <SwiperSlide key={index}>
                     {renderTestimonialCard(testimonial, index)}
                   </SwiperSlide>
